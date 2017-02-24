@@ -1,6 +1,3 @@
 [submodule "src/robot_controllers"]
 	path = src/robot_controllers
 	url = https://github.com/MoyinOtubela/robot_controllers.git
-[submodule "src/gazebo_sim"]
-	path = src/gazebo_sim
-	url = https://github.com/MoyinOtubela/gazebo_sim.git
