@@ -4,6 +4,3 @@
 [submodule "src/gazebo_sim"]
 	path = src/gazebo_sim
 	url = https://github.com/MoyinOtubela/gazebo_sim.git
-[submodule "src/matlab_rosbag"]
-	path = src/matlab_rosbag
-	url = https://github.com/MoyinOtubela/matlab_rosbag.git
