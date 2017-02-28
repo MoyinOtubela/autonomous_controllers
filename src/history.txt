@@ -1,0 +1,1000 @@
+ 1005  git submodule add https://github.com/thebotmechanic/gazebo_sim.git --name src/gazebo_sim
+ 1006  git submodule add https://github.com/thebotmechanic/gazebo_sim.git --name -f src/gazebo_sim
+ 1007  git submodule add -f https://github.com/thebotmechanic/gazebo_sim.git --namesrc/gazebo_sim
+ 1008  git submodule add -f https://github.com/thebotmechanic/gazebo_sim.git --name src/gazebo_sim
+ 1009  git submodule add https://github.com/thebotmechanic/gazebo_sim.git src/gazebo_sim
+ 1010  ls
+ 1011  git rm src/gazebo_sim
+ 1012  git rm -cached src/gazebo_sim
+ 1013  git rm --cached src/gazebo_sim
+ 1014  rm -rf .git/modules/src/gazebo_sim/
+ 1015  ls
+ 1016  git submodule add https://github.com/thebotmechanic/gazebo_sim.git src/gazebo_sim
+ 1017  git submodule init
+ 1018  git submodule update 
+ 1019  cd ..
+ 1020  ls
+ 1021  cd autonomous_controllers/
+ 1022  ls
+ 1023  cd src
+ 1024  ls
+ 1025  git submodule update 
+ 1026  git submodule init
+ 1027  git submodule update 
+ 1028  cd ..
+ 1029  ls
+ 1030  git push origin origin/control_conflict 
+ 1031  git status
+ 1032  git commit -a -m "modified gazebo_sim"
+ 1033  git push origin origin/control_conflict 
+ 1034  git push origin control_conflict 
+ 1035  git add src/gazebo_sim/
+ 1036  git commit -a -m "modified gazebo_sim"
+ 1037  git commit src/gazebo_sim/ -m "modified gazebo_sim"
+ 1038  git status
+ 1039  ls
+ 1040  git add src/gazebo_sim/
+ 1041  ls
+ 1042  cd src
+ 1043  ls
+ 1044  cd gazebo_sim/
+ 1045  ls
+ 1046  git add *
+ 1047  git commit -a -m "update"
+ 1048  git remote -v
+ 1049  cd ..
+ 1050  ls
+ 1051  cd gazebo_sim/
+ 1052  ls
+ 1053  git pull
+ 1054  cd ..
+ 1055  ls
+ 1056  cd gazebo_sim/
+ 1057  ls
+ 1058  gedit .git
+ 1059  ls
+ 1060  cd ..
+ 1061  ls
+ 1062  git add --force gazebo_sim/
+ 1063  git status 
+ 1064  cd ..
+ 1065  ls
+ 1066  git push origin master 
+ 1067  git status 
+ 1068  git branch 
+ 1069  git checkout master 
+ 1070  ls
+ 1071  git status 
+ 1072  git checkout origin/control_conflict 
+ 1073  ls
+ 1074  cd src
+ 1075  ls
+ 1076  cd ..
+ 1077  ls
+ 1078  git status 
+ 1079  git add
+ 1080  git add .
+ 1081  git status 
+ 1082  git commit . -m "update"
+ 1083  git branch 
+ 1084  git push origin origin/control_conflict 
+ 1085  ls
+ 1086  git branch 
+ 1087  ls
+ 1088  git checkout control_conflict 
+ 1089  ls
+ 1090  cd src
+ 1091  ls
+ 1092  git rm -rf gazebo_sim/
+ 1093  cd ..
+ 1094  git commit -a -m "remove gazebo_sim"
+ 1095  ls
+ 1096  git status
+ 1097  git branch 
+ 1098  git push origin control_conflict 
+ 1099  ls
+ 1100  cd src/
+ 1101  ls
+ 1102  pwd
+ 1103  l
+ 1104  ls
+ 1105  cd ..
+ 1106  ls
+ 1107  cd src
+ 1108  l
+ 1109  ls
+ 1110  cd ..
+ 1111  git submodule add https://github.com/MoyinOtubela/gazebo_sim.git src/gazebo_sim
+ 1112  cd ..
+ 1113  ls
+ 1114  cd autonomous_controllers/
+ 1115  ls
+ 1116  s
+ 1117  git rm -rf .gitmodules 
+ 1118  ls
+ 1119  cd src
+ 1120  ls
+ 1121  cd ..
+ 1122  ls
+ 1123  git branch 
+ 1124  ls
+ 1125  cd src
+ 1126  lg
+ 1127  ls
+ 1128  cd ..
+ 1129  git submodule add https://github.com/MoyinOtubela/gazebo_sim.git
+ 1130  git submodule add https://github.com/MoyinOtubela/gazebo_sim.git src/gazebo_sim
+ 1131  ls
+ 1132  git branch master 
+ 1133  git branch -b master 
+ 1134  git checkout master 
+ 1135  ls
+ 1136  cd src
+ 1137  ls
+ 1138  cd ..
+ 1139  ls
+ 1140  git checkout -b test2 
+ 1141  ls
+ 1142  cd src
+ 1143  ls
+ 1144  cd ..
+ 1145  ls
+ 1146  cd src
+ 1147  ls
+ 1148  cd ..
+ 1149  git submodule add https://github.com/MoyinOtubela/gazebo_sim.git src/gazebo_sim
+ 1150  ls
+ 1151  rm -r .git/modules/src/gazebo_sim/
+ 1152  sudo rm -r .git/modules/src/gazebo_sim/
+ 1153  ls
+ 1154  git submodule add https://github.com/MoyinOtubela/gazebo_sim.git src/gazebo_sim
+ 1155  l
+ 1156  ls
+ 1157  cd src
+ 1158  ls
+ 1159  git submodule init 
+ 1160  git submodule update 
+ 1161  gedit ../.gitmodules 
+ 1162  git submodule init 
+ 1163  gedit ../.gitmodules 
+ 1164  git submodule init 
+ 1165  gedit ../.gitmodules 
+ 1166  ls
+ 1167  gedit ../.git/modules/src/gazebo_sim/config 
+ 1168  ls
+ 1169  cd ..
+ 1170  ls
+ 1171  rm -r .git*
+ 1172  sudo rm -r .git*
+ 1173  ls
+ 1174  git init
+ 1175  git branch 
+ 1176  git remote add origin https://github.com/MoyinOtubela/autonomous_controllers.git
+ 1177  ls
+ 1178  cd src
+ 1179  ls
+ 1180  git init 
+ 1181  git submodule init 
+ 1182  git submodule update 
+ 1183  ls
+ 1184  cd ..
+ 1185  ls
+ 1186  git sta
+ 1187  git status 
+ 1188  git add *
+ 1189  git add src/robot_controllers/
+ 1190  ls
+ 1191  cd src
+ 1192  ls
+ 1193  rm -r gazebo_sim/
+ 1194  rm -r robot_controllers/
+ 1195  ls
+ 1196  git rm .git/
+ 1197  git rm -rf .git/
+ 1198  git rm -rf .git*
+ 1199  git rm -rf .git/*
+ 1200  ls
+ 1201  rm -r .git/
+ 1202  ls
+ 1203  cd ..
+ 1204  ls
+ 1205  git init
+ 1206  ls
+ 1207  git branch 
+ 1208  git remote add origin https://github.com/MoyinOtubela/autonomous_controllers.git
+ 1209  ls
+ 1210  git pull origin 
+ 1211  git pull origin master 
+ 1212  git pull --force origin master 
+ 1213  ls
+ 1214  rm LICENSE 
+ 1215  git pull --force origin master 
+ 1216  ls
+ 1217  git pull origin master 
+ 1218  git fetch origin master:master 
+ 1219  ls
+ 1220  git branch 
+ 1221  git checkout -b test
+ 1222  git pull origin master 
+ 1223  git branch 
+ 1224  ls
+ 1225  git init
+ 1226  subl ../../.git/modules/src/gazebo_sim/config 
+ 1227  cd dev
+ 1228  ls
+ 1229  cd moyin_ws/
+ 1230  ls
+ 1231  cd src
+ 1232  ls
+ 1233  cd gazebo_sim/
+ 1234  ls
+ 1235  git remote --verbose
+ 1236  git fetch upstream 
+ 1237  git checkout master
+ 1238  git merge upstream/master 
+ 1239  ld
+ 1240  ls
+ 1241  git remote --verbose
+ 1242  ls
+ 1243  cd build/
+ 1244  ls
+ 1245  cd gazebo_sim/
+ 1246  ls
+ 1247  cd ..
+ 1248  ls
+ 1249  cd ..
+ 1250  ls
+ 1251  git describe master 
+ 1252  git describe origin/test 
+ 1253  ls
+ 1254  git branch 
+ 1255  cd src/
+ 1256  ls
+ 1257  cd gazebo_sim/
+ 1258  ls
+ 1259  cd ..
+ 1260  ls
+ 1261  cd ..
+ 1262  ls
+ 1263  rm -r src/
+ 1264  rm -r build/
+ 1265  rm -r devel/
+ 1266  ls
+ 1267  rm -r gazebo_ros_demos/
+ 1268  ls
+ 1269  gedit README.md 
+ 1270  rm README.*
+ 1271  ls
+ 1272  git branch -D test
+ 1273  ls
+ 1274  git init
+ 1275  ls
+ 1276  git status
+ 1277  ls
+ 1278  git add *
+ 1279  git commit -a
+ 1280  sudo git commit -a
+ 1281  sudo git commit -a -m "submodule"
+ 1282  ls
+ 1283  git submodule add https://github.com/MoyinOtubela/moyin_ws/src/gazebo_sim/.git src/gazebo_sim 
+ 1284  git submodule add https://github.com/MoyinOtubela/moyin_ws/src/gazebo_sim.git src/gazebo_sim 
+ 1285  git submodule add https://github.com/MoyinOtubela/moyin_ws/src/.git src/gazebo_sim 
+ 1286  git submodule add https://github.com/MoyinOtubela/moyin_ws/src/.git src 
+ 1287  git submodule add https://github.com/MoyinOtubela/moyin_ws/src/.git src/gazebo_sim 
+ 1288  ls
+ 1289  git init
+ 1290  git remote --verbose
+ 1291  git submodule add https://github.com/thebotmechanic/gazebo_sim.git src/gazebo_sim 
+ 1292  sudo git submodule add https://github.com/thebotmechanic/gazebo_sim.git src/gazebo_sim 
+ 1293  sudo git submodule add https://github.com/thebotmechanic/gazebo_sim.git src/
+ 1294  sudo git submodule add https://github.com/thebotmechanic/gazebo_sim.git src
+ 1295  sudo git submodule add https://github.com/thebotmechanic/gazebo_sim.git src/gazebo_sim
+ 1296  sudo git submodule add https://github.com/thebotmechanic/gazebo_sim.git src/gazebo_sim/
+ 1297  git status
+ 1298  ls
+ 1299  git add .gitmodules 
+ 1300  gedit .gitmodules 
+ 1301  git add .gitmodules 
+ 1302  git add -f .gitmodules 
+ 1303  sudo git add -f .gitmodules 
+ 1304  git status
+ 1305  git submodule init 
+ 1306  git submodule update
+ 1307  git sta
+ 1308  git status 
+ 1309  ls
+ 1310  git submodule update 
+ 1311  git submodule sync 
+ 1312  git submodule update 
+ 1313  ls
+ 1314  git submodule  add robbie_auto/
+ 1315  git submodule add 
+ 1316  ls
+ 1317  git checkout master 
+ 1318  git status
+ 1319  git remote -v
+ 1320  git submodule init 
+ 1321  git submodule update 
+ 1322  ls
+ 1323  git submodule rm src/gazebo_sim
+ 1324  cd ..
+ 1325  ls
+ 1326  git remote -v
+ 1327  git submodule rm src/gazebo_sim
+ 1328  git submodule status
+ 1329  gedit .git/config 
+ 1330  rm .git/*
+ 1331  rm -r .git/*
+ 1332  sudo rm -r .git/*
+ 1333  ls
+ 1334  sudo rm -r .git
+ 1335  ls
+ 1336  nautilus .
+ 1337  ls
+ 1338  git submodule add https://github.com/thebotmechanic/gazebo_sim.git gazebo_sim_c
+ 1339  ls
+ 1340  cd gazebo_sim_c/
+ 1341  ls
+ 1342  cd ..
+ 1343  ls
+ 1344  git status 
+ 1345  git submodule init
+ 1346  git ../.gitmodules
+ 1347  gedit ../.gitmodules
+ 1348  ls
+ 1349  git submodule update
+ 1350  gedit .gitmodules
+ 1351  git submodule update
+ 1352  git submodule init
+ 1353  sudo rm -r gazebo_sim_c
+ 1354  ls
+ 1355  mv -r gazebo_sim/ gazebo_sim.original/
+ 1356  mv  gazebo_sim/ gazebo_sim.original/
+ 1357  ls
+ 1358  git submodule add https://github.com/thebotmechanic/gazebo_sim.git gazebo_sim
+ 1359  rm .gitmodules 
+ 1360  ls
+ 1361  git submodule add https://github.com/thebotmechanic/gazebo_sim.git gazebo_sim
+ 1362  git init
+ 1363  git submodule add https://github.com/thebotmechanic/gazebo_sim.git gazebo_sim
+ 1364  ls
+ 1365  git status
+ 1366  git submodule init
+ 1367  git submodule update
+ 1368  ls
+ 1369  cd gazebo_sim
+ 1370  ls
+ 1371  cd ..
+ 1372  ls
+ 1373  git status
+ 1374  git checkout test
+ 1375  git checkout -b test
+ 1376  ls
+ 1377  git status
+ 1378  git push add gazebo_sim
+ 1379  git add gazebo_sim
+ 1380  git commit gazebo_sim -m "gazebo_sim"
+ 1381  ls
+ 1382  git push 
+ 1383  ls
+ 1384  git pull
+ 1385  git remote add origin https://github.com/MoyinOtubela/moyin_ws/src.git
+ 1386  git push origin test 
+ 1387  git init
+ 1388  git remote add origin https://github.com/MoyinOtubela/moyin_ws/src/.git
+ 1389  git remote remove origin 
+ 1390  git remote add origin https://github.com/MoyinOtubela/moyin_ws/src/.git
+ 1391  git push origin test 
+ 1392  git init
+ 1393  ls
+ 1394  git submodule update --init --recursive
+ 1395  ls
+ 1396  rm -r gazebo_sim
+ 1397  ls
+ 1398  mv gazebo_sim.original/ gazebo_sim
+ 1399  ks
+ 1400  ls
+ 1401  cd gazebo_sim/
+ 1402  ls
+ 1403  cd src/
+ 1404  ls
+ 1405  cd gazebo_sim/
+ 1406  ls
+ 1407  cd ..
+ 1408  ls
+ 1409  cd ..
+ 1410  ls
+ 1411  rm src
+ 1412  rm -r src
+ 1413  ls
+ 1414  cd ..
+ 1415  ls
+ 1416  git status
+ 1417  git add gazebo_sim/
+ 1418  ls
+ 1419  git push origin test 
+ 1420  ls
+ 1421  git submodule add https://github.com/MoyinOtubela/moyin_ws/src/gazebo_sim/.git gazebo_sim/
+ 1422  ls
+ 1423  gedit .gitmodules 
+ 1424  git submodule add https://github.com/MoyinOtubela/moyin_ws/src/gazebo_sim/.git gazebo_sim/
+ 1425  rm .gitmodules
+ 1426  ls
+ 1427  rm -r .git
+ 1428  sudo rm -r .git
+ 1429  ls
+ 1430  git submodule add https://github.com/MoyinOtubela/moyin_ws/src/gazebo_sim/.git gazebo_sim/
+ 1431  git rm gazebo_sim_c 
+ 1432  git rm gazebo_sim/
+ 1433  ls
+ 1434  cp -r gazebo_sim/ gazebo_sim.original/
+ 1435  git rm gazebo_sim/
+ 1436  git rm -rf gazebo_sim/
+ 1437  rm -rf gazebo_sim/
+ 1438  sudo rm -rf gazebo_sim/
+ 1439  ls
+ 1440  git rm -rf gazebo_sim/
+ 1441  ls
+ 1442  git submodule add https://github.com/MoyinOtubela/moyin_ws/src/gazebo_sim/.git gazebo_sim/
+ 1443  ls
+ 1444  mv gazebo_sim.original/ gazebo_sim
+ 1445  ks
+ 1446  ls
+ 1447  git submodule add https://github.com/thebotmechanic/gazebo_sim.git gazebo_sim/
+ 1448  ls
+ 1449  git submodule update --init --recursive
+ 1450  sudo git submodule update --init --recursive
+ 1451  ls
+ 1452  git commit gazebo_sim -m "Add gazebo_sim submodule"
+ 1453  git push origin origin/test 
+ 1454  git status
+ 1455  git add gazebo_sim
+ 1456  git commit gazebo_sim -m "Add gazebo_sim submodule"
+ 1457  git commit -a -m "Add gazebo_sim submodule"
+ 1458  git push origin origin/test 
+ 1459  ls
+ 1460  git status
+ 1461  git remote -v
+ 1462  git submodule update 
+ 1463  git submodule update  --init --recursive
+ 1464  ls
+ 1465  cd gazebo_sim/
+ 1466  ls
+ 1467  cd src
+ 1468  ls
+ 1469  cd gazebo_sim/s
+ 1470  cd gazebo_sim/
+ 1471  ls
+ 1472  cd ..
+ 1473  ls
+ 1474  cd ..
+ 1475  ls
+ 1476  rm -r src/
+ 1477  ls
+ 1478  cd ..
+ 1479  ls
+ 1480  git submodule rm gazebo_sim
+ 1481  git status
+ 1482  gedit .gitmodules~ 
+ 1483  git submodule 
+ 1484  git submodule .
+ 1485  git submodule init
+ 1486  git submodule update --init --recursive
+ 1487  sudo nautilus .
+ 1488  ls
+ 1489  cd ..
+ 1490  ls
+ 1491  cd src/
+ 1492  ls
+ 1493  cd gazebo_sim/
+ 1494  ls
+ 1495  cd ..
+ 1496  ls
+ 1497  cd ..
+ 1498  ls
+ 1499  git submodule add https://github.com/thebotmechanic/gazebo_sim.git src/gazebo_sim
+ 1500  cd src
+ 1501  ls
+ 1502  git submodule add https://github.com/thebotmechanic/gazebo_sim.git src/gazebo_sim
+ 1503  ls
+ 1504  cd src/
+ 1505  ls
+ 1506  cd gazebo_sim/
+ 1507  ls
+ 1508  cd ..
+ 1509  ls
+ 1510  cd ..
+ 1511  ls
+ 1512  rm -r src/gazebo_sim/
+ 1513  ls
+ 1514  rm -r src/
+ 1515  ls
+ 1516  cd ..
+ 1517  ls
+ 1518  cd ..
+ 1519  ls
+ 1520  mkdir robot_controllers
+ 1521  ls
+ 1522  cd robot_controllers/
+ 1523  ls
+ 1524  cd src
+ 1525  ls
+ 1526  cd gazebo_sim/
+ 1527  ls
+ 1528  cd ..
+ 1529  ls
+ 1530  cd ..
+ 1531  ls
+ 1532  catkin_make -j4
+ 1533  ls
+ 1534  cd src
+ 1535  ls
+ 1536  cd gazebo_sim/
+ 1537  ls
+ 1538  gedit .gitmodules 
+ 1539  rm .git*
+ 1540  rm -r .git*
+ 1541  sudo rm -r .git*
+ 1542  ls
+ 1543  cd ..
+ 1544  ls
+ 1545  rm -r gazebo_ros_demos/
+ 1546  ls
+ 1547  cd gazebo_sim/
+ 1548  ls
+ 1549  cd ..
+ 1550  ls
+ 1551  cd ..
+ 1552  ls
+ 1553  cd build/
+ 1554  ls
+ 1555  cd ..
+ 1556  ls
+ 1557  catkin_make -j4
+ 1558  git init
+ 1559  ls
+ 1560  git add build/
+ 1561  git commit -m "build commit"
+ 1562  git remote add origin https://github.com/MoyinOtubela/robot_controllers.git
+ 1563  git push origin master 
+ 1564  sudo git push origin master 
+ 1565  git push -u origin master
+ 1566  git push -u -f origin master
+ 1567  git add devel -m "devel commit"
+ 1568  git add devel/ -m "devel commit"
+ 1569  git add devel
+ 1570  git commit devel/ -m "devel commit"
+ 1571  git push -u -f origin master
+ 1572  git add src
+ 1573  git commit src/ -m "src commit"
+ 1574  git checkout -b test
+ 1575  git push -u -f origin test 
+ 1576  ls
+ 1577  cd src
+ 1578  ls
+ 1579  cd gazebo_sim/
+ 1580  ls
+ 1581  cd ..
+ 1582  ls
+ 1583  git status
+ 1584  cd ..
+ 1585  ls
+ 1586  git status
+ 1587  git checkout -b submodule_test
+ 1588  ls
+ 1589  cd src
+ 1590  ls
+ 1591  cd ..
+ 1592  ls
+ 1593  git submodule add https://github.com/thebotmechanic/gazebo_sim.git src/
+ 1594  git submodule add https://github.com/thebotmechanic/gazebo_sim.git 
+ 1595  ls
+ 1596  git add gazebo_sim/
+ 1597  git status
+ 1598  git submodule init
+ 1599  git submodule update
+ 1600  ls
+ 1601  cd gazebo_sim/
+ 1602  ls
+ 1603  git status 
+ 1604  ls
+ 1605  cd ..
+ 1606  ls
+ 1607  git status 
+ 1608  git add gazebo_sim/
+ 1609  git status 
+ 1610  git commit gazebo_sim/ -m "gazebo_sim submodule"
+ 1611  git branch 
+ 1612  git push origin submodule_test 
+ 1613  git push origin/src submodule_test 
+ 1614  git push origin submodule_test/src 
+ 1615  ls
+ 1616  git branch -D submodule_test 
+ 1617  git branch -D test 
+ 1618  git branch origin/
+ 1619  git branch origin/master 
+ 1620  ls
+ 1621  git status
+ 1622  git checkout master 
+ 1623  ls
+ 1624  git branch -D submodule_test 
+ 1625  ls
+ 1626  rm -r gazebo_sim/
+ 1627  ls
+ 1628  cd src
+ 1629  ls
+ 1630  cd gazebo_sim/
+ 1631  ls
+ 1632  cd ..
+ 1633  ls
+ 1634  cd ..
+ 1635  ls
+ 1636  cd ..
+ 1637  ls
+ 1638  cd robot_controllers/
+ 1639  ls
+ 1640  cd src
+ 1641  ls
+ 1642  mv gazebo_sim/ gazebo_sim.original/
+ 1643  ls
+ 1644  git submodule add https://github.com/thebotmechanic/gazebo_sim.git 
+ 1645  gedit .gitmodules~
+ 1646  rm .gitmodules
+ 1647  rm .gitmodules~
+ 1648  ls
+ 1649  git submodule add https://github.com/thebotmechanic/gazebo_sim.git 
+ 1650  gedit ../.gitmodules 
+ 1651  rm ../.gitmodules 
+ 1652  ls
+ 1653  git submodule add https://github.com/thebotmechanic/gazebo_sim.git 
+ 1654  gedit ../.git/config 
+ 1655  git submodule add https://github.com/thebotmechanic/gazebo_sim.git 
+ 1656  ls
+ 1657  git submodule add https://github.com/thebotmechanic/gazebo_sim.git .
+ 1658  git submodule add https://github.com/thebotmechanic/gazebo_sim.git 
+ 1659  rm .gitmodules~~ 
+ 1660  git submodule add https://github.com/thebotmechanic/gazebo_sim.git 
+ 1661  git rm gazebo_sim 
+ 1662  git rm -r gazebo_sim 
+ 1663  ls
+ 1664  git submodule add https://github.com/thebotmechanic/gazebo_sim.git 
+ 1665  ls
+ 1666  cd gazebo_sim
+ 1667  ls
+ 1668  cd ..
+ 1669  ls
+ 1670  git status
+ 1671  ls
+ 1672  git submodule init 
+ 1673  git submodule update 
+ 1674  ls
+ 1675  git status
+ 1676  git checkout test
+ 1677  ls
+ 1678  git pull
+ 1679  ls
+ 1680  cd ../
+ 1681  ls
+ 1682  git status
+ 1683  git add src/gazebo_sim
+ 1684  git status
+ 1685  git commit src/gazebo_sim -m "submodule gazebo_sim"
+ 1686  git status
+ 1687  git push origin test 
+ 1688  ls
+ 1689  git pull origin test 
+ 1690  ls
+ 1691  cd src
+ 1692  ls
+ 1693  cd gazebo_sim
+ 1694  ls
+ 1695  cd ..
+ 1696  ls
+ 1697  cd ..
+ 1698  ls
+ 1699  gedit .gitmodules 
+ 1700  git commit -am 'gazebo_sim submodule'
+ 1701  git diff --cached --submodule
+ 1702  ls
+ 1703  git submodule init
+ 1704  git submodule update
+ 1705  git push --recursive origin test 
+ 1706  git push origin test 
+ 1707  ls
+ 1708  cd src
+ 1709  ls
+ 1710  cd gazebo_sim
+ 1711  ls
+ 1712  cd ..
+ 1713  ls
+ 1714  git fetch
+ 1715  cd gazebo_sim
+ 1716  ls
+ 1717  git fetch 
+ 1718  git merge
+ 1719  cd ..
+ 1720  ls
+ 1721  cd ..
+ 1722  ls
+ 1723  git fetch
+ 1724  git fetch origin 
+ 1725  git merge
+ 1726  git merge origin/
+ 1727  git merge origin/test 
+ 1728  git add src/gazebo_sim.original/
+ 1729  ls
+ 1730  git commit -am 'gazebo_sim.original submodule'
+ 1731  git push origin test 
+ 1732  ls
+ 1733  cd src
+ 1734  ls
+ 1735  cd gazebo_sim
+ 1736  ls
+ 1737  cd ..
+ 1738  ls
+ 1739  cd ..
+ 1740  ls
+ 1741  git status
+ 1742  git add src/gazebo_sim
+ 1743  git status
+ 1744  ls
+ 1745  pwd
+ 1746  cd src
+ 1747  ls
+ 1748  cd gazebo_sim
+ 1749  ls
+ 1750  rm -r robbie_auto/
+ 1751  sudo rm -r robbie_auto/
+ 1752  sudo rm -r robbie_control/
+ 1753  ls
+ 1754  cd ..
+ 1755  ls
+ 1756  cd gazebo_sim/
+ 1757  ls
+ 1758  cd ..
+ 1759  ls
+ 1760  pwd
+ 1761  cd ..
+ 1762  ls
+ 1763  cd src
+ 1764  ls
+ 1765  cd robot_controllers/
+ 1766  ls
+ 1767  cd ..
+ 1768  ls
+ 1769  pwd
+ 1770  git branch 
+ 1771  git checkout -b push_robot_controllers
+ 1772  ls
+ 1773  git status
+ 1774  git reset push_robot_controllers 
+ 1775  git add robot_controllers/
+ 1776  git status
+ 1777  ls
+ 1778  cd ..
+ 1779  git commit src/robot_controllers/ -m "adding robot_controllers"
+ 1780  git reset push_robot_controllers 
+ 1781  git add robot_controllers/*
+ 1782  l
+ 1783  cd src
+ 1784  ls
+ 1785  cd robot_controllers/
+ 1786  ls
+ 1787  cd ..
+ 1788  ls
+ 1789  cd robot_controllers/
+ 1790  ls
+ 1791  git add *
+ 1792  git commit -a -m "adding robot_controller_content"
+ 1793  git commit -a -m -f "adding robot_controller_content"
+ 1794  git add -f robbie_auto/
+ 1795  git commit -a -m -f "adding robot_controller_content"
+ 1796  git commit -a -m "adding robot_controller_content"
+ 1797  git add robbie_auto/
+ 1798  git add -f robbie_auto/
+ 1799  sudo git add -f robbie_auto/
+ 1800  git status
+ 1801  ls
+ 1802  cd robbie_
+ 1803  cd robbie_auto/
+ 1804  ls
+ 1805  l
+ 1806  ls
+ 1807  sudo rm -r .git/
+ 1808  ls
+ 1809  cd ..
+ 1810  ls
+ 1811  sudo git add -f robbie_auto/
+ 1812  git commit -a -m "adding robot_controller_content"
+ 1813  ls
+ 1814  cd ..
+ 1815  ls
+ 1816  cd robot_controllers/
+ 1817  ls
+ 1818  git add *
+ 1819  git commit -a -m "adding robot_controller_content"
+ 1820  git push origin push_robot_controllers 
+ 1821  ls
+ 1822  cd ..
+ 1823  ls
+ 1824  cd ..
+ 1825  ls
+ 1826  cd 
+ 1827  cd -
+ 1828  ls
+ 1829  cd src
+ 1830  ls
+ 1831  rm -r gazebo_sim/
+ 1832  ls
+ 1833  rm CMakeLists.txt 
+ 1834  ls
+ 1835  mv robot_controllers/* ../
+ 1836  ls
+ 1837  cd ..
+ 1838  ls
+ 1839  cd src
+ 1840  ls
+ 1841  rm -r robot_controllers/
+ 1842  ls
+ 1843  cd ..
+ 1844  ls
+ 1845  rm -r src/
+ 1846  ls
+ 1847  git init
+ 1848  git add *
+ 1849  git push origin push_robot_controllers 
+ 1850  ls
+ 1851  git commit -a -m "adding robot_controller_content"
+ 1852  git push origin push_robot_controllers 
+ 1853  ls
+ 1854  git remote -v
+ 1855  git remote remove origin 
+ 1856  git remote add origin https://github.com/MoyinOtubela/robot_controllers.git
+ 1857  ls
+ 1858  git push origin push_robot_controllers 
+ 1859  ls
+ 1860  cd ..
+ 1861  pwd
+ 1862  cd autonomous_controllers/
+ 1863  ls
+ 1864  cd src
+ 1865  ls
+ 1866  cd ..
+ 1867  ls
+ 1868  git init
+ 1869  ls
+ 1870  cd src
+ 1871  ls
+ 1872  cd ..
+ 1873  ls
+ 1874  git branch 
+ 1875  git remote add origin https://github.com/MoyinOtubela/autonomous_controllers.git
+ 1876  ls
+ 1877  git branch 
+ 1878  ls
+ 1879  cd src
+ 1880  ls
+ 1881  git branch 
+ 1882  ls
+ 1883  cd ..
+ 1884  ls
+ 1885  cd src
+ 1886  ls
+ 1887  rm -r gazebo_sim/
+ 1888  gedit ../.git
+ 1889  gedit ../.gitmodules 
+ 1890  ls
+ 1891  git add submodule gazebo_sim 
+ 1892  git submodule add https://github.com/MoyinOtubela/autonomous_controllers.git
+ 1893  ls
+ 1894  git submodule add https://github.com/thebotmechanic/gazebo_sim.git
+ 1895  cd ..
+ 1896  ls
+ 1897  rm -r .git
+ 1898  sudo rm -r .git
+ 1899  git init
+ 1900  ls
+ 1901  cd src
+ 1902  ls
+ 1903  git submodule add https://github.com/thebotmechanic/gazebo_sim.git
+ 1904  rm -r gazebo_sim/
+ 1905  ls
+ 1906  cd ..
+ 1907  ls
+ 1908  rm -r .git*
+ 1909  sudo rm -r .git*
+ 1910  git init
+ 1911  ls
+ 1912  git submodule add https://github.com/thebotmechanic/gazebo_sim.git src
+ 1913  git submodule add https://github.com/thebotmechanic/gazebo_sim.git src/gazebo_sim
+ 1914  ls
+ 1915  git status
+ 1916  git submodule init
+ 1917  ls
+ 1918  git submodule update
+ 1919  cd src/
+ 1920  ls
+ 1921  git status 
+ 1922  git checkout HEAD 
+ 1923  git status
+ 1924  git checkout -b file_organise
+ 1925  cd ..
+ 1926  ls
+ 1927  git commit src/gazebo_sim/ -m "adding submodule gazebo_sim"
+ 1928  git sta
+ 1929  git status 
+ 1930  git add src/gazebo_sim/
+ 1931  git commit src/gazebo_sim/ -m "adding submodule gazebo_sim"
+ 1932  git status
+ 1933  ls
+ 1934  cd src
+ 1935  ls
+ 1936  git submodule init 
+ 1937  ls
+ 1938  cd ..
+ 1939  git submodule init 
+ 1940  git status
+ 1941  git remote add origin https://github.com/MoyinOtubela/autonomous_controllers.git
+ 1942  git push origin file_organise 
+ 1943  ls
+ 1944  cd src
+ 1945  ls
+ 1946  cd ..
+ 1947  ls
+ 1948  cd ..
+ 1949  ls
+ 1950  cd robot_controllers/
+ 1951  ls
+ 1952  rm *
+ 1953  rm -r *
+ 1954  ls
+ 1955  s
+ 1956  ls
+ 1957  git clone -b push_robot_controllers https://github.com/MoyinOtubela/autonomous_controllers.git
+ 1958  ls
+ 1959  cd autonomous_controllers/
+ 1960  ls
+ 1961  cd ..
+ 1962  ls
+ 1963  mv autonomous_controllers/* .
+ 1964  ls
+ 1965  rm -r autonomous_controllers/
+ 1966  sudo rm -r autonomous_controllers/
+ 1967  ls
+ 1968  rm -r .git*
+ 1969  sudo rm -r .git*
+ 1970  ls
+ 1971  git init
+ 1972  git branch 
+ 1973  git init
+ 1974  git remote add origin https://github.com/MoyinOtubela/robot_controllers.git
+ 1975  ls
+ 1976  git add *
+ 1977  git commit * -m "first commit"
+ 1978  git push origin master 
+ 1979  git add -f *
+ 1980  git commit * -m "first commit"
+ 1981  git push origin master 
+ 1982  git pull
+ 1983  git pull origin master 
+ 1984  ls
+ 1985  git commit -a -m "update"
+ 1986  ls
+ 1987  git remote -v
+ 1988  git push origin master 
+ 1989  ls
+ 1990  rm -r src 
+ 1991  ls
+ 1992  git push origin master 
+ 1993  git status
+ 1994  git push origin master 
+ 1995  git rm src 
+ 1996  git rm -r src 
+ 1997  git push origin master 
+ 1998  git commit -a -m "remove src"
+ 1999  git push origin master 
+ 2000  ls
+ 2001  git commit -a -m "remove src"
+ 2002  git status 
+ 2003  git push origin control_conflict 
+ 2004  history > history.txt
