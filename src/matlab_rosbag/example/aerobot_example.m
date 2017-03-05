@@ -1,6 +1,8 @@
 close all; clear('all');
 %% Load a bag, build a TF tree using it, and see what frames exist
+% rosbag_dir = '/home/moyin/dev/autonomous_controllers/src/robot_controllers/robbie_control/src/aerobot_tf_1.bag.active'
 rosbag_dir = '/home/moyin/dev/autonomous_controllers/src/robot_controllers/robbie_control/src/aerobot_tf_1.bag.active'
+% rosbag_dir = '/home/moyin/dev/autonomous_controllers/src/robot_controllers/robbie_control/src/aerobot_1.bag'
 % rosbag_dir = '/home/moyin/dev/autonomous_controllers/src/robot_controllers/robbie_control/src/sample_bag_1.bag'
 bag = ros.Bag.load(rosbag_dir);
 bag.info()
