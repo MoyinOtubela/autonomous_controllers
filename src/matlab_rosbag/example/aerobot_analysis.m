@@ -46,14 +46,37 @@ classdef aerobot_analysis
 			% set up mass
 			obj.rosbag = ros.Bag.load(strcat(obj.rosbag_dir,bag_name,'.active'));
 			disp(obj.rosbag.info());
-			title('Aerobot analytics','FontSize',12);
-			f = figure(1), hold on, grid on, xlabel('X-axis');ylabel('Y-axis');zlabel('Z-axis');
+		end
 
-			axis([-1 1 -1 1 0 1])
-			az = 180;
-			el = 0;
-			view(az, el);
 
+
+		function [joints, time] = plot_joint_positions(obj, bag_name)
+			topic = '/robbie/whole_body_controller/state';
+			[pos, t] = obj.rosbag.readAll(topic);
+			joints = zeros(8, length(pos));
+			time = [];
+			for i = 1:length(pos)
+				joints(1, i) = pos{i}.actual.positions(1);
+				joints(2, i) = pos{i}.actual.positions(2);
+				joints(3, i) = pos{i}.actual.positions(3);
+				joints(4, i) = pos{i}.actual.positions(4);
+				joints(5, i) = pos{i}.actual.positions(5);
+				joints(6, i) = pos{i}.actual.positions(6);
+				joints(7, i) = pos{i}.actual.positions(7);
+				joints(8, i) = pos{i}.actual.positions(8);
+				time = [time; t{i}.time.time];
+			end
+
+			figure, plot(time, joints), grid on, title('Joint positions vs Time'), xlabel('time (s)'), ylabel('joint position'), legend('stabilser','thigh','hip','lhm','left shoulder','right shoulder','left elbow','right elbow');
+			
+			hold off
+
+			% color = {'k^','bh','r:','g','p','c','y','b+'} ;
+			% figure
+			% for i = 1:8
+			% 	plot(time, joints(i, :),color{i},'MarkerSize', 5), hold on,  grid on;
+			% end
+			% xlabel('time (s)'), ylabel('joint position'), legend('stabilser','thigh','hip','lhm','left shoulder','right shoulder','left elbow','right elbow');
 		end
 
 		function rot = get_rotation_matrix(obj, q)
@@ -89,13 +112,26 @@ classdef aerobot_analysis
 		function result = ssm_delta(obj, com, supports, locations)
 			result = [];
 			for i = 1:obj.resolution
-				if( supports.stab(i) && supports.shank(i) )
+
+				if( supports.lhm(i) && supports.stab(i) )
+					x0 =  (locations.stab(1, i) +  locations.lhm(1, i) )/2;
+					y0 =  (locations.stab(2, i) +  locations.lhm(2, i) )/2;
+
+					result = [result; sqrt(  ( x0 - com(1, i) )^2  + ( y0 - com(2, i) )^2 )];
+				elseif( supports.stab(i) && supports.shank(i) )
 					% shank -> upper
 					% stab  -> lower
 					x0 =  (locations.shank(1, i) +  locations.stab(1, i) )/2;
 					y0 =  (locations.shank(2, i) +  locations.stab(2, i) )/2;
 
-					result = [result; sqrt(  ( x0- com(1, i) )^2  + ( y0 - com(2, i) )^2 )];
+					result = [result; sqrt(  ( x0 - com(1, i) )^2  + ( y0 - com(2, i) )^2 )];
+				elseif( supports.lhm(i) && supports.shank(i) )
+					x0 =  (locations.shank(1, i) +  locations.lhm(1, i) )/2;
+					y0 =  (locations.shank(2, i) +  locations.lhm(2, i) )/2;
+
+					result = [result; sqrt(  ( x0 - com(1, i) )^2  + ( y0 - com(2, i) )^2 )];
+				else
+					result = [result; 1];
 				end
 			end
 		end
@@ -111,9 +147,33 @@ classdef aerobot_analysis
 					d2 = sqrt(  ( locations.stab(1, i) - com(1, i) )^2  + ( locations.stab(2, i) - com(2, i) )^2 );
 
 					if(d1<d2)
-						result = [result; d2];
-					else
 						result = [result; d1];
+					else
+						result = [result; d2];
+					end
+
+				elseif( supports.stab(i) && supports.lhm(i) )
+					% shank -> upper
+					% stab  -> lower
+					d1 = sqrt(  ( locations.lhm(1, i) - com(1, i) )^2  + ( locations.lhm(2, i) - com(2, i) )^2 );
+					d2 = sqrt(  ( locations.stab(1, i) - com(1, i) )^2  + ( locations.stab(2, i) - com(2, i) )^2 );
+
+					if(d1<d2)
+						result = [result; d1];
+					else
+						result = [result; d2];
+					end
+
+				elseif( supports.shank(i) && supports.lhm(i) )
+					% shank -> upper
+					% stab  -> lower
+					d1 = sqrt(  ( locations.lhm(1, i) - com(1, i) )^2  + ( locations.lhm(2, i) - com(2, i) )^2 );
+					d2 = sqrt(  ( locations.shank(1, i) - com(1, i) )^2  + ( locations.shank(2, i) - com(2, i) )^2 );
+
+					if(d1<d2)
+						result = [result; d1];
+					else
+						result = [result; d2];
 					end
 
 				end
@@ -182,7 +242,6 @@ classdef aerobot_analysis
 
             total_mass = sum(mass);
              % objective: find overall center of mass for each time frame -> pos.com
-			% pose.com = zeros(3,100);
 
 			fields = fieldnames(pose);
 
@@ -223,6 +282,14 @@ classdef aerobot_analysis
 
 		function obj = animate(obj, pose, stability)
 			% [pose, stability] = obj.get_coordinates;
+			title('Aerobot analytics','FontSize',12);
+			f = figure(1), hold on, grid on, xlabel('X-axis');ylabel('Y-axis');zlabel('Z-axis');
+
+			axis([-1 1 -1 1 0 1])
+			az = 180;
+			el = 0;
+			view(az, el);
+
 
 			h = zeros(1, 15);
 			fields = fieldnames(pose);
@@ -233,15 +300,41 @@ classdef aerobot_analysis
 			end
 
 			h(16) = plot3(pose.com(1,1),pose.com(2,1),pose.com(3,1),'k.','MarkerSize', 60);
+
+
+   %          mass = [
+   %              obj.camera_mass;
+			% 	obj.shank_mass;
+   %              obj.stab_wheel_mass;
+   %              obj.stab_mass;
+   %              obj.thigh_mass;
+   %              obj.torso_mass;
+   %              obj.lhm_mass;
+   %              obj.left_lhm_wheel_mass;
+   %              obj.right_lhm_wheel_mass;
+   %              obj.left_shoulder_mass;
+   %              obj.right_shoulder_mass;
+   %              obj.left_arm_mass;
+   %              obj.right_arm_mass;
+   %              obj.shank_left_wheel_mass;
+   %              obj.shank_right_wheel_mass;
+   %              ];
+
+
+			% for i = 1:15
+			% 	pose_ = pose.(fields{i})(1, :);
+			% 	h(i) = plot3(pose_(1), pose_(2), pose_(3),'b.','MarkerSize', 5*mass(i));
+			% end
+
+   %          total_mass = sum(mass);
+
+			% h(16) = plot3(pose.com(1,1),pose.com(2,1),pose.com(3,1),'k.','MarkerSize', 5*total_mass);
+
+
 			% a = obj.times
-			figure, plot(1:obj.resolution, stability.ssm), title('Static stability analysis','FontSize',12), hold on, grid on
-			plot(1:obj.resolution, stability.ssm_delta), legend('ssm','ssm\_delta'), hold off
-			% hold off;
-			drawnow;
+			% drawnow;
 			% % Playback data at certain frequency
 
-			% s = (1/obj.resolution)^2;
-			% pose_ = pose.('com')(1:3, 100)
 			for j = 1:obj.resolution
 				for i = 1:15
 					pose_ = pose.(fields{i})(j, :);
@@ -259,7 +352,11 @@ classdef aerobot_analysis
 	            drawnow;
 			end
 
+			hold off;
 
+			figure, plot(1:obj.resolution, stability.ssm), title('Static stability analysis','FontSize',12), hold on, grid on, axis([0 1000 -0.1 0.3])
+
+			plot(1:obj.resolution, stability.ssm_delta), legend('ssm','ssm\_delta'), hold off
 
 		end
 
