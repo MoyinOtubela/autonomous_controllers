@@ -1,0 +1,8 @@
+prefix=/home/moyin/dev/autonomous_controllers/devel
+
+Name: robbie_control
+Description: Description of robbie_control
+Version: 0.0.0
+Cflags: 
+Libs: -L/home/moyin/dev/autonomous_controllers/devel/lib 
+Requires: 

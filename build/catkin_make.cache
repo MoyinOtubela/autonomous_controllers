@@ -1,0 +1,2 @@
+gazebo_ros_demos/custom_plugin_tutorial:gazebo_ros_demos/rrbot_control:gazebo_ros_demos/rrbot_description:gazebo_ros_demos/rrbot_gazebo:gazebo_sim/robbie_description:gazebo_sim/robbie_gazebo:gazebo_sim/robbie_navigation/robbie_2dslam:robot_controllers/robbie_auto:robot_controllers/robbie_control:robot_controllers/robbie_stability
+-DCATKIN_DEVEL_PREFIX=/home/moyin/dev/autonomous_controllers/devel -DCMAKE_INSTALL_PREFIX=/home/moyin/dev/autonomous_controllers/install -G Unix Makefiles
