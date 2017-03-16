@@ -56,6 +56,17 @@ CMAKE_BINARY_DIR = /home/moyin/dev/autonomous_controllers/build
 #=============================================================================
 # Targets provided globally by CMake.
 
+# Special rule for the target install/strip
+install/strip: preinstall
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing the project stripped..."
+	/home/moyin/tools/cmake-3.7.0-rc1/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
+.PHONY : install/strip
+
+# Special rule for the target install/strip
+install/strip/fast: install/strip
+
+.PHONY : install/strip/fast
+
 # Special rule for the target install/local
 install/local: preinstall
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing only the local directory..."
@@ -66,6 +77,28 @@ install/local: preinstall
 install/local/fast: install/local
 
 .PHONY : install/local/fast
+
+# Special rule for the target install
+install: preinstall
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Install the project..."
+	/home/moyin/tools/cmake-3.7.0-rc1/bin/cmake -P cmake_install.cmake
+.PHONY : install
+
+# Special rule for the target install
+install/fast: preinstall/fast
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Install the project..."
+	/home/moyin/tools/cmake-3.7.0-rc1/bin/cmake -P cmake_install.cmake
+.PHONY : install/fast
+
+# Special rule for the target list_install_components
+list_install_components:
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Available install components are: \"Unspecified\""
+.PHONY : list_install_components
+
+# Special rule for the target list_install_components
+list_install_components/fast: list_install_components
+
+.PHONY : list_install_components/fast
 
 # Special rule for the target rebuild_cache
 rebuild_cache:
@@ -88,39 +121,6 @@ edit_cache:
 edit_cache/fast: edit_cache
 
 .PHONY : edit_cache/fast
-
-# Special rule for the target install/strip
-install/strip: preinstall
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing the project stripped..."
-	/home/moyin/tools/cmake-3.7.0-rc1/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
-.PHONY : install/strip
-
-# Special rule for the target install/strip
-install/strip/fast: install/strip
-
-.PHONY : install/strip/fast
-
-# Special rule for the target list_install_components
-list_install_components:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Available install components are: \"Unspecified\""
-.PHONY : list_install_components
-
-# Special rule for the target list_install_components
-list_install_components/fast: list_install_components
-
-.PHONY : list_install_components/fast
-
-# Special rule for the target install
-install: preinstall
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Install the project..."
-	/home/moyin/tools/cmake-3.7.0-rc1/bin/cmake -P cmake_install.cmake
-.PHONY : install
-
-# Special rule for the target install
-install/fast: preinstall/fast
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Install the project..."
-	/home/moyin/tools/cmake-3.7.0-rc1/bin/cmake -P cmake_install.cmake
-.PHONY : install/fast
 
 # Special rule for the target test
 test:
@@ -166,6 +166,81 @@ depend:
 .PHONY : depend
 
 # Convenience name for target.
+robot_controllers/robbie_auto/CMakeFiles/kinect_processor.dir/rule:
+	cd /home/moyin/dev/autonomous_controllers/build && $(MAKE) -f CMakeFiles/Makefile2 robot_controllers/robbie_auto/CMakeFiles/kinect_processor.dir/rule
+.PHONY : robot_controllers/robbie_auto/CMakeFiles/kinect_processor.dir/rule
+
+# Convenience name for target.
+kinect_processor: robot_controllers/robbie_auto/CMakeFiles/kinect_processor.dir/rule
+
+.PHONY : kinect_processor
+
+# fast build rule for target.
+kinect_processor/fast:
+	cd /home/moyin/dev/autonomous_controllers/build && $(MAKE) -f robot_controllers/robbie_auto/CMakeFiles/kinect_processor.dir/build.make robot_controllers/robbie_auto/CMakeFiles/kinect_processor.dir/build
+.PHONY : kinect_processor/fast
+
+# Convenience name for target.
+robot_controllers/robbie_auto/CMakeFiles/laser_to_pointcloud.dir/rule:
+	cd /home/moyin/dev/autonomous_controllers/build && $(MAKE) -f CMakeFiles/Makefile2 robot_controllers/robbie_auto/CMakeFiles/laser_to_pointcloud.dir/rule
+.PHONY : robot_controllers/robbie_auto/CMakeFiles/laser_to_pointcloud.dir/rule
+
+# Convenience name for target.
+laser_to_pointcloud: robot_controllers/robbie_auto/CMakeFiles/laser_to_pointcloud.dir/rule
+
+.PHONY : laser_to_pointcloud
+
+# fast build rule for target.
+laser_to_pointcloud/fast:
+	cd /home/moyin/dev/autonomous_controllers/build && $(MAKE) -f robot_controllers/robbie_auto/CMakeFiles/laser_to_pointcloud.dir/build.make robot_controllers/robbie_auto/CMakeFiles/laser_to_pointcloud.dir/build
+.PHONY : laser_to_pointcloud/fast
+
+# Convenience name for target.
+robot_controllers/robbie_auto/CMakeFiles/pcl_msgs_generate_messages_py.dir/rule:
+	cd /home/moyin/dev/autonomous_controllers/build && $(MAKE) -f CMakeFiles/Makefile2 robot_controllers/robbie_auto/CMakeFiles/pcl_msgs_generate_messages_py.dir/rule
+.PHONY : robot_controllers/robbie_auto/CMakeFiles/pcl_msgs_generate_messages_py.dir/rule
+
+# Convenience name for target.
+pcl_msgs_generate_messages_py: robot_controllers/robbie_auto/CMakeFiles/pcl_msgs_generate_messages_py.dir/rule
+
+.PHONY : pcl_msgs_generate_messages_py
+
+# fast build rule for target.
+pcl_msgs_generate_messages_py/fast:
+	cd /home/moyin/dev/autonomous_controllers/build && $(MAKE) -f robot_controllers/robbie_auto/CMakeFiles/pcl_msgs_generate_messages_py.dir/build.make robot_controllers/robbie_auto/CMakeFiles/pcl_msgs_generate_messages_py.dir/build
+.PHONY : pcl_msgs_generate_messages_py/fast
+
+# Convenience name for target.
+robot_controllers/robbie_auto/CMakeFiles/pcl_msgs_generate_messages_lisp.dir/rule:
+	cd /home/moyin/dev/autonomous_controllers/build && $(MAKE) -f CMakeFiles/Makefile2 robot_controllers/robbie_auto/CMakeFiles/pcl_msgs_generate_messages_lisp.dir/rule
+.PHONY : robot_controllers/robbie_auto/CMakeFiles/pcl_msgs_generate_messages_lisp.dir/rule
+
+# Convenience name for target.
+pcl_msgs_generate_messages_lisp: robot_controllers/robbie_auto/CMakeFiles/pcl_msgs_generate_messages_lisp.dir/rule
+
+.PHONY : pcl_msgs_generate_messages_lisp
+
+# fast build rule for target.
+pcl_msgs_generate_messages_lisp/fast:
+	cd /home/moyin/dev/autonomous_controllers/build && $(MAKE) -f robot_controllers/robbie_auto/CMakeFiles/pcl_msgs_generate_messages_lisp.dir/build.make robot_controllers/robbie_auto/CMakeFiles/pcl_msgs_generate_messages_lisp.dir/build
+.PHONY : pcl_msgs_generate_messages_lisp/fast
+
+# Convenience name for target.
+robot_controllers/robbie_auto/CMakeFiles/robbie_auto_generate_messages_lisp.dir/rule:
+	cd /home/moyin/dev/autonomous_controllers/build && $(MAKE) -f CMakeFiles/Makefile2 robot_controllers/robbie_auto/CMakeFiles/robbie_auto_generate_messages_lisp.dir/rule
+.PHONY : robot_controllers/robbie_auto/CMakeFiles/robbie_auto_generate_messages_lisp.dir/rule
+
+# Convenience name for target.
+robbie_auto_generate_messages_lisp: robot_controllers/robbie_auto/CMakeFiles/robbie_auto_generate_messages_lisp.dir/rule
+
+.PHONY : robbie_auto_generate_messages_lisp
+
+# fast build rule for target.
+robbie_auto_generate_messages_lisp/fast:
+	cd /home/moyin/dev/autonomous_controllers/build && $(MAKE) -f robot_controllers/robbie_auto/CMakeFiles/robbie_auto_generate_messages_lisp.dir/build.make robot_controllers/robbie_auto/CMakeFiles/robbie_auto_generate_messages_lisp.dir/build
+.PHONY : robbie_auto_generate_messages_lisp/fast
+
+# Convenience name for target.
 robot_controllers/robbie_auto/CMakeFiles/_robbie_auto_generate_messages_check_deps_Contact.dir/rule:
 	cd /home/moyin/dev/autonomous_controllers/build && $(MAKE) -f CMakeFiles/Makefile2 robot_controllers/robbie_auto/CMakeFiles/_robbie_auto_generate_messages_check_deps_Contact.dir/rule
 .PHONY : robot_controllers/robbie_auto/CMakeFiles/_robbie_auto_generate_messages_check_deps_Contact.dir/rule
@@ -181,19 +256,169 @@ _robbie_auto_generate_messages_check_deps_Contact/fast:
 .PHONY : _robbie_auto_generate_messages_check_deps_Contact/fast
 
 # Convenience name for target.
-robot_controllers/robbie_auto/CMakeFiles/robbie_auto_genpy.dir/rule:
-	cd /home/moyin/dev/autonomous_controllers/build && $(MAKE) -f CMakeFiles/Makefile2 robot_controllers/robbie_auto/CMakeFiles/robbie_auto_genpy.dir/rule
-.PHONY : robot_controllers/robbie_auto/CMakeFiles/robbie_auto_genpy.dir/rule
+robot_controllers/robbie_auto/CMakeFiles/pcl_msgs_generate_messages_cpp.dir/rule:
+	cd /home/moyin/dev/autonomous_controllers/build && $(MAKE) -f CMakeFiles/Makefile2 robot_controllers/robbie_auto/CMakeFiles/pcl_msgs_generate_messages_cpp.dir/rule
+.PHONY : robot_controllers/robbie_auto/CMakeFiles/pcl_msgs_generate_messages_cpp.dir/rule
 
 # Convenience name for target.
-robbie_auto_genpy: robot_controllers/robbie_auto/CMakeFiles/robbie_auto_genpy.dir/rule
+pcl_msgs_generate_messages_cpp: robot_controllers/robbie_auto/CMakeFiles/pcl_msgs_generate_messages_cpp.dir/rule
 
-.PHONY : robbie_auto_genpy
+.PHONY : pcl_msgs_generate_messages_cpp
 
 # fast build rule for target.
-robbie_auto_genpy/fast:
-	cd /home/moyin/dev/autonomous_controllers/build && $(MAKE) -f robot_controllers/robbie_auto/CMakeFiles/robbie_auto_genpy.dir/build.make robot_controllers/robbie_auto/CMakeFiles/robbie_auto_genpy.dir/build
-.PHONY : robbie_auto_genpy/fast
+pcl_msgs_generate_messages_cpp/fast:
+	cd /home/moyin/dev/autonomous_controllers/build && $(MAKE) -f robot_controllers/robbie_auto/CMakeFiles/pcl_msgs_generate_messages_cpp.dir/build.make robot_controllers/robbie_auto/CMakeFiles/pcl_msgs_generate_messages_cpp.dir/build
+.PHONY : pcl_msgs_generate_messages_cpp/fast
+
+# Convenience name for target.
+robot_controllers/robbie_auto/CMakeFiles/bond_generate_messages_lisp.dir/rule:
+	cd /home/moyin/dev/autonomous_controllers/build && $(MAKE) -f CMakeFiles/Makefile2 robot_controllers/robbie_auto/CMakeFiles/bond_generate_messages_lisp.dir/rule
+.PHONY : robot_controllers/robbie_auto/CMakeFiles/bond_generate_messages_lisp.dir/rule
+
+# Convenience name for target.
+bond_generate_messages_lisp: robot_controllers/robbie_auto/CMakeFiles/bond_generate_messages_lisp.dir/rule
+
+.PHONY : bond_generate_messages_lisp
+
+# fast build rule for target.
+bond_generate_messages_lisp/fast:
+	cd /home/moyin/dev/autonomous_controllers/build && $(MAKE) -f robot_controllers/robbie_auto/CMakeFiles/bond_generate_messages_lisp.dir/build.make robot_controllers/robbie_auto/CMakeFiles/bond_generate_messages_lisp.dir/build
+.PHONY : bond_generate_messages_lisp/fast
+
+# Convenience name for target.
+robot_controllers/robbie_auto/CMakeFiles/bond_generate_messages_cpp.dir/rule:
+	cd /home/moyin/dev/autonomous_controllers/build && $(MAKE) -f CMakeFiles/Makefile2 robot_controllers/robbie_auto/CMakeFiles/bond_generate_messages_cpp.dir/rule
+.PHONY : robot_controllers/robbie_auto/CMakeFiles/bond_generate_messages_cpp.dir/rule
+
+# Convenience name for target.
+bond_generate_messages_cpp: robot_controllers/robbie_auto/CMakeFiles/bond_generate_messages_cpp.dir/rule
+
+.PHONY : bond_generate_messages_cpp
+
+# fast build rule for target.
+bond_generate_messages_cpp/fast:
+	cd /home/moyin/dev/autonomous_controllers/build && $(MAKE) -f robot_controllers/robbie_auto/CMakeFiles/bond_generate_messages_cpp.dir/build.make robot_controllers/robbie_auto/CMakeFiles/bond_generate_messages_cpp.dir/build
+.PHONY : bond_generate_messages_cpp/fast
+
+# Convenience name for target.
+robot_controllers/robbie_auto/CMakeFiles/nodelet_generate_messages_py.dir/rule:
+	cd /home/moyin/dev/autonomous_controllers/build && $(MAKE) -f CMakeFiles/Makefile2 robot_controllers/robbie_auto/CMakeFiles/nodelet_generate_messages_py.dir/rule
+.PHONY : robot_controllers/robbie_auto/CMakeFiles/nodelet_generate_messages_py.dir/rule
+
+# Convenience name for target.
+nodelet_generate_messages_py: robot_controllers/robbie_auto/CMakeFiles/nodelet_generate_messages_py.dir/rule
+
+.PHONY : nodelet_generate_messages_py
+
+# fast build rule for target.
+nodelet_generate_messages_py/fast:
+	cd /home/moyin/dev/autonomous_controllers/build && $(MAKE) -f robot_controllers/robbie_auto/CMakeFiles/nodelet_generate_messages_py.dir/build.make robot_controllers/robbie_auto/CMakeFiles/nodelet_generate_messages_py.dir/build
+.PHONY : nodelet_generate_messages_py/fast
+
+# Convenience name for target.
+robot_controllers/robbie_auto/CMakeFiles/nodelet_generate_messages_cpp.dir/rule:
+	cd /home/moyin/dev/autonomous_controllers/build && $(MAKE) -f CMakeFiles/Makefile2 robot_controllers/robbie_auto/CMakeFiles/nodelet_generate_messages_cpp.dir/rule
+.PHONY : robot_controllers/robbie_auto/CMakeFiles/nodelet_generate_messages_cpp.dir/rule
+
+# Convenience name for target.
+nodelet_generate_messages_cpp: robot_controllers/robbie_auto/CMakeFiles/nodelet_generate_messages_cpp.dir/rule
+
+.PHONY : nodelet_generate_messages_cpp
+
+# fast build rule for target.
+nodelet_generate_messages_cpp/fast:
+	cd /home/moyin/dev/autonomous_controllers/build && $(MAKE) -f robot_controllers/robbie_auto/CMakeFiles/nodelet_generate_messages_cpp.dir/build.make robot_controllers/robbie_auto/CMakeFiles/nodelet_generate_messages_cpp.dir/build
+.PHONY : nodelet_generate_messages_cpp/fast
+
+# Convenience name for target.
+robot_controllers/robbie_auto/CMakeFiles/bond_generate_messages_py.dir/rule:
+	cd /home/moyin/dev/autonomous_controllers/build && $(MAKE) -f CMakeFiles/Makefile2 robot_controllers/robbie_auto/CMakeFiles/bond_generate_messages_py.dir/rule
+.PHONY : robot_controllers/robbie_auto/CMakeFiles/bond_generate_messages_py.dir/rule
+
+# Convenience name for target.
+bond_generate_messages_py: robot_controllers/robbie_auto/CMakeFiles/bond_generate_messages_py.dir/rule
+
+.PHONY : bond_generate_messages_py
+
+# fast build rule for target.
+bond_generate_messages_py/fast:
+	cd /home/moyin/dev/autonomous_controllers/build && $(MAKE) -f robot_controllers/robbie_auto/CMakeFiles/bond_generate_messages_py.dir/build.make robot_controllers/robbie_auto/CMakeFiles/bond_generate_messages_py.dir/build
+.PHONY : bond_generate_messages_py/fast
+
+# Convenience name for target.
+robot_controllers/robbie_auto/CMakeFiles/pcl_ros_gencfg.dir/rule:
+	cd /home/moyin/dev/autonomous_controllers/build && $(MAKE) -f CMakeFiles/Makefile2 robot_controllers/robbie_auto/CMakeFiles/pcl_ros_gencfg.dir/rule
+.PHONY : robot_controllers/robbie_auto/CMakeFiles/pcl_ros_gencfg.dir/rule
+
+# Convenience name for target.
+pcl_ros_gencfg: robot_controllers/robbie_auto/CMakeFiles/pcl_ros_gencfg.dir/rule
+
+.PHONY : pcl_ros_gencfg
+
+# fast build rule for target.
+pcl_ros_gencfg/fast:
+	cd /home/moyin/dev/autonomous_controllers/build && $(MAKE) -f robot_controllers/robbie_auto/CMakeFiles/pcl_ros_gencfg.dir/build.make robot_controllers/robbie_auto/CMakeFiles/pcl_ros_gencfg.dir/build
+.PHONY : pcl_ros_gencfg/fast
+
+# Convenience name for target.
+robot_controllers/robbie_auto/CMakeFiles/robbie_auto_gencpp.dir/rule:
+	cd /home/moyin/dev/autonomous_controllers/build && $(MAKE) -f CMakeFiles/Makefile2 robot_controllers/robbie_auto/CMakeFiles/robbie_auto_gencpp.dir/rule
+.PHONY : robot_controllers/robbie_auto/CMakeFiles/robbie_auto_gencpp.dir/rule
+
+# Convenience name for target.
+robbie_auto_gencpp: robot_controllers/robbie_auto/CMakeFiles/robbie_auto_gencpp.dir/rule
+
+.PHONY : robbie_auto_gencpp
+
+# fast build rule for target.
+robbie_auto_gencpp/fast:
+	cd /home/moyin/dev/autonomous_controllers/build && $(MAKE) -f robot_controllers/robbie_auto/CMakeFiles/robbie_auto_gencpp.dir/build.make robot_controllers/robbie_auto/CMakeFiles/robbie_auto_gencpp.dir/build
+.PHONY : robbie_auto_gencpp/fast
+
+# Convenience name for target.
+robot_controllers/robbie_auto/CMakeFiles/topic_tools_generate_messages_cpp.dir/rule:
+	cd /home/moyin/dev/autonomous_controllers/build && $(MAKE) -f CMakeFiles/Makefile2 robot_controllers/robbie_auto/CMakeFiles/topic_tools_generate_messages_cpp.dir/rule
+.PHONY : robot_controllers/robbie_auto/CMakeFiles/topic_tools_generate_messages_cpp.dir/rule
+
+# Convenience name for target.
+topic_tools_generate_messages_cpp: robot_controllers/robbie_auto/CMakeFiles/topic_tools_generate_messages_cpp.dir/rule
+
+.PHONY : topic_tools_generate_messages_cpp
+
+# fast build rule for target.
+topic_tools_generate_messages_cpp/fast:
+	cd /home/moyin/dev/autonomous_controllers/build && $(MAKE) -f robot_controllers/robbie_auto/CMakeFiles/topic_tools_generate_messages_cpp.dir/build.make robot_controllers/robbie_auto/CMakeFiles/topic_tools_generate_messages_cpp.dir/build
+.PHONY : topic_tools_generate_messages_cpp/fast
+
+# Convenience name for target.
+robot_controllers/robbie_auto/CMakeFiles/topic_tools_generate_messages_lisp.dir/rule:
+	cd /home/moyin/dev/autonomous_controllers/build && $(MAKE) -f CMakeFiles/Makefile2 robot_controllers/robbie_auto/CMakeFiles/topic_tools_generate_messages_lisp.dir/rule
+.PHONY : robot_controllers/robbie_auto/CMakeFiles/topic_tools_generate_messages_lisp.dir/rule
+
+# Convenience name for target.
+topic_tools_generate_messages_lisp: robot_controllers/robbie_auto/CMakeFiles/topic_tools_generate_messages_lisp.dir/rule
+
+.PHONY : topic_tools_generate_messages_lisp
+
+# fast build rule for target.
+topic_tools_generate_messages_lisp/fast:
+	cd /home/moyin/dev/autonomous_controllers/build && $(MAKE) -f robot_controllers/robbie_auto/CMakeFiles/topic_tools_generate_messages_lisp.dir/build.make robot_controllers/robbie_auto/CMakeFiles/topic_tools_generate_messages_lisp.dir/build
+.PHONY : topic_tools_generate_messages_lisp/fast
+
+# Convenience name for target.
+robot_controllers/robbie_auto/CMakeFiles/topic_tools_generate_messages_py.dir/rule:
+	cd /home/moyin/dev/autonomous_controllers/build && $(MAKE) -f CMakeFiles/Makefile2 robot_controllers/robbie_auto/CMakeFiles/topic_tools_generate_messages_py.dir/rule
+.PHONY : robot_controllers/robbie_auto/CMakeFiles/topic_tools_generate_messages_py.dir/rule
+
+# Convenience name for target.
+topic_tools_generate_messages_py: robot_controllers/robbie_auto/CMakeFiles/topic_tools_generate_messages_py.dir/rule
+
+.PHONY : topic_tools_generate_messages_py
+
+# fast build rule for target.
+topic_tools_generate_messages_py/fast:
+	cd /home/moyin/dev/autonomous_controllers/build && $(MAKE) -f robot_controllers/robbie_auto/CMakeFiles/topic_tools_generate_messages_py.dir/build.make robot_controllers/robbie_auto/CMakeFiles/topic_tools_generate_messages_py.dir/build
+.PHONY : topic_tools_generate_messages_py/fast
 
 # Convenience name for target.
 robot_controllers/robbie_auto/CMakeFiles/robbie_auto_generate_messages.dir/rule:
@@ -226,6 +451,21 @@ height_publisher/fast:
 .PHONY : height_publisher/fast
 
 # Convenience name for target.
+robot_controllers/robbie_auto/CMakeFiles/nodelet_generate_messages_lisp.dir/rule:
+	cd /home/moyin/dev/autonomous_controllers/build && $(MAKE) -f CMakeFiles/Makefile2 robot_controllers/robbie_auto/CMakeFiles/nodelet_generate_messages_lisp.dir/rule
+.PHONY : robot_controllers/robbie_auto/CMakeFiles/nodelet_generate_messages_lisp.dir/rule
+
+# Convenience name for target.
+nodelet_generate_messages_lisp: robot_controllers/robbie_auto/CMakeFiles/nodelet_generate_messages_lisp.dir/rule
+
+.PHONY : nodelet_generate_messages_lisp
+
+# fast build rule for target.
+nodelet_generate_messages_lisp/fast:
+	cd /home/moyin/dev/autonomous_controllers/build && $(MAKE) -f robot_controllers/robbie_auto/CMakeFiles/nodelet_generate_messages_lisp.dir/build.make robot_controllers/robbie_auto/CMakeFiles/nodelet_generate_messages_lisp.dir/build
+.PHONY : nodelet_generate_messages_lisp/fast
+
+# Convenience name for target.
 robot_controllers/robbie_auto/CMakeFiles/robbie_auto_generate_messages_cpp.dir/rule:
 	cd /home/moyin/dev/autonomous_controllers/build && $(MAKE) -f CMakeFiles/Makefile2 robot_controllers/robbie_auto/CMakeFiles/robbie_auto_generate_messages_cpp.dir/rule
 .PHONY : robot_controllers/robbie_auto/CMakeFiles/robbie_auto_generate_messages_cpp.dir/rule
@@ -239,36 +479,6 @@ robbie_auto_generate_messages_cpp: robot_controllers/robbie_auto/CMakeFiles/robb
 robbie_auto_generate_messages_cpp/fast:
 	cd /home/moyin/dev/autonomous_controllers/build && $(MAKE) -f robot_controllers/robbie_auto/CMakeFiles/robbie_auto_generate_messages_cpp.dir/build.make robot_controllers/robbie_auto/CMakeFiles/robbie_auto_generate_messages_cpp.dir/build
 .PHONY : robbie_auto_generate_messages_cpp/fast
-
-# Convenience name for target.
-robot_controllers/robbie_auto/CMakeFiles/robbie_auto_gencpp.dir/rule:
-	cd /home/moyin/dev/autonomous_controllers/build && $(MAKE) -f CMakeFiles/Makefile2 robot_controllers/robbie_auto/CMakeFiles/robbie_auto_gencpp.dir/rule
-.PHONY : robot_controllers/robbie_auto/CMakeFiles/robbie_auto_gencpp.dir/rule
-
-# Convenience name for target.
-robbie_auto_gencpp: robot_controllers/robbie_auto/CMakeFiles/robbie_auto_gencpp.dir/rule
-
-.PHONY : robbie_auto_gencpp
-
-# fast build rule for target.
-robbie_auto_gencpp/fast:
-	cd /home/moyin/dev/autonomous_controllers/build && $(MAKE) -f robot_controllers/robbie_auto/CMakeFiles/robbie_auto_gencpp.dir/build.make robot_controllers/robbie_auto/CMakeFiles/robbie_auto_gencpp.dir/build
-.PHONY : robbie_auto_gencpp/fast
-
-# Convenience name for target.
-robot_controllers/robbie_auto/CMakeFiles/robbie_auto_generate_messages_lisp.dir/rule:
-	cd /home/moyin/dev/autonomous_controllers/build && $(MAKE) -f CMakeFiles/Makefile2 robot_controllers/robbie_auto/CMakeFiles/robbie_auto_generate_messages_lisp.dir/rule
-.PHONY : robot_controllers/robbie_auto/CMakeFiles/robbie_auto_generate_messages_lisp.dir/rule
-
-# Convenience name for target.
-robbie_auto_generate_messages_lisp: robot_controllers/robbie_auto/CMakeFiles/robbie_auto_generate_messages_lisp.dir/rule
-
-.PHONY : robbie_auto_generate_messages_lisp
-
-# fast build rule for target.
-robbie_auto_generate_messages_lisp/fast:
-	cd /home/moyin/dev/autonomous_controllers/build && $(MAKE) -f robot_controllers/robbie_auto/CMakeFiles/robbie_auto_generate_messages_lisp.dir/build.make robot_controllers/robbie_auto/CMakeFiles/robbie_auto_generate_messages_lisp.dir/build
-.PHONY : robbie_auto_generate_messages_lisp/fast
 
 # Convenience name for target.
 robot_controllers/robbie_auto/CMakeFiles/robbie_auto_genlisp.dir/rule:
@@ -300,6 +510,21 @@ robbie_auto_generate_messages_py/fast:
 	cd /home/moyin/dev/autonomous_controllers/build && $(MAKE) -f robot_controllers/robbie_auto/CMakeFiles/robbie_auto_generate_messages_py.dir/build.make robot_controllers/robbie_auto/CMakeFiles/robbie_auto_generate_messages_py.dir/build
 .PHONY : robbie_auto_generate_messages_py/fast
 
+# Convenience name for target.
+robot_controllers/robbie_auto/CMakeFiles/robbie_auto_genpy.dir/rule:
+	cd /home/moyin/dev/autonomous_controllers/build && $(MAKE) -f CMakeFiles/Makefile2 robot_controllers/robbie_auto/CMakeFiles/robbie_auto_genpy.dir/rule
+.PHONY : robot_controllers/robbie_auto/CMakeFiles/robbie_auto_genpy.dir/rule
+
+# Convenience name for target.
+robbie_auto_genpy: robot_controllers/robbie_auto/CMakeFiles/robbie_auto_genpy.dir/rule
+
+.PHONY : robbie_auto_genpy
+
+# fast build rule for target.
+robbie_auto_genpy/fast:
+	cd /home/moyin/dev/autonomous_controllers/build && $(MAKE) -f robot_controllers/robbie_auto/CMakeFiles/robbie_auto_genpy.dir/build.make robot_controllers/robbie_auto/CMakeFiles/robbie_auto_genpy.dir/build
+.PHONY : robbie_auto_genpy/fast
+
 src/height_publisher.o: src/height_publisher.cpp.o
 
 .PHONY : src/height_publisher.o
@@ -327,31 +552,106 @@ src/height_publisher.cpp.s:
 	cd /home/moyin/dev/autonomous_controllers/build && $(MAKE) -f robot_controllers/robbie_auto/CMakeFiles/height_publisher.dir/build.make robot_controllers/robbie_auto/CMakeFiles/height_publisher.dir/src/height_publisher.cpp.s
 .PHONY : src/height_publisher.cpp.s
 
+src/kinect_processing.o: src/kinect_processing.cpp.o
+
+.PHONY : src/kinect_processing.o
+
+# target to build an object file
+src/kinect_processing.cpp.o:
+	cd /home/moyin/dev/autonomous_controllers/build && $(MAKE) -f robot_controllers/robbie_auto/CMakeFiles/kinect_processor.dir/build.make robot_controllers/robbie_auto/CMakeFiles/kinect_processor.dir/src/kinect_processing.cpp.o
+.PHONY : src/kinect_processing.cpp.o
+
+src/kinect_processing.i: src/kinect_processing.cpp.i
+
+.PHONY : src/kinect_processing.i
+
+# target to preprocess a source file
+src/kinect_processing.cpp.i:
+	cd /home/moyin/dev/autonomous_controllers/build && $(MAKE) -f robot_controllers/robbie_auto/CMakeFiles/kinect_processor.dir/build.make robot_controllers/robbie_auto/CMakeFiles/kinect_processor.dir/src/kinect_processing.cpp.i
+.PHONY : src/kinect_processing.cpp.i
+
+src/kinect_processing.s: src/kinect_processing.cpp.s
+
+.PHONY : src/kinect_processing.s
+
+# target to generate assembly for a file
+src/kinect_processing.cpp.s:
+	cd /home/moyin/dev/autonomous_controllers/build && $(MAKE) -f robot_controllers/robbie_auto/CMakeFiles/kinect_processor.dir/build.make robot_controllers/robbie_auto/CMakeFiles/kinect_processor.dir/src/kinect_processing.cpp.s
+.PHONY : src/kinect_processing.cpp.s
+
+src/laser_to_pointcloud.o: src/laser_to_pointcloud.cpp.o
+
+.PHONY : src/laser_to_pointcloud.o
+
+# target to build an object file
+src/laser_to_pointcloud.cpp.o:
+	cd /home/moyin/dev/autonomous_controllers/build && $(MAKE) -f robot_controllers/robbie_auto/CMakeFiles/laser_to_pointcloud.dir/build.make robot_controllers/robbie_auto/CMakeFiles/laser_to_pointcloud.dir/src/laser_to_pointcloud.cpp.o
+.PHONY : src/laser_to_pointcloud.cpp.o
+
+src/laser_to_pointcloud.i: src/laser_to_pointcloud.cpp.i
+
+.PHONY : src/laser_to_pointcloud.i
+
+# target to preprocess a source file
+src/laser_to_pointcloud.cpp.i:
+	cd /home/moyin/dev/autonomous_controllers/build && $(MAKE) -f robot_controllers/robbie_auto/CMakeFiles/laser_to_pointcloud.dir/build.make robot_controllers/robbie_auto/CMakeFiles/laser_to_pointcloud.dir/src/laser_to_pointcloud.cpp.i
+.PHONY : src/laser_to_pointcloud.cpp.i
+
+src/laser_to_pointcloud.s: src/laser_to_pointcloud.cpp.s
+
+.PHONY : src/laser_to_pointcloud.s
+
+# target to generate assembly for a file
+src/laser_to_pointcloud.cpp.s:
+	cd /home/moyin/dev/autonomous_controllers/build && $(MAKE) -f robot_controllers/robbie_auto/CMakeFiles/laser_to_pointcloud.dir/build.make robot_controllers/robbie_auto/CMakeFiles/laser_to_pointcloud.dir/src/laser_to_pointcloud.cpp.s
+.PHONY : src/laser_to_pointcloud.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
 	@echo "... all (the default if no target is provided)"
 	@echo "... clean"
 	@echo "... depend"
+	@echo "... install/strip"
 	@echo "... install/local"
+	@echo "... install"
+	@echo "... list_install_components"
 	@echo "... rebuild_cache"
-	@echo "... _robbie_auto_generate_messages_check_deps_Contact"
-	@echo "... robbie_auto_genpy"
 	@echo "... edit_cache"
+	@echo "... kinect_processor"
+	@echo "... laser_to_pointcloud"
+	@echo "... pcl_msgs_generate_messages_py"
+	@echo "... pcl_msgs_generate_messages_lisp"
+	@echo "... robbie_auto_generate_messages_lisp"
+	@echo "... _robbie_auto_generate_messages_check_deps_Contact"
+	@echo "... pcl_msgs_generate_messages_cpp"
+	@echo "... bond_generate_messages_lisp"
+	@echo "... bond_generate_messages_cpp"
+	@echo "... nodelet_generate_messages_py"
+	@echo "... nodelet_generate_messages_cpp"
+	@echo "... bond_generate_messages_py"
+	@echo "... pcl_ros_gencfg"
+	@echo "... robbie_auto_gencpp"
+	@echo "... topic_tools_generate_messages_cpp"
+	@echo "... topic_tools_generate_messages_lisp"
+	@echo "... topic_tools_generate_messages_py"
 	@echo "... robbie_auto_generate_messages"
 	@echo "... height_publisher"
-	@echo "... install/strip"
-	@echo "... list_install_components"
+	@echo "... nodelet_generate_messages_lisp"
 	@echo "... robbie_auto_generate_messages_cpp"
-	@echo "... robbie_auto_gencpp"
-	@echo "... robbie_auto_generate_messages_lisp"
-	@echo "... install"
-	@echo "... robbie_auto_genlisp"
 	@echo "... test"
+	@echo "... robbie_auto_genlisp"
 	@echo "... robbie_auto_generate_messages_py"
+	@echo "... robbie_auto_genpy"
 	@echo "... src/height_publisher.o"
 	@echo "... src/height_publisher.i"
 	@echo "... src/height_publisher.s"
+	@echo "... src/kinect_processing.o"
+	@echo "... src/kinect_processing.i"
+	@echo "... src/kinect_processing.s"
+	@echo "... src/laser_to_pointcloud.o"
+	@echo "... src/laser_to_pointcloud.i"
+	@echo "... src/laser_to_pointcloud.s"
 .PHONY : help
 
 

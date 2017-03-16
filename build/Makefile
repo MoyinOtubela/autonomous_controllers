@@ -1037,6 +1037,71 @@ robbie_contact_ex/fast:
 .PHONY : robbie_contact_ex/fast
 
 #=============================================================================
+# Target rules for targets named kinect_processor
+
+# Build rule for target.
+kinect_processor: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 kinect_processor
+.PHONY : kinect_processor
+
+# fast build rule for target.
+kinect_processor/fast:
+	$(MAKE) -f robot_controllers/robbie_auto/CMakeFiles/kinect_processor.dir/build.make robot_controllers/robbie_auto/CMakeFiles/kinect_processor.dir/build
+.PHONY : kinect_processor/fast
+
+#=============================================================================
+# Target rules for targets named laser_to_pointcloud
+
+# Build rule for target.
+laser_to_pointcloud: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 laser_to_pointcloud
+.PHONY : laser_to_pointcloud
+
+# fast build rule for target.
+laser_to_pointcloud/fast:
+	$(MAKE) -f robot_controllers/robbie_auto/CMakeFiles/laser_to_pointcloud.dir/build.make robot_controllers/robbie_auto/CMakeFiles/laser_to_pointcloud.dir/build
+.PHONY : laser_to_pointcloud/fast
+
+#=============================================================================
+# Target rules for targets named pcl_msgs_generate_messages_py
+
+# Build rule for target.
+pcl_msgs_generate_messages_py: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 pcl_msgs_generate_messages_py
+.PHONY : pcl_msgs_generate_messages_py
+
+# fast build rule for target.
+pcl_msgs_generate_messages_py/fast:
+	$(MAKE) -f robot_controllers/robbie_auto/CMakeFiles/pcl_msgs_generate_messages_py.dir/build.make robot_controllers/robbie_auto/CMakeFiles/pcl_msgs_generate_messages_py.dir/build
+.PHONY : pcl_msgs_generate_messages_py/fast
+
+#=============================================================================
+# Target rules for targets named pcl_msgs_generate_messages_lisp
+
+# Build rule for target.
+pcl_msgs_generate_messages_lisp: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 pcl_msgs_generate_messages_lisp
+.PHONY : pcl_msgs_generate_messages_lisp
+
+# fast build rule for target.
+pcl_msgs_generate_messages_lisp/fast:
+	$(MAKE) -f robot_controllers/robbie_auto/CMakeFiles/pcl_msgs_generate_messages_lisp.dir/build.make robot_controllers/robbie_auto/CMakeFiles/pcl_msgs_generate_messages_lisp.dir/build
+.PHONY : pcl_msgs_generate_messages_lisp/fast
+
+#=============================================================================
+# Target rules for targets named robbie_auto_generate_messages_lisp
+
+# Build rule for target.
+robbie_auto_generate_messages_lisp: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 robbie_auto_generate_messages_lisp
+.PHONY : robbie_auto_generate_messages_lisp
+
+# fast build rule for target.
+robbie_auto_generate_messages_lisp/fast:
+	$(MAKE) -f robot_controllers/robbie_auto/CMakeFiles/robbie_auto_generate_messages_lisp.dir/build.make robot_controllers/robbie_auto/CMakeFiles/robbie_auto_generate_messages_lisp.dir/build
+.PHONY : robbie_auto_generate_messages_lisp/fast
+
+#=============================================================================
 # Target rules for targets named _robbie_auto_generate_messages_check_deps_Contact
 
 # Build rule for target.
@@ -1050,17 +1115,147 @@ _robbie_auto_generate_messages_check_deps_Contact/fast:
 .PHONY : _robbie_auto_generate_messages_check_deps_Contact/fast
 
 #=============================================================================
-# Target rules for targets named robbie_auto_genpy
+# Target rules for targets named pcl_msgs_generate_messages_cpp
 
 # Build rule for target.
-robbie_auto_genpy: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 robbie_auto_genpy
-.PHONY : robbie_auto_genpy
+pcl_msgs_generate_messages_cpp: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 pcl_msgs_generate_messages_cpp
+.PHONY : pcl_msgs_generate_messages_cpp
 
 # fast build rule for target.
-robbie_auto_genpy/fast:
-	$(MAKE) -f robot_controllers/robbie_auto/CMakeFiles/robbie_auto_genpy.dir/build.make robot_controllers/robbie_auto/CMakeFiles/robbie_auto_genpy.dir/build
-.PHONY : robbie_auto_genpy/fast
+pcl_msgs_generate_messages_cpp/fast:
+	$(MAKE) -f robot_controllers/robbie_auto/CMakeFiles/pcl_msgs_generate_messages_cpp.dir/build.make robot_controllers/robbie_auto/CMakeFiles/pcl_msgs_generate_messages_cpp.dir/build
+.PHONY : pcl_msgs_generate_messages_cpp/fast
+
+#=============================================================================
+# Target rules for targets named bond_generate_messages_lisp
+
+# Build rule for target.
+bond_generate_messages_lisp: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 bond_generate_messages_lisp
+.PHONY : bond_generate_messages_lisp
+
+# fast build rule for target.
+bond_generate_messages_lisp/fast:
+	$(MAKE) -f robot_controllers/robbie_auto/CMakeFiles/bond_generate_messages_lisp.dir/build.make robot_controllers/robbie_auto/CMakeFiles/bond_generate_messages_lisp.dir/build
+.PHONY : bond_generate_messages_lisp/fast
+
+#=============================================================================
+# Target rules for targets named bond_generate_messages_cpp
+
+# Build rule for target.
+bond_generate_messages_cpp: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 bond_generate_messages_cpp
+.PHONY : bond_generate_messages_cpp
+
+# fast build rule for target.
+bond_generate_messages_cpp/fast:
+	$(MAKE) -f robot_controllers/robbie_auto/CMakeFiles/bond_generate_messages_cpp.dir/build.make robot_controllers/robbie_auto/CMakeFiles/bond_generate_messages_cpp.dir/build
+.PHONY : bond_generate_messages_cpp/fast
+
+#=============================================================================
+# Target rules for targets named nodelet_generate_messages_py
+
+# Build rule for target.
+nodelet_generate_messages_py: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 nodelet_generate_messages_py
+.PHONY : nodelet_generate_messages_py
+
+# fast build rule for target.
+nodelet_generate_messages_py/fast:
+	$(MAKE) -f robot_controllers/robbie_auto/CMakeFiles/nodelet_generate_messages_py.dir/build.make robot_controllers/robbie_auto/CMakeFiles/nodelet_generate_messages_py.dir/build
+.PHONY : nodelet_generate_messages_py/fast
+
+#=============================================================================
+# Target rules for targets named nodelet_generate_messages_cpp
+
+# Build rule for target.
+nodelet_generate_messages_cpp: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 nodelet_generate_messages_cpp
+.PHONY : nodelet_generate_messages_cpp
+
+# fast build rule for target.
+nodelet_generate_messages_cpp/fast:
+	$(MAKE) -f robot_controllers/robbie_auto/CMakeFiles/nodelet_generate_messages_cpp.dir/build.make robot_controllers/robbie_auto/CMakeFiles/nodelet_generate_messages_cpp.dir/build
+.PHONY : nodelet_generate_messages_cpp/fast
+
+#=============================================================================
+# Target rules for targets named bond_generate_messages_py
+
+# Build rule for target.
+bond_generate_messages_py: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 bond_generate_messages_py
+.PHONY : bond_generate_messages_py
+
+# fast build rule for target.
+bond_generate_messages_py/fast:
+	$(MAKE) -f robot_controllers/robbie_auto/CMakeFiles/bond_generate_messages_py.dir/build.make robot_controllers/robbie_auto/CMakeFiles/bond_generate_messages_py.dir/build
+.PHONY : bond_generate_messages_py/fast
+
+#=============================================================================
+# Target rules for targets named pcl_ros_gencfg
+
+# Build rule for target.
+pcl_ros_gencfg: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 pcl_ros_gencfg
+.PHONY : pcl_ros_gencfg
+
+# fast build rule for target.
+pcl_ros_gencfg/fast:
+	$(MAKE) -f robot_controllers/robbie_auto/CMakeFiles/pcl_ros_gencfg.dir/build.make robot_controllers/robbie_auto/CMakeFiles/pcl_ros_gencfg.dir/build
+.PHONY : pcl_ros_gencfg/fast
+
+#=============================================================================
+# Target rules for targets named robbie_auto_gencpp
+
+# Build rule for target.
+robbie_auto_gencpp: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 robbie_auto_gencpp
+.PHONY : robbie_auto_gencpp
+
+# fast build rule for target.
+robbie_auto_gencpp/fast:
+	$(MAKE) -f robot_controllers/robbie_auto/CMakeFiles/robbie_auto_gencpp.dir/build.make robot_controllers/robbie_auto/CMakeFiles/robbie_auto_gencpp.dir/build
+.PHONY : robbie_auto_gencpp/fast
+
+#=============================================================================
+# Target rules for targets named topic_tools_generate_messages_cpp
+
+# Build rule for target.
+topic_tools_generate_messages_cpp: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 topic_tools_generate_messages_cpp
+.PHONY : topic_tools_generate_messages_cpp
+
+# fast build rule for target.
+topic_tools_generate_messages_cpp/fast:
+	$(MAKE) -f robot_controllers/robbie_auto/CMakeFiles/topic_tools_generate_messages_cpp.dir/build.make robot_controllers/robbie_auto/CMakeFiles/topic_tools_generate_messages_cpp.dir/build
+.PHONY : topic_tools_generate_messages_cpp/fast
+
+#=============================================================================
+# Target rules for targets named topic_tools_generate_messages_lisp
+
+# Build rule for target.
+topic_tools_generate_messages_lisp: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 topic_tools_generate_messages_lisp
+.PHONY : topic_tools_generate_messages_lisp
+
+# fast build rule for target.
+topic_tools_generate_messages_lisp/fast:
+	$(MAKE) -f robot_controllers/robbie_auto/CMakeFiles/topic_tools_generate_messages_lisp.dir/build.make robot_controllers/robbie_auto/CMakeFiles/topic_tools_generate_messages_lisp.dir/build
+.PHONY : topic_tools_generate_messages_lisp/fast
+
+#=============================================================================
+# Target rules for targets named topic_tools_generate_messages_py
+
+# Build rule for target.
+topic_tools_generate_messages_py: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 topic_tools_generate_messages_py
+.PHONY : topic_tools_generate_messages_py
+
+# fast build rule for target.
+topic_tools_generate_messages_py/fast:
+	$(MAKE) -f robot_controllers/robbie_auto/CMakeFiles/topic_tools_generate_messages_py.dir/build.make robot_controllers/robbie_auto/CMakeFiles/topic_tools_generate_messages_py.dir/build
+.PHONY : topic_tools_generate_messages_py/fast
 
 #=============================================================================
 # Target rules for targets named robbie_auto_generate_messages
@@ -1089,6 +1284,19 @@ height_publisher/fast:
 .PHONY : height_publisher/fast
 
 #=============================================================================
+# Target rules for targets named nodelet_generate_messages_lisp
+
+# Build rule for target.
+nodelet_generate_messages_lisp: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 nodelet_generate_messages_lisp
+.PHONY : nodelet_generate_messages_lisp
+
+# fast build rule for target.
+nodelet_generate_messages_lisp/fast:
+	$(MAKE) -f robot_controllers/robbie_auto/CMakeFiles/nodelet_generate_messages_lisp.dir/build.make robot_controllers/robbie_auto/CMakeFiles/nodelet_generate_messages_lisp.dir/build
+.PHONY : nodelet_generate_messages_lisp/fast
+
+#=============================================================================
 # Target rules for targets named robbie_auto_generate_messages_cpp
 
 # Build rule for target.
@@ -1100,32 +1308,6 @@ robbie_auto_generate_messages_cpp: cmake_check_build_system
 robbie_auto_generate_messages_cpp/fast:
 	$(MAKE) -f robot_controllers/robbie_auto/CMakeFiles/robbie_auto_generate_messages_cpp.dir/build.make robot_controllers/robbie_auto/CMakeFiles/robbie_auto_generate_messages_cpp.dir/build
 .PHONY : robbie_auto_generate_messages_cpp/fast
-
-#=============================================================================
-# Target rules for targets named robbie_auto_gencpp
-
-# Build rule for target.
-robbie_auto_gencpp: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 robbie_auto_gencpp
-.PHONY : robbie_auto_gencpp
-
-# fast build rule for target.
-robbie_auto_gencpp/fast:
-	$(MAKE) -f robot_controllers/robbie_auto/CMakeFiles/robbie_auto_gencpp.dir/build.make robot_controllers/robbie_auto/CMakeFiles/robbie_auto_gencpp.dir/build
-.PHONY : robbie_auto_gencpp/fast
-
-#=============================================================================
-# Target rules for targets named robbie_auto_generate_messages_lisp
-
-# Build rule for target.
-robbie_auto_generate_messages_lisp: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 robbie_auto_generate_messages_lisp
-.PHONY : robbie_auto_generate_messages_lisp
-
-# fast build rule for target.
-robbie_auto_generate_messages_lisp/fast:
-	$(MAKE) -f robot_controllers/robbie_auto/CMakeFiles/robbie_auto_generate_messages_lisp.dir/build.make robot_controllers/robbie_auto/CMakeFiles/robbie_auto_generate_messages_lisp.dir/build
-.PHONY : robbie_auto_generate_messages_lisp/fast
 
 #=============================================================================
 # Target rules for targets named robbie_auto_genlisp
@@ -1152,6 +1334,19 @@ robbie_auto_generate_messages_py: cmake_check_build_system
 robbie_auto_generate_messages_py/fast:
 	$(MAKE) -f robot_controllers/robbie_auto/CMakeFiles/robbie_auto_generate_messages_py.dir/build.make robot_controllers/robbie_auto/CMakeFiles/robbie_auto_generate_messages_py.dir/build
 .PHONY : robbie_auto_generate_messages_py/fast
+
+#=============================================================================
+# Target rules for targets named robbie_auto_genpy
+
+# Build rule for target.
+robbie_auto_genpy: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 robbie_auto_genpy
+.PHONY : robbie_auto_genpy
+
+# fast build rule for target.
+robbie_auto_genpy/fast:
+	$(MAKE) -f robot_controllers/robbie_auto/CMakeFiles/robbie_auto_genpy.dir/build.make robot_controllers/robbie_auto/CMakeFiles/robbie_auto_genpy.dir/build
+.PHONY : robbie_auto_genpy/fast
 
 # Help Target
 help:
@@ -1233,15 +1428,30 @@ help:
 	@echo "... robbie_stability_generate_messages_py"
 	@echo "... robbie_stability_genpy"
 	@echo "... robbie_contact_ex"
+	@echo "... kinect_processor"
+	@echo "... laser_to_pointcloud"
+	@echo "... pcl_msgs_generate_messages_py"
+	@echo "... pcl_msgs_generate_messages_lisp"
+	@echo "... robbie_auto_generate_messages_lisp"
 	@echo "... _robbie_auto_generate_messages_check_deps_Contact"
-	@echo "... robbie_auto_genpy"
+	@echo "... pcl_msgs_generate_messages_cpp"
+	@echo "... bond_generate_messages_lisp"
+	@echo "... bond_generate_messages_cpp"
+	@echo "... nodelet_generate_messages_py"
+	@echo "... nodelet_generate_messages_cpp"
+	@echo "... bond_generate_messages_py"
+	@echo "... pcl_ros_gencfg"
+	@echo "... robbie_auto_gencpp"
+	@echo "... topic_tools_generate_messages_cpp"
+	@echo "... topic_tools_generate_messages_lisp"
+	@echo "... topic_tools_generate_messages_py"
 	@echo "... robbie_auto_generate_messages"
 	@echo "... height_publisher"
+	@echo "... nodelet_generate_messages_lisp"
 	@echo "... robbie_auto_generate_messages_cpp"
-	@echo "... robbie_auto_gencpp"
-	@echo "... robbie_auto_generate_messages_lisp"
 	@echo "... robbie_auto_genlisp"
 	@echo "... robbie_auto_generate_messages_py"
+	@echo "... robbie_auto_genpy"
 .PHONY : help
 
 

@@ -1,0 +1,11 @@
+scipy
+ros-controllers
+gazebo-ros 7
+hector_sensors_description
+hector_gazebo_plugins 
+matlab
+laser_geometry
+laser_pipepline
+nav_stack
+perception-pcl
+pcl-ros
