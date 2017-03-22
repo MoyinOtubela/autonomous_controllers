@@ -2277,6 +2277,8 @@ clean: robot_controllers/robbie_stability/CMakeFiles/robbie_stability_gencpp.dir
 # Target rules for target robot_controllers/robbie_stability/CMakeFiles/robbie_stability_generate_messages_lisp.dir
 
 # All Build rule for target.
+robot_controllers/robbie_stability/CMakeFiles/robbie_stability_generate_messages_lisp.dir/all: gazebo_sim/robbie_gazebo/CMakeFiles/geometry_msgs_generate_messages_lisp.dir/all
+robot_controllers/robbie_stability/CMakeFiles/robbie_stability_generate_messages_lisp.dir/all: gazebo_sim/robbie_gazebo/CMakeFiles/std_msgs_generate_messages_lisp.dir/all
 robot_controllers/robbie_stability/CMakeFiles/robbie_stability_generate_messages_lisp.dir/all: robot_controllers/robbie_stability/CMakeFiles/_robbie_stability_generate_messages_check_deps_Contact.dir/all
 	$(MAKE) -f robot_controllers/robbie_stability/CMakeFiles/robbie_stability_generate_messages_lisp.dir/build.make robot_controllers/robbie_stability/CMakeFiles/robbie_stability_generate_messages_lisp.dir/depend
 	$(MAKE) -f robot_controllers/robbie_stability/CMakeFiles/robbie_stability_generate_messages_lisp.dir/build.make robot_controllers/robbie_stability/CMakeFiles/robbie_stability_generate_messages_lisp.dir/build
@@ -2309,6 +2311,8 @@ clean: robot_controllers/robbie_stability/CMakeFiles/robbie_stability_generate_m
 # Target rules for target robot_controllers/robbie_stability/CMakeFiles/robbie_stability_generate_messages_cpp.dir
 
 # All Build rule for target.
+robot_controllers/robbie_stability/CMakeFiles/robbie_stability_generate_messages_cpp.dir/all: gazebo_sim/robbie_gazebo/CMakeFiles/std_msgs_generate_messages_cpp.dir/all
+robot_controllers/robbie_stability/CMakeFiles/robbie_stability_generate_messages_cpp.dir/all: gazebo_sim/robbie_gazebo/CMakeFiles/geometry_msgs_generate_messages_cpp.dir/all
 robot_controllers/robbie_stability/CMakeFiles/robbie_stability_generate_messages_cpp.dir/all: robot_controllers/robbie_stability/CMakeFiles/_robbie_stability_generate_messages_check_deps_Contact.dir/all
 	$(MAKE) -f robot_controllers/robbie_stability/CMakeFiles/robbie_stability_generate_messages_cpp.dir/build.make robot_controllers/robbie_stability/CMakeFiles/robbie_stability_generate_messages_cpp.dir/depend
 	$(MAKE) -f robot_controllers/robbie_stability/CMakeFiles/robbie_stability_generate_messages_cpp.dir/build.make robot_controllers/robbie_stability/CMakeFiles/robbie_stability_generate_messages_cpp.dir/build
@@ -2373,6 +2377,8 @@ clean: robot_controllers/robbie_stability/CMakeFiles/robbie_stability_genlisp.di
 # Target rules for target robot_controllers/robbie_stability/CMakeFiles/robbie_stability_generate_messages_py.dir
 
 # All Build rule for target.
+robot_controllers/robbie_stability/CMakeFiles/robbie_stability_generate_messages_py.dir/all: gazebo_sim/robbie_gazebo/CMakeFiles/geometry_msgs_generate_messages_py.dir/all
+robot_controllers/robbie_stability/CMakeFiles/robbie_stability_generate_messages_py.dir/all: gazebo_sim/robbie_gazebo/CMakeFiles/std_msgs_generate_messages_py.dir/all
 robot_controllers/robbie_stability/CMakeFiles/robbie_stability_generate_messages_py.dir/all: robot_controllers/robbie_stability/CMakeFiles/_robbie_stability_generate_messages_check_deps_Contact.dir/all
 	$(MAKE) -f robot_controllers/robbie_stability/CMakeFiles/robbie_stability_generate_messages_py.dir/build.make robot_controllers/robbie_stability/CMakeFiles/robbie_stability_generate_messages_py.dir/depend
 	$(MAKE) -f robot_controllers/robbie_stability/CMakeFiles/robbie_stability_generate_messages_py.dir/build.make robot_controllers/robbie_stability/CMakeFiles/robbie_stability_generate_messages_py.dir/build

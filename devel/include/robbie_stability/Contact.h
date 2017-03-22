@@ -15,6 +15,9 @@
 #include <ros/builtin_message_traits.h>
 #include <ros/message_operations.h>
 
+#include <geometry_msgs/Point.h>
+#include <geometry_msgs/Point.h>
+#include <geometry_msgs/Point.h>
 
 namespace robbie_stability
 {
@@ -26,12 +29,24 @@ struct Contact_
   Contact_()
     : shank(false)
     , lhm(false)
-    , stabilizer(false)  {
+    , stabilizer(false)
+    , stabilizer_on()
+    , shank_on()
+    , lhm_on()
+    , stabilizer_location()
+    , shank_location()
+    , lhm_location()  {
     }
   Contact_(const ContainerAllocator& _alloc)
     : shank(false)
     , lhm(false)
-    , stabilizer(false)  {
+    , stabilizer(false)
+    , stabilizer_on(_alloc)
+    , shank_on(_alloc)
+    , lhm_on(_alloc)
+    , stabilizer_location(_alloc)
+    , shank_location(_alloc)
+    , lhm_location(_alloc)  {
   (void)_alloc;
     }
 
@@ -45,6 +60,24 @@ struct Contact_
 
    typedef uint8_t _stabilizer_type;
   _stabilizer_type stabilizer;
+
+   typedef std::basic_string<char, std::char_traits<char>, typename ContainerAllocator::template rebind<char>::other >  _stabilizer_on_type;
+  _stabilizer_on_type stabilizer_on;
+
+   typedef std::basic_string<char, std::char_traits<char>, typename ContainerAllocator::template rebind<char>::other >  _shank_on_type;
+  _shank_on_type shank_on;
+
+   typedef std::basic_string<char, std::char_traits<char>, typename ContainerAllocator::template rebind<char>::other >  _lhm_on_type;
+  _lhm_on_type lhm_on;
+
+   typedef  ::geometry_msgs::Point_<ContainerAllocator>  _stabilizer_location_type;
+  _stabilizer_location_type stabilizer_location;
+
+   typedef  ::geometry_msgs::Point_<ContainerAllocator>  _shank_location_type;
+  _shank_location_type shank_location;
+
+   typedef  ::geometry_msgs::Point_<ContainerAllocator>  _lhm_location_type;
+  _lhm_location_type lhm_location;
 
 
 
@@ -79,8 +112,8 @@ namespace message_traits
 
 
 
-// BOOLTRAITS {'IsFixedSize': True, 'IsMessage': True, 'HasHeader': False}
-// {'robbie_stability': ['/home/moyin/dev/autonomous_controllers/src/robot_controllers/robbie_stability/msg']}
+// BOOLTRAITS {'IsFixedSize': False, 'IsMessage': True, 'HasHeader': False}
+// {'geometry_msgs': ['/opt/ros/indigo/share/geometry_msgs/cmake/../msg'], 'robbie_stability': ['/home/moyin/dev/autonomous_controllers/src/robot_controllers/robbie_stability/msg'], 'std_msgs': ['/opt/ros/indigo/share/std_msgs/cmake/../msg']}
 
 // !!!!!!!!!!! ['__class__', '__delattr__', '__dict__', '__doc__', '__eq__', '__format__', '__getattribute__', '__hash__', '__init__', '__module__', '__ne__', '__new__', '__reduce__', '__reduce_ex__', '__repr__', '__setattr__', '__sizeof__', '__str__', '__subclasshook__', '__weakref__', '_parsed_fields', 'constants', 'fields', 'full_name', 'has_header', 'header_present', 'names', 'package', 'parsed_fields', 'short_name', 'text', 'types']
 
@@ -89,12 +122,12 @@ namespace message_traits
 
 template <class ContainerAllocator>
 struct IsFixedSize< ::robbie_stability::Contact_<ContainerAllocator> >
-  : TrueType
+  : FalseType
   { };
 
 template <class ContainerAllocator>
 struct IsFixedSize< ::robbie_stability::Contact_<ContainerAllocator> const>
-  : TrueType
+  : FalseType
   { };
 
 template <class ContainerAllocator>
@@ -123,12 +156,12 @@ struct MD5Sum< ::robbie_stability::Contact_<ContainerAllocator> >
 {
   static const char* value()
   {
-    return "a1098ecc6338cffcc410aeee87ea5720";
+    return "031fc837dcc9ed46474cb01cba5abfbd";
   }
 
   static const char* value(const ::robbie_stability::Contact_<ContainerAllocator>&) { return value(); }
-  static const uint64_t static_value1 = 0xa1098ecc6338cffcULL;
-  static const uint64_t static_value2 = 0xc410aeee87ea5720ULL;
+  static const uint64_t static_value1 = 0x031fc837dcc9ed46ULL;
+  static const uint64_t static_value2 = 0x474cb01cba5abfbdULL;
 };
 
 template<class ContainerAllocator>
@@ -150,6 +183,20 @@ struct Definition< ::robbie_stability::Contact_<ContainerAllocator> >
     return "bool shank\n\
 bool lhm\n\
 bool stabilizer\n\
+\n\
+string stabilizer_on\n\
+string shank_on\n\
+string lhm_on\n\
+\n\
+geometry_msgs/Point stabilizer_location\n\
+geometry_msgs/Point shank_location\n\
+geometry_msgs/Point lhm_location\n\
+================================================================================\n\
+MSG: geometry_msgs/Point\n\
+# This contains the position of a point in free space\n\
+float64 x\n\
+float64 y\n\
+float64 z\n\
 ";
   }
 
@@ -171,6 +218,12 @@ namespace serialization
       stream.next(m.shank);
       stream.next(m.lhm);
       stream.next(m.stabilizer);
+      stream.next(m.stabilizer_on);
+      stream.next(m.shank_on);
+      stream.next(m.lhm_on);
+      stream.next(m.stabilizer_location);
+      stream.next(m.shank_location);
+      stream.next(m.lhm_location);
     }
 
     ROS_DECLARE_ALLINONE_SERIALIZER
@@ -195,6 +248,21 @@ struct Printer< ::robbie_stability::Contact_<ContainerAllocator> >
     Printer<uint8_t>::stream(s, indent + "  ", v.lhm);
     s << indent << "stabilizer: ";
     Printer<uint8_t>::stream(s, indent + "  ", v.stabilizer);
+    s << indent << "stabilizer_on: ";
+    Printer<std::basic_string<char, std::char_traits<char>, typename ContainerAllocator::template rebind<char>::other > >::stream(s, indent + "  ", v.stabilizer_on);
+    s << indent << "shank_on: ";
+    Printer<std::basic_string<char, std::char_traits<char>, typename ContainerAllocator::template rebind<char>::other > >::stream(s, indent + "  ", v.shank_on);
+    s << indent << "lhm_on: ";
+    Printer<std::basic_string<char, std::char_traits<char>, typename ContainerAllocator::template rebind<char>::other > >::stream(s, indent + "  ", v.lhm_on);
+    s << indent << "stabilizer_location: ";
+    s << std::endl;
+    Printer< ::geometry_msgs::Point_<ContainerAllocator> >::stream(s, indent + "  ", v.stabilizer_location);
+    s << indent << "shank_location: ";
+    s << std::endl;
+    Printer< ::geometry_msgs::Point_<ContainerAllocator> >::stream(s, indent + "  ", v.shank_location);
+    s << indent << "lhm_location: ";
+    s << std::endl;
+    Printer< ::geometry_msgs::Point_<ContainerAllocator> >::stream(s, indent + "  ", v.lhm_location);
   }
 };
 

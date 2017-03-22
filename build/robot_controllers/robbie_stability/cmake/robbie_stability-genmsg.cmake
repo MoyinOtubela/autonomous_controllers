@@ -2,7 +2,7 @@
 
 message(STATUS "robbie_stability: 1 messages, 0 services")
 
-set(MSG_I_FLAGS "-Irobbie_stability:/home/moyin/dev/autonomous_controllers/src/robot_controllers/robbie_stability/msg")
+set(MSG_I_FLAGS "-Irobbie_stability:/home/moyin/dev/autonomous_controllers/src/robot_controllers/robbie_stability/msg;-Istd_msgs:/opt/ros/indigo/share/std_msgs/cmake/../msg;-Igeometry_msgs:/opt/ros/indigo/share/geometry_msgs/cmake/../msg")
 
 # Find all generators
 find_package(gencpp REQUIRED)
@@ -17,7 +17,7 @@ add_custom_target(robbie_stability_generate_messages ALL)
 
 get_filename_component(_filename "/home/moyin/dev/autonomous_controllers/src/robot_controllers/robbie_stability/msg/Contact.msg" NAME_WE)
 add_custom_target(_robbie_stability_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "robbie_stability" "/home/moyin/dev/autonomous_controllers/src/robot_controllers/robbie_stability/msg/Contact.msg" ""
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "robbie_stability" "/home/moyin/dev/autonomous_controllers/src/robot_controllers/robbie_stability/msg/Contact.msg" "geometry_msgs/Point"
 )
 
 #
@@ -29,7 +29,7 @@ add_custom_target(_robbie_stability_generate_messages_check_deps_${_filename}
 _generate_msg_cpp(robbie_stability
   "/home/moyin/dev/autonomous_controllers/src/robot_controllers/robbie_stability/msg/Contact.msg"
   "${MSG_I_FLAGS}"
-  ""
+  "/opt/ros/indigo/share/geometry_msgs/cmake/../msg/Point.msg"
   ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/robbie_stability
 )
 
@@ -62,7 +62,7 @@ list(APPEND ${PROJECT_NAME}_EXPORTED_TARGETS robbie_stability_generate_messages_
 _generate_msg_lisp(robbie_stability
   "/home/moyin/dev/autonomous_controllers/src/robot_controllers/robbie_stability/msg/Contact.msg"
   "${MSG_I_FLAGS}"
-  ""
+  "/opt/ros/indigo/share/geometry_msgs/cmake/../msg/Point.msg"
   ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/robbie_stability
 )
 
@@ -95,7 +95,7 @@ list(APPEND ${PROJECT_NAME}_EXPORTED_TARGETS robbie_stability_generate_messages_
 _generate_msg_py(robbie_stability
   "/home/moyin/dev/autonomous_controllers/src/robot_controllers/robbie_stability/msg/Contact.msg"
   "${MSG_I_FLAGS}"
-  ""
+  "/opt/ros/indigo/share/geometry_msgs/cmake/../msg/Point.msg"
   ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/robbie_stability
 )
 
@@ -132,6 +132,8 @@ if(gencpp_INSTALL_DIR AND EXISTS ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/ro
     DESTINATION ${gencpp_INSTALL_DIR}
   )
 endif()
+add_dependencies(robbie_stability_generate_messages_cpp std_msgs_generate_messages_cpp)
+add_dependencies(robbie_stability_generate_messages_cpp geometry_msgs_generate_messages_cpp)
 
 if(genlisp_INSTALL_DIR AND EXISTS ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/robbie_stability)
   # install generated code
@@ -140,6 +142,8 @@ if(genlisp_INSTALL_DIR AND EXISTS ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/
     DESTINATION ${genlisp_INSTALL_DIR}
   )
 endif()
+add_dependencies(robbie_stability_generate_messages_lisp std_msgs_generate_messages_lisp)
+add_dependencies(robbie_stability_generate_messages_lisp geometry_msgs_generate_messages_lisp)
 
 if(genpy_INSTALL_DIR AND EXISTS ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/robbie_stability)
   install(CODE "execute_process(COMMAND \"/usr/local/bin/python\" -m compileall \"${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/robbie_stability\")")
@@ -149,3 +153,5 @@ if(genpy_INSTALL_DIR AND EXISTS ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/robb
     DESTINATION ${genpy_INSTALL_DIR}
   )
 endif()
+add_dependencies(robbie_stability_generate_messages_py std_msgs_generate_messages_py)
+add_dependencies(robbie_stability_generate_messages_py geometry_msgs_generate_messages_py)

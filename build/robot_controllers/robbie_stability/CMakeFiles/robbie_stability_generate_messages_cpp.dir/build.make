@@ -58,9 +58,10 @@ robot_controllers/robbie_stability/CMakeFiles/robbie_stability_generate_messages
 
 /home/moyin/dev/autonomous_controllers/devel/include/robbie_stability/Contact.h: /opt/ros/indigo/lib/gencpp/gen_cpp.py
 /home/moyin/dev/autonomous_controllers/devel/include/robbie_stability/Contact.h: /home/moyin/dev/autonomous_controllers/src/robot_controllers/robbie_stability/msg/Contact.msg
+/home/moyin/dev/autonomous_controllers/devel/include/robbie_stability/Contact.h: /opt/ros/indigo/share/geometry_msgs/msg/Point.msg
 /home/moyin/dev/autonomous_controllers/devel/include/robbie_stability/Contact.h: /opt/ros/indigo/share/gencpp/msg.h.template
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/moyin/dev/autonomous_controllers/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating C++ code from robbie_stability/Contact.msg"
-	cd /home/moyin/dev/autonomous_controllers/build/robot_controllers/robbie_stability && ../../catkin_generated/env_cached.sh /usr/local/bin/python /opt/ros/indigo/share/gencpp/cmake/../../../lib/gencpp/gen_cpp.py /home/moyin/dev/autonomous_controllers/src/robot_controllers/robbie_stability/msg/Contact.msg -Irobbie_stability:/home/moyin/dev/autonomous_controllers/src/robot_controllers/robbie_stability/msg -p robbie_stability -o /home/moyin/dev/autonomous_controllers/devel/include/robbie_stability -e /opt/ros/indigo/share/gencpp/cmake/..
+	cd /home/moyin/dev/autonomous_controllers/build/robot_controllers/robbie_stability && ../../catkin_generated/env_cached.sh /usr/local/bin/python /opt/ros/indigo/share/gencpp/cmake/../../../lib/gencpp/gen_cpp.py /home/moyin/dev/autonomous_controllers/src/robot_controllers/robbie_stability/msg/Contact.msg -Irobbie_stability:/home/moyin/dev/autonomous_controllers/src/robot_controllers/robbie_stability/msg -Istd_msgs:/opt/ros/indigo/share/std_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/indigo/share/geometry_msgs/cmake/../msg -p robbie_stability -o /home/moyin/dev/autonomous_controllers/devel/include/robbie_stability -e /opt/ros/indigo/share/gencpp/cmake/..
 
 robbie_stability_generate_messages_cpp: robot_controllers/robbie_stability/CMakeFiles/robbie_stability_generate_messages_cpp
 robbie_stability_generate_messages_cpp: /home/moyin/dev/autonomous_controllers/devel/include/robbie_stability/Contact.h

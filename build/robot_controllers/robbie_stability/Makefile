@@ -315,32 +315,32 @@ robbie_contact_ex/fast:
 	cd /home/moyin/dev/autonomous_controllers/build && $(MAKE) -f robot_controllers/robbie_stability/CMakeFiles/robbie_contact_ex.dir/build.make robot_controllers/robbie_stability/CMakeFiles/robbie_contact_ex.dir/build
 .PHONY : robbie_contact_ex/fast
 
-src/robbie_contact_ex.o: src/robbie_contact_ex.cpp.o
+src/robbie_contact_ex_2.o: src/robbie_contact_ex_2.cpp.o
 
-.PHONY : src/robbie_contact_ex.o
+.PHONY : src/robbie_contact_ex_2.o
 
 # target to build an object file
-src/robbie_contact_ex.cpp.o:
-	cd /home/moyin/dev/autonomous_controllers/build && $(MAKE) -f robot_controllers/robbie_stability/CMakeFiles/robbie_contact_ex.dir/build.make robot_controllers/robbie_stability/CMakeFiles/robbie_contact_ex.dir/src/robbie_contact_ex.cpp.o
-.PHONY : src/robbie_contact_ex.cpp.o
+src/robbie_contact_ex_2.cpp.o:
+	cd /home/moyin/dev/autonomous_controllers/build && $(MAKE) -f robot_controllers/robbie_stability/CMakeFiles/robbie_contact_ex.dir/build.make robot_controllers/robbie_stability/CMakeFiles/robbie_contact_ex.dir/src/robbie_contact_ex_2.cpp.o
+.PHONY : src/robbie_contact_ex_2.cpp.o
 
-src/robbie_contact_ex.i: src/robbie_contact_ex.cpp.i
+src/robbie_contact_ex_2.i: src/robbie_contact_ex_2.cpp.i
 
-.PHONY : src/robbie_contact_ex.i
+.PHONY : src/robbie_contact_ex_2.i
 
 # target to preprocess a source file
-src/robbie_contact_ex.cpp.i:
-	cd /home/moyin/dev/autonomous_controllers/build && $(MAKE) -f robot_controllers/robbie_stability/CMakeFiles/robbie_contact_ex.dir/build.make robot_controllers/robbie_stability/CMakeFiles/robbie_contact_ex.dir/src/robbie_contact_ex.cpp.i
-.PHONY : src/robbie_contact_ex.cpp.i
+src/robbie_contact_ex_2.cpp.i:
+	cd /home/moyin/dev/autonomous_controllers/build && $(MAKE) -f robot_controllers/robbie_stability/CMakeFiles/robbie_contact_ex.dir/build.make robot_controllers/robbie_stability/CMakeFiles/robbie_contact_ex.dir/src/robbie_contact_ex_2.cpp.i
+.PHONY : src/robbie_contact_ex_2.cpp.i
 
-src/robbie_contact_ex.s: src/robbie_contact_ex.cpp.s
+src/robbie_contact_ex_2.s: src/robbie_contact_ex_2.cpp.s
 
-.PHONY : src/robbie_contact_ex.s
+.PHONY : src/robbie_contact_ex_2.s
 
 # target to generate assembly for a file
-src/robbie_contact_ex.cpp.s:
-	cd /home/moyin/dev/autonomous_controllers/build && $(MAKE) -f robot_controllers/robbie_stability/CMakeFiles/robbie_contact_ex.dir/build.make robot_controllers/robbie_stability/CMakeFiles/robbie_contact_ex.dir/src/robbie_contact_ex.cpp.s
-.PHONY : src/robbie_contact_ex.cpp.s
+src/robbie_contact_ex_2.cpp.s:
+	cd /home/moyin/dev/autonomous_controllers/build && $(MAKE) -f robot_controllers/robbie_stability/CMakeFiles/robbie_contact_ex.dir/build.make robot_controllers/robbie_stability/CMakeFiles/robbie_contact_ex.dir/src/robbie_contact_ex_2.cpp.s
+.PHONY : src/robbie_contact_ex_2.cpp.s
 
 src/robbie_stability_ex.o: src/robbie_stability_ex.cpp.o
 
@@ -392,9 +392,9 @@ help:
 	@echo "... robbie_stability_generate_messages_py"
 	@echo "... robbie_stability_genpy"
 	@echo "... robbie_contact_ex"
-	@echo "... src/robbie_contact_ex.o"
-	@echo "... src/robbie_contact_ex.i"
-	@echo "... src/robbie_contact_ex.s"
+	@echo "... src/robbie_contact_ex_2.o"
+	@echo "... src/robbie_contact_ex_2.i"
+	@echo "... src/robbie_contact_ex_2.s"
 	@echo "... src/robbie_stability_ex.o"
 	@echo "... src/robbie_stability_ex.i"
 	@echo "... src/robbie_stability_ex.s"
