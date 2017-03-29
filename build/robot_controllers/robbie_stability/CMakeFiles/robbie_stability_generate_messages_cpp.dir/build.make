@@ -53,17 +53,47 @@ CMAKE_BINARY_DIR = /home/moyin/dev/autonomous_controllers/build
 # Include the progress variables for this target.
 include robot_controllers/robbie_stability/CMakeFiles/robbie_stability_generate_messages_cpp.dir/progress.make
 
+robot_controllers/robbie_stability/CMakeFiles/robbie_stability_generate_messages_cpp: /home/moyin/dev/autonomous_controllers/devel/include/robbie_stability/ContactLinkStates.h
 robot_controllers/robbie_stability/CMakeFiles/robbie_stability_generate_messages_cpp: /home/moyin/dev/autonomous_controllers/devel/include/robbie_stability/Contact.h
+robot_controllers/robbie_stability/CMakeFiles/robbie_stability_generate_messages_cpp: /home/moyin/dev/autonomous_controllers/devel/include/robbie_stability/LinkStatesStamped.h
 
+
+/home/moyin/dev/autonomous_controllers/devel/include/robbie_stability/ContactLinkStates.h: /opt/ros/indigo/lib/gencpp/gen_cpp.py
+/home/moyin/dev/autonomous_controllers/devel/include/robbie_stability/ContactLinkStates.h: /home/moyin/dev/autonomous_controllers/src/robot_controllers/robbie_stability/msg/ContactLinkStates.msg
+/home/moyin/dev/autonomous_controllers/devel/include/robbie_stability/ContactLinkStates.h: /home/moyin/dev/autonomous_controllers/src/robot_controllers/robbie_stability/msg/Contact.msg
+/home/moyin/dev/autonomous_controllers/devel/include/robbie_stability/ContactLinkStates.h: /opt/ros/indigo/share/geometry_msgs/msg/Pose.msg
+/home/moyin/dev/autonomous_controllers/devel/include/robbie_stability/ContactLinkStates.h: /opt/ros/indigo/share/geometry_msgs/msg/Quaternion.msg
+/home/moyin/dev/autonomous_controllers/devel/include/robbie_stability/ContactLinkStates.h: /opt/ros/indigo/share/std_msgs/msg/Header.msg
+/home/moyin/dev/autonomous_controllers/devel/include/robbie_stability/ContactLinkStates.h: /opt/ros/indigo/share/geometry_msgs/msg/Point.msg
+/home/moyin/dev/autonomous_controllers/devel/include/robbie_stability/ContactLinkStates.h: /opt/ros/indigo/share/gencpp/msg.h.template
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/moyin/dev/autonomous_controllers/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating C++ code from robbie_stability/ContactLinkStates.msg"
+	cd /home/moyin/dev/autonomous_controllers/build/robot_controllers/robbie_stability && ../../catkin_generated/env_cached.sh /usr/local/bin/python /opt/ros/indigo/share/gencpp/cmake/../../../lib/gencpp/gen_cpp.py /home/moyin/dev/autonomous_controllers/src/robot_controllers/robbie_stability/msg/ContactLinkStates.msg -Irobbie_stability:/home/moyin/dev/autonomous_controllers/src/robot_controllers/robbie_stability/msg -Istd_msgs:/opt/ros/indigo/share/std_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/indigo/share/geometry_msgs/cmake/../msg -Igazebo_msgs:/opt/ros/indigo/share/gazebo_msgs/cmake/../msg -Isensor_msgs:/opt/ros/indigo/share/sensor_msgs/cmake/../msg -Itrajectory_msgs:/opt/ros/indigo/share/trajectory_msgs/cmake/../msg -p robbie_stability -o /home/moyin/dev/autonomous_controllers/devel/include/robbie_stability -e /opt/ros/indigo/share/gencpp/cmake/..
 
 /home/moyin/dev/autonomous_controllers/devel/include/robbie_stability/Contact.h: /opt/ros/indigo/lib/gencpp/gen_cpp.py
 /home/moyin/dev/autonomous_controllers/devel/include/robbie_stability/Contact.h: /home/moyin/dev/autonomous_controllers/src/robot_controllers/robbie_stability/msg/Contact.msg
+/home/moyin/dev/autonomous_controllers/devel/include/robbie_stability/Contact.h: /opt/ros/indigo/share/std_msgs/msg/Header.msg
+/home/moyin/dev/autonomous_controllers/devel/include/robbie_stability/Contact.h: /opt/ros/indigo/share/geometry_msgs/msg/Point.msg
 /home/moyin/dev/autonomous_controllers/devel/include/robbie_stability/Contact.h: /opt/ros/indigo/share/gencpp/msg.h.template
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/moyin/dev/autonomous_controllers/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating C++ code from robbie_stability/Contact.msg"
-	cd /home/moyin/dev/autonomous_controllers/build/robot_controllers/robbie_stability && ../../catkin_generated/env_cached.sh /usr/local/bin/python /opt/ros/indigo/share/gencpp/cmake/../../../lib/gencpp/gen_cpp.py /home/moyin/dev/autonomous_controllers/src/robot_controllers/robbie_stability/msg/Contact.msg -Irobbie_stability:/home/moyin/dev/autonomous_controllers/src/robot_controllers/robbie_stability/msg -p robbie_stability -o /home/moyin/dev/autonomous_controllers/devel/include/robbie_stability -e /opt/ros/indigo/share/gencpp/cmake/..
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/moyin/dev/autonomous_controllers/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Generating C++ code from robbie_stability/Contact.msg"
+	cd /home/moyin/dev/autonomous_controllers/build/robot_controllers/robbie_stability && ../../catkin_generated/env_cached.sh /usr/local/bin/python /opt/ros/indigo/share/gencpp/cmake/../../../lib/gencpp/gen_cpp.py /home/moyin/dev/autonomous_controllers/src/robot_controllers/robbie_stability/msg/Contact.msg -Irobbie_stability:/home/moyin/dev/autonomous_controllers/src/robot_controllers/robbie_stability/msg -Istd_msgs:/opt/ros/indigo/share/std_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/indigo/share/geometry_msgs/cmake/../msg -Igazebo_msgs:/opt/ros/indigo/share/gazebo_msgs/cmake/../msg -Isensor_msgs:/opt/ros/indigo/share/sensor_msgs/cmake/../msg -Itrajectory_msgs:/opt/ros/indigo/share/trajectory_msgs/cmake/../msg -p robbie_stability -o /home/moyin/dev/autonomous_controllers/devel/include/robbie_stability -e /opt/ros/indigo/share/gencpp/cmake/..
+
+/home/moyin/dev/autonomous_controllers/devel/include/robbie_stability/LinkStatesStamped.h: /opt/ros/indigo/lib/gencpp/gen_cpp.py
+/home/moyin/dev/autonomous_controllers/devel/include/robbie_stability/LinkStatesStamped.h: /home/moyin/dev/autonomous_controllers/src/robot_controllers/robbie_stability/msg/LinkStatesStamped.msg
+/home/moyin/dev/autonomous_controllers/devel/include/robbie_stability/LinkStatesStamped.h: /opt/ros/indigo/share/geometry_msgs/msg/Point.msg
+/home/moyin/dev/autonomous_controllers/devel/include/robbie_stability/LinkStatesStamped.h: /opt/ros/indigo/share/geometry_msgs/msg/Vector3.msg
+/home/moyin/dev/autonomous_controllers/devel/include/robbie_stability/LinkStatesStamped.h: /opt/ros/indigo/share/std_msgs/msg/Header.msg
+/home/moyin/dev/autonomous_controllers/devel/include/robbie_stability/LinkStatesStamped.h: /opt/ros/indigo/share/geometry_msgs/msg/Quaternion.msg
+/home/moyin/dev/autonomous_controllers/devel/include/robbie_stability/LinkStatesStamped.h: /opt/ros/indigo/share/gazebo_msgs/msg/LinkStates.msg
+/home/moyin/dev/autonomous_controllers/devel/include/robbie_stability/LinkStatesStamped.h: /opt/ros/indigo/share/geometry_msgs/msg/Pose.msg
+/home/moyin/dev/autonomous_controllers/devel/include/robbie_stability/LinkStatesStamped.h: /opt/ros/indigo/share/geometry_msgs/msg/Twist.msg
+/home/moyin/dev/autonomous_controllers/devel/include/robbie_stability/LinkStatesStamped.h: /opt/ros/indigo/share/gencpp/msg.h.template
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/moyin/dev/autonomous_controllers/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Generating C++ code from robbie_stability/LinkStatesStamped.msg"
+	cd /home/moyin/dev/autonomous_controllers/build/robot_controllers/robbie_stability && ../../catkin_generated/env_cached.sh /usr/local/bin/python /opt/ros/indigo/share/gencpp/cmake/../../../lib/gencpp/gen_cpp.py /home/moyin/dev/autonomous_controllers/src/robot_controllers/robbie_stability/msg/LinkStatesStamped.msg -Irobbie_stability:/home/moyin/dev/autonomous_controllers/src/robot_controllers/robbie_stability/msg -Istd_msgs:/opt/ros/indigo/share/std_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/indigo/share/geometry_msgs/cmake/../msg -Igazebo_msgs:/opt/ros/indigo/share/gazebo_msgs/cmake/../msg -Isensor_msgs:/opt/ros/indigo/share/sensor_msgs/cmake/../msg -Itrajectory_msgs:/opt/ros/indigo/share/trajectory_msgs/cmake/../msg -p robbie_stability -o /home/moyin/dev/autonomous_controllers/devel/include/robbie_stability -e /opt/ros/indigo/share/gencpp/cmake/..
 
 robbie_stability_generate_messages_cpp: robot_controllers/robbie_stability/CMakeFiles/robbie_stability_generate_messages_cpp
+robbie_stability_generate_messages_cpp: /home/moyin/dev/autonomous_controllers/devel/include/robbie_stability/ContactLinkStates.h
 robbie_stability_generate_messages_cpp: /home/moyin/dev/autonomous_controllers/devel/include/robbie_stability/Contact.h
+robbie_stability_generate_messages_cpp: /home/moyin/dev/autonomous_controllers/devel/include/robbie_stability/LinkStatesStamped.h
 robbie_stability_generate_messages_cpp: robot_controllers/robbie_stability/CMakeFiles/robbie_stability_generate_messages_cpp.dir/build.make
 
 .PHONY : robbie_stability_generate_messages_cpp

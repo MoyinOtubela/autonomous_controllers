@@ -2108,23 +2108,29 @@ clean: gazebo_ros_demos/custom_plugin_tutorial/CMakeFiles/gazebo_tutorials.dir/c
 # Directory level rules for directory robot_controllers/robbie_stability
 
 # Convenience name for "all" pass in the directory.
-robot_controllers/robbie_stability/all: robot_controllers/robbie_stability/CMakeFiles/robbie_stability_generate_messages.dir/all
-robot_controllers/robbie_stability/all: robot_controllers/robbie_stability/CMakeFiles/robbie_stability_ex.dir/all
+robot_controllers/robbie_stability/all: robot_controllers/robbie_stability/CMakeFiles/robbie_location_contact.dir/all
+robot_controllers/robbie_stability/all: robot_controllers/robbie_stability/CMakeFiles/robbie_linkstates_stamped.dir/all
 robot_controllers/robbie_stability/all: robot_controllers/robbie_stability/CMakeFiles/robbie_contact_ex.dir/all
+robot_controllers/robbie_stability/all: robot_controllers/robbie_stability/CMakeFiles/robbie_stability_ex.dir/all
+robot_controllers/robbie_stability/all: robot_controllers/robbie_stability/CMakeFiles/robbie_stability_generate_messages.dir/all
 
 .PHONY : robot_controllers/robbie_stability/all
 
 # Convenience name for "clean" pass in the directory.
+robot_controllers/robbie_stability/clean: robot_controllers/robbie_stability/CMakeFiles/robbie_location_contact.dir/clean
+robot_controllers/robbie_stability/clean: robot_controllers/robbie_stability/CMakeFiles/robbie_linkstates_stamped.dir/clean
+robot_controllers/robbie_stability/clean: robot_controllers/robbie_stability/CMakeFiles/robbie_contact_ex.dir/clean
+robot_controllers/robbie_stability/clean: robot_controllers/robbie_stability/CMakeFiles/robbie_stability_ex.dir/clean
 robot_controllers/robbie_stability/clean: robot_controllers/robbie_stability/CMakeFiles/robbie_stability_generate_messages.dir/clean
 robot_controllers/robbie_stability/clean: robot_controllers/robbie_stability/CMakeFiles/_robbie_stability_generate_messages_check_deps_Contact.dir/clean
-robot_controllers/robbie_stability/clean: robot_controllers/robbie_stability/CMakeFiles/robbie_stability_ex.dir/clean
+robot_controllers/robbie_stability/clean: robot_controllers/robbie_stability/CMakeFiles/robbie_stability_genpy.dir/clean
+robot_controllers/robbie_stability/clean: robot_controllers/robbie_stability/CMakeFiles/_robbie_stability_generate_messages_check_deps_LinkStatesStamped.dir/clean
 robot_controllers/robbie_stability/clean: robot_controllers/robbie_stability/CMakeFiles/robbie_stability_gencpp.dir/clean
 robot_controllers/robbie_stability/clean: robot_controllers/robbie_stability/CMakeFiles/robbie_stability_generate_messages_lisp.dir/clean
 robot_controllers/robbie_stability/clean: robot_controllers/robbie_stability/CMakeFiles/robbie_stability_generate_messages_cpp.dir/clean
 robot_controllers/robbie_stability/clean: robot_controllers/robbie_stability/CMakeFiles/robbie_stability_genlisp.dir/clean
+robot_controllers/robbie_stability/clean: robot_controllers/robbie_stability/CMakeFiles/_robbie_stability_generate_messages_check_deps_ContactLinkStates.dir/clean
 robot_controllers/robbie_stability/clean: robot_controllers/robbie_stability/CMakeFiles/robbie_stability_generate_messages_py.dir/clean
-robot_controllers/robbie_stability/clean: robot_controllers/robbie_stability/CMakeFiles/robbie_stability_genpy.dir/clean
-robot_controllers/robbie_stability/clean: robot_controllers/robbie_stability/CMakeFiles/robbie_contact_ex.dir/clean
 
 .PHONY : robot_controllers/robbie_stability/clean
 
@@ -2132,6 +2138,154 @@ robot_controllers/robbie_stability/clean: robot_controllers/robbie_stability/CMa
 robot_controllers/robbie_stability/preinstall:
 
 .PHONY : robot_controllers/robbie_stability/preinstall
+
+#=============================================================================
+# Target rules for target robot_controllers/robbie_stability/CMakeFiles/robbie_location_contact.dir
+
+# All Build rule for target.
+robot_controllers/robbie_stability/CMakeFiles/robbie_location_contact.dir/all:
+	$(MAKE) -f robot_controllers/robbie_stability/CMakeFiles/robbie_location_contact.dir/build.make robot_controllers/robbie_stability/CMakeFiles/robbie_location_contact.dir/depend
+	$(MAKE) -f robot_controllers/robbie_stability/CMakeFiles/robbie_location_contact.dir/build.make robot_controllers/robbie_stability/CMakeFiles/robbie_location_contact.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/moyin/dev/autonomous_controllers/build/CMakeFiles --progress-num=24,25 "Built target robbie_location_contact"
+.PHONY : robot_controllers/robbie_stability/CMakeFiles/robbie_location_contact.dir/all
+
+# Include target in all.
+all: robot_controllers/robbie_stability/CMakeFiles/robbie_location_contact.dir/all
+
+.PHONY : all
+
+# Build rule for subdir invocation for target.
+robot_controllers/robbie_stability/CMakeFiles/robbie_location_contact.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/moyin/dev/autonomous_controllers/build/CMakeFiles 2
+	$(MAKE) -f CMakeFiles/Makefile2 robot_controllers/robbie_stability/CMakeFiles/robbie_location_contact.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/moyin/dev/autonomous_controllers/build/CMakeFiles 0
+.PHONY : robot_controllers/robbie_stability/CMakeFiles/robbie_location_contact.dir/rule
+
+# Convenience name for target.
+robbie_location_contact: robot_controllers/robbie_stability/CMakeFiles/robbie_location_contact.dir/rule
+
+.PHONY : robbie_location_contact
+
+# clean rule for target.
+robot_controllers/robbie_stability/CMakeFiles/robbie_location_contact.dir/clean:
+	$(MAKE) -f robot_controllers/robbie_stability/CMakeFiles/robbie_location_contact.dir/build.make robot_controllers/robbie_stability/CMakeFiles/robbie_location_contact.dir/clean
+.PHONY : robot_controllers/robbie_stability/CMakeFiles/robbie_location_contact.dir/clean
+
+# clean rule for target.
+clean: robot_controllers/robbie_stability/CMakeFiles/robbie_location_contact.dir/clean
+
+.PHONY : clean
+
+#=============================================================================
+# Target rules for target robot_controllers/robbie_stability/CMakeFiles/robbie_linkstates_stamped.dir
+
+# All Build rule for target.
+robot_controllers/robbie_stability/CMakeFiles/robbie_linkstates_stamped.dir/all:
+	$(MAKE) -f robot_controllers/robbie_stability/CMakeFiles/robbie_linkstates_stamped.dir/build.make robot_controllers/robbie_stability/CMakeFiles/robbie_linkstates_stamped.dir/depend
+	$(MAKE) -f robot_controllers/robbie_stability/CMakeFiles/robbie_linkstates_stamped.dir/build.make robot_controllers/robbie_stability/CMakeFiles/robbie_linkstates_stamped.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/moyin/dev/autonomous_controllers/build/CMakeFiles --progress-num=22,23 "Built target robbie_linkstates_stamped"
+.PHONY : robot_controllers/robbie_stability/CMakeFiles/robbie_linkstates_stamped.dir/all
+
+# Include target in all.
+all: robot_controllers/robbie_stability/CMakeFiles/robbie_linkstates_stamped.dir/all
+
+.PHONY : all
+
+# Build rule for subdir invocation for target.
+robot_controllers/robbie_stability/CMakeFiles/robbie_linkstates_stamped.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/moyin/dev/autonomous_controllers/build/CMakeFiles 2
+	$(MAKE) -f CMakeFiles/Makefile2 robot_controllers/robbie_stability/CMakeFiles/robbie_linkstates_stamped.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/moyin/dev/autonomous_controllers/build/CMakeFiles 0
+.PHONY : robot_controllers/robbie_stability/CMakeFiles/robbie_linkstates_stamped.dir/rule
+
+# Convenience name for target.
+robbie_linkstates_stamped: robot_controllers/robbie_stability/CMakeFiles/robbie_linkstates_stamped.dir/rule
+
+.PHONY : robbie_linkstates_stamped
+
+# clean rule for target.
+robot_controllers/robbie_stability/CMakeFiles/robbie_linkstates_stamped.dir/clean:
+	$(MAKE) -f robot_controllers/robbie_stability/CMakeFiles/robbie_linkstates_stamped.dir/build.make robot_controllers/robbie_stability/CMakeFiles/robbie_linkstates_stamped.dir/clean
+.PHONY : robot_controllers/robbie_stability/CMakeFiles/robbie_linkstates_stamped.dir/clean
+
+# clean rule for target.
+clean: robot_controllers/robbie_stability/CMakeFiles/robbie_linkstates_stamped.dir/clean
+
+.PHONY : clean
+
+#=============================================================================
+# Target rules for target robot_controllers/robbie_stability/CMakeFiles/robbie_contact_ex.dir
+
+# All Build rule for target.
+robot_controllers/robbie_stability/CMakeFiles/robbie_contact_ex.dir/all:
+	$(MAKE) -f robot_controllers/robbie_stability/CMakeFiles/robbie_contact_ex.dir/build.make robot_controllers/robbie_stability/CMakeFiles/robbie_contact_ex.dir/depend
+	$(MAKE) -f robot_controllers/robbie_stability/CMakeFiles/robbie_contact_ex.dir/build.make robot_controllers/robbie_stability/CMakeFiles/robbie_contact_ex.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/moyin/dev/autonomous_controllers/build/CMakeFiles --progress-num=20,21 "Built target robbie_contact_ex"
+.PHONY : robot_controllers/robbie_stability/CMakeFiles/robbie_contact_ex.dir/all
+
+# Include target in all.
+all: robot_controllers/robbie_stability/CMakeFiles/robbie_contact_ex.dir/all
+
+.PHONY : all
+
+# Build rule for subdir invocation for target.
+robot_controllers/robbie_stability/CMakeFiles/robbie_contact_ex.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/moyin/dev/autonomous_controllers/build/CMakeFiles 2
+	$(MAKE) -f CMakeFiles/Makefile2 robot_controllers/robbie_stability/CMakeFiles/robbie_contact_ex.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/moyin/dev/autonomous_controllers/build/CMakeFiles 0
+.PHONY : robot_controllers/robbie_stability/CMakeFiles/robbie_contact_ex.dir/rule
+
+# Convenience name for target.
+robbie_contact_ex: robot_controllers/robbie_stability/CMakeFiles/robbie_contact_ex.dir/rule
+
+.PHONY : robbie_contact_ex
+
+# clean rule for target.
+robot_controllers/robbie_stability/CMakeFiles/robbie_contact_ex.dir/clean:
+	$(MAKE) -f robot_controllers/robbie_stability/CMakeFiles/robbie_contact_ex.dir/build.make robot_controllers/robbie_stability/CMakeFiles/robbie_contact_ex.dir/clean
+.PHONY : robot_controllers/robbie_stability/CMakeFiles/robbie_contact_ex.dir/clean
+
+# clean rule for target.
+clean: robot_controllers/robbie_stability/CMakeFiles/robbie_contact_ex.dir/clean
+
+.PHONY : clean
+
+#=============================================================================
+# Target rules for target robot_controllers/robbie_stability/CMakeFiles/robbie_stability_ex.dir
+
+# All Build rule for target.
+robot_controllers/robbie_stability/CMakeFiles/robbie_stability_ex.dir/all:
+	$(MAKE) -f robot_controllers/robbie_stability/CMakeFiles/robbie_stability_ex.dir/build.make robot_controllers/robbie_stability/CMakeFiles/robbie_stability_ex.dir/depend
+	$(MAKE) -f robot_controllers/robbie_stability/CMakeFiles/robbie_stability_ex.dir/build.make robot_controllers/robbie_stability/CMakeFiles/robbie_stability_ex.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/moyin/dev/autonomous_controllers/build/CMakeFiles --progress-num=26,27 "Built target robbie_stability_ex"
+.PHONY : robot_controllers/robbie_stability/CMakeFiles/robbie_stability_ex.dir/all
+
+# Include target in all.
+all: robot_controllers/robbie_stability/CMakeFiles/robbie_stability_ex.dir/all
+
+.PHONY : all
+
+# Build rule for subdir invocation for target.
+robot_controllers/robbie_stability/CMakeFiles/robbie_stability_ex.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/moyin/dev/autonomous_controllers/build/CMakeFiles 2
+	$(MAKE) -f CMakeFiles/Makefile2 robot_controllers/robbie_stability/CMakeFiles/robbie_stability_ex.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/moyin/dev/autonomous_controllers/build/CMakeFiles 0
+.PHONY : robot_controllers/robbie_stability/CMakeFiles/robbie_stability_ex.dir/rule
+
+# Convenience name for target.
+robbie_stability_ex: robot_controllers/robbie_stability/CMakeFiles/robbie_stability_ex.dir/rule
+
+.PHONY : robbie_stability_ex
+
+# clean rule for target.
+robot_controllers/robbie_stability/CMakeFiles/robbie_stability_ex.dir/clean:
+	$(MAKE) -f robot_controllers/robbie_stability/CMakeFiles/robbie_stability_ex.dir/build.make robot_controllers/robbie_stability/CMakeFiles/robbie_stability_ex.dir/clean
+.PHONY : robot_controllers/robbie_stability/CMakeFiles/robbie_stability_ex.dir/clean
+
+# clean rule for target.
+clean: robot_controllers/robbie_stability/CMakeFiles/robbie_stability_ex.dir/clean
+
+.PHONY : clean
 
 #=============================================================================
 # Target rules for target robot_controllers/robbie_stability/CMakeFiles/robbie_stability_generate_messages.dir
@@ -2152,7 +2306,7 @@ all: robot_controllers/robbie_stability/CMakeFiles/robbie_stability_generate_mes
 
 # Build rule for subdir invocation for target.
 robot_controllers/robbie_stability/CMakeFiles/robbie_stability_generate_messages.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/moyin/dev/autonomous_controllers/build/CMakeFiles 4
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/moyin/dev/autonomous_controllers/build/CMakeFiles 10
 	$(MAKE) -f CMakeFiles/Makefile2 robot_controllers/robbie_stability/CMakeFiles/robbie_stability_generate_messages.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/moyin/dev/autonomous_controllers/build/CMakeFiles 0
 .PHONY : robot_controllers/robbie_stability/CMakeFiles/robbie_stability_generate_messages.dir/rule
@@ -2205,39 +2359,66 @@ clean: robot_controllers/robbie_stability/CMakeFiles/_robbie_stability_generate_
 .PHONY : clean
 
 #=============================================================================
-# Target rules for target robot_controllers/robbie_stability/CMakeFiles/robbie_stability_ex.dir
+# Target rules for target robot_controllers/robbie_stability/CMakeFiles/robbie_stability_genpy.dir
 
 # All Build rule for target.
-robot_controllers/robbie_stability/CMakeFiles/robbie_stability_ex.dir/all:
-	$(MAKE) -f robot_controllers/robbie_stability/CMakeFiles/robbie_stability_ex.dir/build.make robot_controllers/robbie_stability/CMakeFiles/robbie_stability_ex.dir/depend
-	$(MAKE) -f robot_controllers/robbie_stability/CMakeFiles/robbie_stability_ex.dir/build.make robot_controllers/robbie_stability/CMakeFiles/robbie_stability_ex.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/moyin/dev/autonomous_controllers/build/CMakeFiles --progress-num=15,16 "Built target robbie_stability_ex"
-.PHONY : robot_controllers/robbie_stability/CMakeFiles/robbie_stability_ex.dir/all
-
-# Include target in all.
-all: robot_controllers/robbie_stability/CMakeFiles/robbie_stability_ex.dir/all
-
-.PHONY : all
+robot_controllers/robbie_stability/CMakeFiles/robbie_stability_genpy.dir/all: robot_controllers/robbie_stability/CMakeFiles/robbie_stability_generate_messages_py.dir/all
+	$(MAKE) -f robot_controllers/robbie_stability/CMakeFiles/robbie_stability_genpy.dir/build.make robot_controllers/robbie_stability/CMakeFiles/robbie_stability_genpy.dir/depend
+	$(MAKE) -f robot_controllers/robbie_stability/CMakeFiles/robbie_stability_genpy.dir/build.make robot_controllers/robbie_stability/CMakeFiles/robbie_stability_genpy.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/moyin/dev/autonomous_controllers/build/CMakeFiles --progress-num= "Built target robbie_stability_genpy"
+.PHONY : robot_controllers/robbie_stability/CMakeFiles/robbie_stability_genpy.dir/all
 
 # Build rule for subdir invocation for target.
-robot_controllers/robbie_stability/CMakeFiles/robbie_stability_ex.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/moyin/dev/autonomous_controllers/build/CMakeFiles 2
-	$(MAKE) -f CMakeFiles/Makefile2 robot_controllers/robbie_stability/CMakeFiles/robbie_stability_ex.dir/all
+robot_controllers/robbie_stability/CMakeFiles/robbie_stability_genpy.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/moyin/dev/autonomous_controllers/build/CMakeFiles 4
+	$(MAKE) -f CMakeFiles/Makefile2 robot_controllers/robbie_stability/CMakeFiles/robbie_stability_genpy.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/moyin/dev/autonomous_controllers/build/CMakeFiles 0
-.PHONY : robot_controllers/robbie_stability/CMakeFiles/robbie_stability_ex.dir/rule
+.PHONY : robot_controllers/robbie_stability/CMakeFiles/robbie_stability_genpy.dir/rule
 
 # Convenience name for target.
-robbie_stability_ex: robot_controllers/robbie_stability/CMakeFiles/robbie_stability_ex.dir/rule
+robbie_stability_genpy: robot_controllers/robbie_stability/CMakeFiles/robbie_stability_genpy.dir/rule
 
-.PHONY : robbie_stability_ex
-
-# clean rule for target.
-robot_controllers/robbie_stability/CMakeFiles/robbie_stability_ex.dir/clean:
-	$(MAKE) -f robot_controllers/robbie_stability/CMakeFiles/robbie_stability_ex.dir/build.make robot_controllers/robbie_stability/CMakeFiles/robbie_stability_ex.dir/clean
-.PHONY : robot_controllers/robbie_stability/CMakeFiles/robbie_stability_ex.dir/clean
+.PHONY : robbie_stability_genpy
 
 # clean rule for target.
-clean: robot_controllers/robbie_stability/CMakeFiles/robbie_stability_ex.dir/clean
+robot_controllers/robbie_stability/CMakeFiles/robbie_stability_genpy.dir/clean:
+	$(MAKE) -f robot_controllers/robbie_stability/CMakeFiles/robbie_stability_genpy.dir/build.make robot_controllers/robbie_stability/CMakeFiles/robbie_stability_genpy.dir/clean
+.PHONY : robot_controllers/robbie_stability/CMakeFiles/robbie_stability_genpy.dir/clean
+
+# clean rule for target.
+clean: robot_controllers/robbie_stability/CMakeFiles/robbie_stability_genpy.dir/clean
+
+.PHONY : clean
+
+#=============================================================================
+# Target rules for target robot_controllers/robbie_stability/CMakeFiles/_robbie_stability_generate_messages_check_deps_LinkStatesStamped.dir
+
+# All Build rule for target.
+robot_controllers/robbie_stability/CMakeFiles/_robbie_stability_generate_messages_check_deps_LinkStatesStamped.dir/all:
+	$(MAKE) -f robot_controllers/robbie_stability/CMakeFiles/_robbie_stability_generate_messages_check_deps_LinkStatesStamped.dir/build.make robot_controllers/robbie_stability/CMakeFiles/_robbie_stability_generate_messages_check_deps_LinkStatesStamped.dir/depend
+	$(MAKE) -f robot_controllers/robbie_stability/CMakeFiles/_robbie_stability_generate_messages_check_deps_LinkStatesStamped.dir/build.make robot_controllers/robbie_stability/CMakeFiles/_robbie_stability_generate_messages_check_deps_LinkStatesStamped.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/moyin/dev/autonomous_controllers/build/CMakeFiles --progress-num= "Built target _robbie_stability_generate_messages_check_deps_LinkStatesStamped"
+.PHONY : robot_controllers/robbie_stability/CMakeFiles/_robbie_stability_generate_messages_check_deps_LinkStatesStamped.dir/all
+
+# Build rule for subdir invocation for target.
+robot_controllers/robbie_stability/CMakeFiles/_robbie_stability_generate_messages_check_deps_LinkStatesStamped.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/moyin/dev/autonomous_controllers/build/CMakeFiles 0
+	$(MAKE) -f CMakeFiles/Makefile2 robot_controllers/robbie_stability/CMakeFiles/_robbie_stability_generate_messages_check_deps_LinkStatesStamped.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/moyin/dev/autonomous_controllers/build/CMakeFiles 0
+.PHONY : robot_controllers/robbie_stability/CMakeFiles/_robbie_stability_generate_messages_check_deps_LinkStatesStamped.dir/rule
+
+# Convenience name for target.
+_robbie_stability_generate_messages_check_deps_LinkStatesStamped: robot_controllers/robbie_stability/CMakeFiles/_robbie_stability_generate_messages_check_deps_LinkStatesStamped.dir/rule
+
+.PHONY : _robbie_stability_generate_messages_check_deps_LinkStatesStamped
+
+# clean rule for target.
+robot_controllers/robbie_stability/CMakeFiles/_robbie_stability_generate_messages_check_deps_LinkStatesStamped.dir/clean:
+	$(MAKE) -f robot_controllers/robbie_stability/CMakeFiles/_robbie_stability_generate_messages_check_deps_LinkStatesStamped.dir/build.make robot_controllers/robbie_stability/CMakeFiles/_robbie_stability_generate_messages_check_deps_LinkStatesStamped.dir/clean
+.PHONY : robot_controllers/robbie_stability/CMakeFiles/_robbie_stability_generate_messages_check_deps_LinkStatesStamped.dir/clean
+
+# clean rule for target.
+clean: robot_controllers/robbie_stability/CMakeFiles/_robbie_stability_generate_messages_check_deps_LinkStatesStamped.dir/clean
 
 .PHONY : clean
 
@@ -2253,7 +2434,7 @@ robot_controllers/robbie_stability/CMakeFiles/robbie_stability_gencpp.dir/all: r
 
 # Build rule for subdir invocation for target.
 robot_controllers/robbie_stability/CMakeFiles/robbie_stability_gencpp.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/moyin/dev/autonomous_controllers/build/CMakeFiles 1
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/moyin/dev/autonomous_controllers/build/CMakeFiles 3
 	$(MAKE) -f CMakeFiles/Makefile2 robot_controllers/robbie_stability/CMakeFiles/robbie_stability_gencpp.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/moyin/dev/autonomous_controllers/build/CMakeFiles 0
 .PHONY : robot_controllers/robbie_stability/CMakeFiles/robbie_stability_gencpp.dir/rule
@@ -2277,15 +2458,20 @@ clean: robot_controllers/robbie_stability/CMakeFiles/robbie_stability_gencpp.dir
 # Target rules for target robot_controllers/robbie_stability/CMakeFiles/robbie_stability_generate_messages_lisp.dir
 
 # All Build rule for target.
+robot_controllers/robbie_stability/CMakeFiles/robbie_stability_generate_messages_lisp.dir/all: gazebo_sim/robbie_gazebo/CMakeFiles/geometry_msgs_generate_messages_lisp.dir/all
+robot_controllers/robbie_stability/CMakeFiles/robbie_stability_generate_messages_lisp.dir/all: gazebo_sim/robbie_gazebo/CMakeFiles/std_msgs_generate_messages_lisp.dir/all
+robot_controllers/robbie_stability/CMakeFiles/robbie_stability_generate_messages_lisp.dir/all: gazebo_sim/robbie_gazebo/CMakeFiles/gazebo_msgs_generate_messages_lisp.dir/all
 robot_controllers/robbie_stability/CMakeFiles/robbie_stability_generate_messages_lisp.dir/all: robot_controllers/robbie_stability/CMakeFiles/_robbie_stability_generate_messages_check_deps_Contact.dir/all
+robot_controllers/robbie_stability/CMakeFiles/robbie_stability_generate_messages_lisp.dir/all: robot_controllers/robbie_stability/CMakeFiles/_robbie_stability_generate_messages_check_deps_LinkStatesStamped.dir/all
+robot_controllers/robbie_stability/CMakeFiles/robbie_stability_generate_messages_lisp.dir/all: robot_controllers/robbie_stability/CMakeFiles/_robbie_stability_generate_messages_check_deps_ContactLinkStates.dir/all
 	$(MAKE) -f robot_controllers/robbie_stability/CMakeFiles/robbie_stability_generate_messages_lisp.dir/build.make robot_controllers/robbie_stability/CMakeFiles/robbie_stability_generate_messages_lisp.dir/depend
 	$(MAKE) -f robot_controllers/robbie_stability/CMakeFiles/robbie_stability_generate_messages_lisp.dir/build.make robot_controllers/robbie_stability/CMakeFiles/robbie_stability_generate_messages_lisp.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/moyin/dev/autonomous_controllers/build/CMakeFiles --progress-num=18 "Built target robbie_stability_generate_messages_lisp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/moyin/dev/autonomous_controllers/build/CMakeFiles --progress-num=31,32,33 "Built target robbie_stability_generate_messages_lisp"
 .PHONY : robot_controllers/robbie_stability/CMakeFiles/robbie_stability_generate_messages_lisp.dir/all
 
 # Build rule for subdir invocation for target.
 robot_controllers/robbie_stability/CMakeFiles/robbie_stability_generate_messages_lisp.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/moyin/dev/autonomous_controllers/build/CMakeFiles 1
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/moyin/dev/autonomous_controllers/build/CMakeFiles 3
 	$(MAKE) -f CMakeFiles/Makefile2 robot_controllers/robbie_stability/CMakeFiles/robbie_stability_generate_messages_lisp.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/moyin/dev/autonomous_controllers/build/CMakeFiles 0
 .PHONY : robot_controllers/robbie_stability/CMakeFiles/robbie_stability_generate_messages_lisp.dir/rule
@@ -2309,15 +2495,20 @@ clean: robot_controllers/robbie_stability/CMakeFiles/robbie_stability_generate_m
 # Target rules for target robot_controllers/robbie_stability/CMakeFiles/robbie_stability_generate_messages_cpp.dir
 
 # All Build rule for target.
+robot_controllers/robbie_stability/CMakeFiles/robbie_stability_generate_messages_cpp.dir/all: gazebo_sim/robbie_gazebo/CMakeFiles/gazebo_msgs_generate_messages_cpp.dir/all
+robot_controllers/robbie_stability/CMakeFiles/robbie_stability_generate_messages_cpp.dir/all: gazebo_sim/robbie_gazebo/CMakeFiles/std_msgs_generate_messages_cpp.dir/all
+robot_controllers/robbie_stability/CMakeFiles/robbie_stability_generate_messages_cpp.dir/all: gazebo_sim/robbie_gazebo/CMakeFiles/geometry_msgs_generate_messages_cpp.dir/all
 robot_controllers/robbie_stability/CMakeFiles/robbie_stability_generate_messages_cpp.dir/all: robot_controllers/robbie_stability/CMakeFiles/_robbie_stability_generate_messages_check_deps_Contact.dir/all
+robot_controllers/robbie_stability/CMakeFiles/robbie_stability_generate_messages_cpp.dir/all: robot_controllers/robbie_stability/CMakeFiles/_robbie_stability_generate_messages_check_deps_LinkStatesStamped.dir/all
+robot_controllers/robbie_stability/CMakeFiles/robbie_stability_generate_messages_cpp.dir/all: robot_controllers/robbie_stability/CMakeFiles/_robbie_stability_generate_messages_check_deps_ContactLinkStates.dir/all
 	$(MAKE) -f robot_controllers/robbie_stability/CMakeFiles/robbie_stability_generate_messages_cpp.dir/build.make robot_controllers/robbie_stability/CMakeFiles/robbie_stability_generate_messages_cpp.dir/depend
 	$(MAKE) -f robot_controllers/robbie_stability/CMakeFiles/robbie_stability_generate_messages_cpp.dir/build.make robot_controllers/robbie_stability/CMakeFiles/robbie_stability_generate_messages_cpp.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/moyin/dev/autonomous_controllers/build/CMakeFiles --progress-num=17 "Built target robbie_stability_generate_messages_cpp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/moyin/dev/autonomous_controllers/build/CMakeFiles --progress-num=28,29,30 "Built target robbie_stability_generate_messages_cpp"
 .PHONY : robot_controllers/robbie_stability/CMakeFiles/robbie_stability_generate_messages_cpp.dir/all
 
 # Build rule for subdir invocation for target.
 robot_controllers/robbie_stability/CMakeFiles/robbie_stability_generate_messages_cpp.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/moyin/dev/autonomous_controllers/build/CMakeFiles 1
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/moyin/dev/autonomous_controllers/build/CMakeFiles 3
 	$(MAKE) -f CMakeFiles/Makefile2 robot_controllers/robbie_stability/CMakeFiles/robbie_stability_generate_messages_cpp.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/moyin/dev/autonomous_controllers/build/CMakeFiles 0
 .PHONY : robot_controllers/robbie_stability/CMakeFiles/robbie_stability_generate_messages_cpp.dir/rule
@@ -2349,7 +2540,7 @@ robot_controllers/robbie_stability/CMakeFiles/robbie_stability_genlisp.dir/all: 
 
 # Build rule for subdir invocation for target.
 robot_controllers/robbie_stability/CMakeFiles/robbie_stability_genlisp.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/moyin/dev/autonomous_controllers/build/CMakeFiles 1
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/moyin/dev/autonomous_controllers/build/CMakeFiles 3
 	$(MAKE) -f CMakeFiles/Makefile2 robot_controllers/robbie_stability/CMakeFiles/robbie_stability_genlisp.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/moyin/dev/autonomous_controllers/build/CMakeFiles 0
 .PHONY : robot_controllers/robbie_stability/CMakeFiles/robbie_stability_genlisp.dir/rule
@@ -2370,18 +2561,55 @@ clean: robot_controllers/robbie_stability/CMakeFiles/robbie_stability_genlisp.di
 .PHONY : clean
 
 #=============================================================================
+# Target rules for target robot_controllers/robbie_stability/CMakeFiles/_robbie_stability_generate_messages_check_deps_ContactLinkStates.dir
+
+# All Build rule for target.
+robot_controllers/robbie_stability/CMakeFiles/_robbie_stability_generate_messages_check_deps_ContactLinkStates.dir/all:
+	$(MAKE) -f robot_controllers/robbie_stability/CMakeFiles/_robbie_stability_generate_messages_check_deps_ContactLinkStates.dir/build.make robot_controllers/robbie_stability/CMakeFiles/_robbie_stability_generate_messages_check_deps_ContactLinkStates.dir/depend
+	$(MAKE) -f robot_controllers/robbie_stability/CMakeFiles/_robbie_stability_generate_messages_check_deps_ContactLinkStates.dir/build.make robot_controllers/robbie_stability/CMakeFiles/_robbie_stability_generate_messages_check_deps_ContactLinkStates.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/moyin/dev/autonomous_controllers/build/CMakeFiles --progress-num= "Built target _robbie_stability_generate_messages_check_deps_ContactLinkStates"
+.PHONY : robot_controllers/robbie_stability/CMakeFiles/_robbie_stability_generate_messages_check_deps_ContactLinkStates.dir/all
+
+# Build rule for subdir invocation for target.
+robot_controllers/robbie_stability/CMakeFiles/_robbie_stability_generate_messages_check_deps_ContactLinkStates.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/moyin/dev/autonomous_controllers/build/CMakeFiles 0
+	$(MAKE) -f CMakeFiles/Makefile2 robot_controllers/robbie_stability/CMakeFiles/_robbie_stability_generate_messages_check_deps_ContactLinkStates.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/moyin/dev/autonomous_controllers/build/CMakeFiles 0
+.PHONY : robot_controllers/robbie_stability/CMakeFiles/_robbie_stability_generate_messages_check_deps_ContactLinkStates.dir/rule
+
+# Convenience name for target.
+_robbie_stability_generate_messages_check_deps_ContactLinkStates: robot_controllers/robbie_stability/CMakeFiles/_robbie_stability_generate_messages_check_deps_ContactLinkStates.dir/rule
+
+.PHONY : _robbie_stability_generate_messages_check_deps_ContactLinkStates
+
+# clean rule for target.
+robot_controllers/robbie_stability/CMakeFiles/_robbie_stability_generate_messages_check_deps_ContactLinkStates.dir/clean:
+	$(MAKE) -f robot_controllers/robbie_stability/CMakeFiles/_robbie_stability_generate_messages_check_deps_ContactLinkStates.dir/build.make robot_controllers/robbie_stability/CMakeFiles/_robbie_stability_generate_messages_check_deps_ContactLinkStates.dir/clean
+.PHONY : robot_controllers/robbie_stability/CMakeFiles/_robbie_stability_generate_messages_check_deps_ContactLinkStates.dir/clean
+
+# clean rule for target.
+clean: robot_controllers/robbie_stability/CMakeFiles/_robbie_stability_generate_messages_check_deps_ContactLinkStates.dir/clean
+
+.PHONY : clean
+
+#=============================================================================
 # Target rules for target robot_controllers/robbie_stability/CMakeFiles/robbie_stability_generate_messages_py.dir
 
 # All Build rule for target.
+robot_controllers/robbie_stability/CMakeFiles/robbie_stability_generate_messages_py.dir/all: gazebo_sim/robbie_gazebo/CMakeFiles/geometry_msgs_generate_messages_py.dir/all
+robot_controllers/robbie_stability/CMakeFiles/robbie_stability_generate_messages_py.dir/all: gazebo_sim/robbie_gazebo/CMakeFiles/gazebo_msgs_generate_messages_py.dir/all
+robot_controllers/robbie_stability/CMakeFiles/robbie_stability_generate_messages_py.dir/all: gazebo_sim/robbie_gazebo/CMakeFiles/std_msgs_generate_messages_py.dir/all
 robot_controllers/robbie_stability/CMakeFiles/robbie_stability_generate_messages_py.dir/all: robot_controllers/robbie_stability/CMakeFiles/_robbie_stability_generate_messages_check_deps_Contact.dir/all
+robot_controllers/robbie_stability/CMakeFiles/robbie_stability_generate_messages_py.dir/all: robot_controllers/robbie_stability/CMakeFiles/_robbie_stability_generate_messages_check_deps_LinkStatesStamped.dir/all
+robot_controllers/robbie_stability/CMakeFiles/robbie_stability_generate_messages_py.dir/all: robot_controllers/robbie_stability/CMakeFiles/_robbie_stability_generate_messages_check_deps_ContactLinkStates.dir/all
 	$(MAKE) -f robot_controllers/robbie_stability/CMakeFiles/robbie_stability_generate_messages_py.dir/build.make robot_controllers/robbie_stability/CMakeFiles/robbie_stability_generate_messages_py.dir/depend
 	$(MAKE) -f robot_controllers/robbie_stability/CMakeFiles/robbie_stability_generate_messages_py.dir/build.make robot_controllers/robbie_stability/CMakeFiles/robbie_stability_generate_messages_py.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/moyin/dev/autonomous_controllers/build/CMakeFiles --progress-num=19,20 "Built target robbie_stability_generate_messages_py"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/moyin/dev/autonomous_controllers/build/CMakeFiles --progress-num=34,35,36,37 "Built target robbie_stability_generate_messages_py"
 .PHONY : robot_controllers/robbie_stability/CMakeFiles/robbie_stability_generate_messages_py.dir/all
 
 # Build rule for subdir invocation for target.
 robot_controllers/robbie_stability/CMakeFiles/robbie_stability_generate_messages_py.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/moyin/dev/autonomous_controllers/build/CMakeFiles 2
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/moyin/dev/autonomous_controllers/build/CMakeFiles 4
 	$(MAKE) -f CMakeFiles/Makefile2 robot_controllers/robbie_stability/CMakeFiles/robbie_stability_generate_messages_py.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/moyin/dev/autonomous_controllers/build/CMakeFiles 0
 .PHONY : robot_controllers/robbie_stability/CMakeFiles/robbie_stability_generate_messages_py.dir/rule
@@ -2402,93 +2630,42 @@ clean: robot_controllers/robbie_stability/CMakeFiles/robbie_stability_generate_m
 .PHONY : clean
 
 #=============================================================================
-# Target rules for target robot_controllers/robbie_stability/CMakeFiles/robbie_stability_genpy.dir
-
-# All Build rule for target.
-robot_controllers/robbie_stability/CMakeFiles/robbie_stability_genpy.dir/all: robot_controllers/robbie_stability/CMakeFiles/robbie_stability_generate_messages_py.dir/all
-	$(MAKE) -f robot_controllers/robbie_stability/CMakeFiles/robbie_stability_genpy.dir/build.make robot_controllers/robbie_stability/CMakeFiles/robbie_stability_genpy.dir/depend
-	$(MAKE) -f robot_controllers/robbie_stability/CMakeFiles/robbie_stability_genpy.dir/build.make robot_controllers/robbie_stability/CMakeFiles/robbie_stability_genpy.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/moyin/dev/autonomous_controllers/build/CMakeFiles --progress-num= "Built target robbie_stability_genpy"
-.PHONY : robot_controllers/robbie_stability/CMakeFiles/robbie_stability_genpy.dir/all
-
-# Build rule for subdir invocation for target.
-robot_controllers/robbie_stability/CMakeFiles/robbie_stability_genpy.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/moyin/dev/autonomous_controllers/build/CMakeFiles 2
-	$(MAKE) -f CMakeFiles/Makefile2 robot_controllers/robbie_stability/CMakeFiles/robbie_stability_genpy.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/moyin/dev/autonomous_controllers/build/CMakeFiles 0
-.PHONY : robot_controllers/robbie_stability/CMakeFiles/robbie_stability_genpy.dir/rule
-
-# Convenience name for target.
-robbie_stability_genpy: robot_controllers/robbie_stability/CMakeFiles/robbie_stability_genpy.dir/rule
-
-.PHONY : robbie_stability_genpy
-
-# clean rule for target.
-robot_controllers/robbie_stability/CMakeFiles/robbie_stability_genpy.dir/clean:
-	$(MAKE) -f robot_controllers/robbie_stability/CMakeFiles/robbie_stability_genpy.dir/build.make robot_controllers/robbie_stability/CMakeFiles/robbie_stability_genpy.dir/clean
-.PHONY : robot_controllers/robbie_stability/CMakeFiles/robbie_stability_genpy.dir/clean
-
-# clean rule for target.
-clean: robot_controllers/robbie_stability/CMakeFiles/robbie_stability_genpy.dir/clean
-
-.PHONY : clean
-
-#=============================================================================
-# Target rules for target robot_controllers/robbie_stability/CMakeFiles/robbie_contact_ex.dir
-
-# All Build rule for target.
-robot_controllers/robbie_stability/CMakeFiles/robbie_contact_ex.dir/all:
-	$(MAKE) -f robot_controllers/robbie_stability/CMakeFiles/robbie_contact_ex.dir/build.make robot_controllers/robbie_stability/CMakeFiles/robbie_contact_ex.dir/depend
-	$(MAKE) -f robot_controllers/robbie_stability/CMakeFiles/robbie_contact_ex.dir/build.make robot_controllers/robbie_stability/CMakeFiles/robbie_contact_ex.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/moyin/dev/autonomous_controllers/build/CMakeFiles --progress-num=13,14 "Built target robbie_contact_ex"
-.PHONY : robot_controllers/robbie_stability/CMakeFiles/robbie_contact_ex.dir/all
-
-# Include target in all.
-all: robot_controllers/robbie_stability/CMakeFiles/robbie_contact_ex.dir/all
-
-.PHONY : all
-
-# Build rule for subdir invocation for target.
-robot_controllers/robbie_stability/CMakeFiles/robbie_contact_ex.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/moyin/dev/autonomous_controllers/build/CMakeFiles 2
-	$(MAKE) -f CMakeFiles/Makefile2 robot_controllers/robbie_stability/CMakeFiles/robbie_contact_ex.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/moyin/dev/autonomous_controllers/build/CMakeFiles 0
-.PHONY : robot_controllers/robbie_stability/CMakeFiles/robbie_contact_ex.dir/rule
-
-# Convenience name for target.
-robbie_contact_ex: robot_controllers/robbie_stability/CMakeFiles/robbie_contact_ex.dir/rule
-
-.PHONY : robbie_contact_ex
-
-# clean rule for target.
-robot_controllers/robbie_stability/CMakeFiles/robbie_contact_ex.dir/clean:
-	$(MAKE) -f robot_controllers/robbie_stability/CMakeFiles/robbie_contact_ex.dir/build.make robot_controllers/robbie_stability/CMakeFiles/robbie_contact_ex.dir/clean
-.PHONY : robot_controllers/robbie_stability/CMakeFiles/robbie_contact_ex.dir/clean
-
-# clean rule for target.
-clean: robot_controllers/robbie_stability/CMakeFiles/robbie_contact_ex.dir/clean
-
-.PHONY : clean
-
-#=============================================================================
 # Directory level rules for directory robot_controllers/robbie_auto
 
 # Convenience name for "all" pass in the directory.
-robot_controllers/robbie_auto/all: robot_controllers/robbie_auto/CMakeFiles/robbie_auto_generate_messages.dir/all
+robot_controllers/robbie_auto/all: robot_controllers/robbie_auto/CMakeFiles/kinect_processor.dir/all
+robot_controllers/robbie_auto/all: robot_controllers/robbie_auto/CMakeFiles/laser_to_pointcloud.dir/all
 robot_controllers/robbie_auto/all: robot_controllers/robbie_auto/CMakeFiles/height_publisher.dir/all
+robot_controllers/robbie_auto/all: robot_controllers/robbie_auto/CMakeFiles/robbie_auto_generate_messages.dir/all
 
 .PHONY : robot_controllers/robbie_auto/all
 
 # Convenience name for "clean" pass in the directory.
-robot_controllers/robbie_auto/clean: robot_controllers/robbie_auto/CMakeFiles/_robbie_auto_generate_messages_check_deps_Contact.dir/clean
-robot_controllers/robbie_auto/clean: robot_controllers/robbie_auto/CMakeFiles/robbie_auto_genpy.dir/clean
-robot_controllers/robbie_auto/clean: robot_controllers/robbie_auto/CMakeFiles/robbie_auto_generate_messages.dir/clean
+robot_controllers/robbie_auto/clean: robot_controllers/robbie_auto/CMakeFiles/kinect_processor.dir/clean
+robot_controllers/robbie_auto/clean: robot_controllers/robbie_auto/CMakeFiles/laser_to_pointcloud.dir/clean
 robot_controllers/robbie_auto/clean: robot_controllers/robbie_auto/CMakeFiles/height_publisher.dir/clean
-robot_controllers/robbie_auto/clean: robot_controllers/robbie_auto/CMakeFiles/robbie_auto_generate_messages_cpp.dir/clean
-robot_controllers/robbie_auto/clean: robot_controllers/robbie_auto/CMakeFiles/robbie_auto_gencpp.dir/clean
+robot_controllers/robbie_auto/clean: robot_controllers/robbie_auto/CMakeFiles/pcl_msgs_generate_messages_py.dir/clean
+robot_controllers/robbie_auto/clean: robot_controllers/robbie_auto/CMakeFiles/pcl_msgs_generate_messages_lisp.dir/clean
 robot_controllers/robbie_auto/clean: robot_controllers/robbie_auto/CMakeFiles/robbie_auto_generate_messages_lisp.dir/clean
+robot_controllers/robbie_auto/clean: robot_controllers/robbie_auto/CMakeFiles/_robbie_auto_generate_messages_check_deps_Contact.dir/clean
+robot_controllers/robbie_auto/clean: robot_controllers/robbie_auto/CMakeFiles/pcl_msgs_generate_messages_cpp.dir/clean
+robot_controllers/robbie_auto/clean: robot_controllers/robbie_auto/CMakeFiles/bond_generate_messages_lisp.dir/clean
+robot_controllers/robbie_auto/clean: robot_controllers/robbie_auto/CMakeFiles/bond_generate_messages_cpp.dir/clean
+robot_controllers/robbie_auto/clean: robot_controllers/robbie_auto/CMakeFiles/nodelet_generate_messages_py.dir/clean
+robot_controllers/robbie_auto/clean: robot_controllers/robbie_auto/CMakeFiles/nodelet_generate_messages_cpp.dir/clean
+robot_controllers/robbie_auto/clean: robot_controllers/robbie_auto/CMakeFiles/_robbie_auto_generate_messages_check_deps_Script.dir/clean
+robot_controllers/robbie_auto/clean: robot_controllers/robbie_auto/CMakeFiles/bond_generate_messages_py.dir/clean
+robot_controllers/robbie_auto/clean: robot_controllers/robbie_auto/CMakeFiles/pcl_ros_gencfg.dir/clean
+robot_controllers/robbie_auto/clean: robot_controllers/robbie_auto/CMakeFiles/robbie_auto_gencpp.dir/clean
+robot_controllers/robbie_auto/clean: robot_controllers/robbie_auto/CMakeFiles/topic_tools_generate_messages_cpp.dir/clean
+robot_controllers/robbie_auto/clean: robot_controllers/robbie_auto/CMakeFiles/topic_tools_generate_messages_lisp.dir/clean
+robot_controllers/robbie_auto/clean: robot_controllers/robbie_auto/CMakeFiles/topic_tools_generate_messages_py.dir/clean
+robot_controllers/robbie_auto/clean: robot_controllers/robbie_auto/CMakeFiles/robbie_auto_generate_messages.dir/clean
+robot_controllers/robbie_auto/clean: robot_controllers/robbie_auto/CMakeFiles/nodelet_generate_messages_lisp.dir/clean
+robot_controllers/robbie_auto/clean: robot_controllers/robbie_auto/CMakeFiles/robbie_auto_generate_messages_cpp.dir/clean
 robot_controllers/robbie_auto/clean: robot_controllers/robbie_auto/CMakeFiles/robbie_auto_genlisp.dir/clean
 robot_controllers/robbie_auto/clean: robot_controllers/robbie_auto/CMakeFiles/robbie_auto_generate_messages_py.dir/clean
+robot_controllers/robbie_auto/clean: robot_controllers/robbie_auto/CMakeFiles/robbie_auto_genpy.dir/clean
 
 .PHONY : robot_controllers/robbie_auto/clean
 
@@ -2498,105 +2675,76 @@ robot_controllers/robbie_auto/preinstall:
 .PHONY : robot_controllers/robbie_auto/preinstall
 
 #=============================================================================
-# Target rules for target robot_controllers/robbie_auto/CMakeFiles/_robbie_auto_generate_messages_check_deps_Contact.dir
+# Target rules for target robot_controllers/robbie_auto/CMakeFiles/kinect_processor.dir
 
 # All Build rule for target.
-robot_controllers/robbie_auto/CMakeFiles/_robbie_auto_generate_messages_check_deps_Contact.dir/all:
-	$(MAKE) -f robot_controllers/robbie_auto/CMakeFiles/_robbie_auto_generate_messages_check_deps_Contact.dir/build.make robot_controllers/robbie_auto/CMakeFiles/_robbie_auto_generate_messages_check_deps_Contact.dir/depend
-	$(MAKE) -f robot_controllers/robbie_auto/CMakeFiles/_robbie_auto_generate_messages_check_deps_Contact.dir/build.make robot_controllers/robbie_auto/CMakeFiles/_robbie_auto_generate_messages_check_deps_Contact.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/moyin/dev/autonomous_controllers/build/CMakeFiles --progress-num= "Built target _robbie_auto_generate_messages_check_deps_Contact"
-.PHONY : robot_controllers/robbie_auto/CMakeFiles/_robbie_auto_generate_messages_check_deps_Contact.dir/all
-
-# Build rule for subdir invocation for target.
-robot_controllers/robbie_auto/CMakeFiles/_robbie_auto_generate_messages_check_deps_Contact.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/moyin/dev/autonomous_controllers/build/CMakeFiles 0
-	$(MAKE) -f CMakeFiles/Makefile2 robot_controllers/robbie_auto/CMakeFiles/_robbie_auto_generate_messages_check_deps_Contact.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/moyin/dev/autonomous_controllers/build/CMakeFiles 0
-.PHONY : robot_controllers/robbie_auto/CMakeFiles/_robbie_auto_generate_messages_check_deps_Contact.dir/rule
-
-# Convenience name for target.
-_robbie_auto_generate_messages_check_deps_Contact: robot_controllers/robbie_auto/CMakeFiles/_robbie_auto_generate_messages_check_deps_Contact.dir/rule
-
-.PHONY : _robbie_auto_generate_messages_check_deps_Contact
-
-# clean rule for target.
-robot_controllers/robbie_auto/CMakeFiles/_robbie_auto_generate_messages_check_deps_Contact.dir/clean:
-	$(MAKE) -f robot_controllers/robbie_auto/CMakeFiles/_robbie_auto_generate_messages_check_deps_Contact.dir/build.make robot_controllers/robbie_auto/CMakeFiles/_robbie_auto_generate_messages_check_deps_Contact.dir/clean
-.PHONY : robot_controllers/robbie_auto/CMakeFiles/_robbie_auto_generate_messages_check_deps_Contact.dir/clean
-
-# clean rule for target.
-clean: robot_controllers/robbie_auto/CMakeFiles/_robbie_auto_generate_messages_check_deps_Contact.dir/clean
-
-.PHONY : clean
-
-#=============================================================================
-# Target rules for target robot_controllers/robbie_auto/CMakeFiles/robbie_auto_genpy.dir
-
-# All Build rule for target.
-robot_controllers/robbie_auto/CMakeFiles/robbie_auto_genpy.dir/all: robot_controllers/robbie_auto/CMakeFiles/robbie_auto_generate_messages_py.dir/all
-	$(MAKE) -f robot_controllers/robbie_auto/CMakeFiles/robbie_auto_genpy.dir/build.make robot_controllers/robbie_auto/CMakeFiles/robbie_auto_genpy.dir/depend
-	$(MAKE) -f robot_controllers/robbie_auto/CMakeFiles/robbie_auto_genpy.dir/build.make robot_controllers/robbie_auto/CMakeFiles/robbie_auto_genpy.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/moyin/dev/autonomous_controllers/build/CMakeFiles --progress-num= "Built target robbie_auto_genpy"
-.PHONY : robot_controllers/robbie_auto/CMakeFiles/robbie_auto_genpy.dir/all
-
-# Build rule for subdir invocation for target.
-robot_controllers/robbie_auto/CMakeFiles/robbie_auto_genpy.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/moyin/dev/autonomous_controllers/build/CMakeFiles 2
-	$(MAKE) -f CMakeFiles/Makefile2 robot_controllers/robbie_auto/CMakeFiles/robbie_auto_genpy.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/moyin/dev/autonomous_controllers/build/CMakeFiles 0
-.PHONY : robot_controllers/robbie_auto/CMakeFiles/robbie_auto_genpy.dir/rule
-
-# Convenience name for target.
-robbie_auto_genpy: robot_controllers/robbie_auto/CMakeFiles/robbie_auto_genpy.dir/rule
-
-.PHONY : robbie_auto_genpy
-
-# clean rule for target.
-robot_controllers/robbie_auto/CMakeFiles/robbie_auto_genpy.dir/clean:
-	$(MAKE) -f robot_controllers/robbie_auto/CMakeFiles/robbie_auto_genpy.dir/build.make robot_controllers/robbie_auto/CMakeFiles/robbie_auto_genpy.dir/clean
-.PHONY : robot_controllers/robbie_auto/CMakeFiles/robbie_auto_genpy.dir/clean
-
-# clean rule for target.
-clean: robot_controllers/robbie_auto/CMakeFiles/robbie_auto_genpy.dir/clean
-
-.PHONY : clean
-
-#=============================================================================
-# Target rules for target robot_controllers/robbie_auto/CMakeFiles/robbie_auto_generate_messages.dir
-
-# All Build rule for target.
-robot_controllers/robbie_auto/CMakeFiles/robbie_auto_generate_messages.dir/all: robot_controllers/robbie_auto/CMakeFiles/robbie_auto_generate_messages_cpp.dir/all
-robot_controllers/robbie_auto/CMakeFiles/robbie_auto_generate_messages.dir/all: robot_controllers/robbie_auto/CMakeFiles/robbie_auto_generate_messages_lisp.dir/all
-robot_controllers/robbie_auto/CMakeFiles/robbie_auto_generate_messages.dir/all: robot_controllers/robbie_auto/CMakeFiles/robbie_auto_generate_messages_py.dir/all
-	$(MAKE) -f robot_controllers/robbie_auto/CMakeFiles/robbie_auto_generate_messages.dir/build.make robot_controllers/robbie_auto/CMakeFiles/robbie_auto_generate_messages.dir/depend
-	$(MAKE) -f robot_controllers/robbie_auto/CMakeFiles/robbie_auto_generate_messages.dir/build.make robot_controllers/robbie_auto/CMakeFiles/robbie_auto_generate_messages.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/moyin/dev/autonomous_controllers/build/CMakeFiles --progress-num= "Built target robbie_auto_generate_messages"
-.PHONY : robot_controllers/robbie_auto/CMakeFiles/robbie_auto_generate_messages.dir/all
+robot_controllers/robbie_auto/CMakeFiles/kinect_processor.dir/all:
+	$(MAKE) -f robot_controllers/robbie_auto/CMakeFiles/kinect_processor.dir/build.make robot_controllers/robbie_auto/CMakeFiles/kinect_processor.dir/depend
+	$(MAKE) -f robot_controllers/robbie_auto/CMakeFiles/kinect_processor.dir/build.make robot_controllers/robbie_auto/CMakeFiles/kinect_processor.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/moyin/dev/autonomous_controllers/build/CMakeFiles --progress-num=9,10 "Built target kinect_processor"
+.PHONY : robot_controllers/robbie_auto/CMakeFiles/kinect_processor.dir/all
 
 # Include target in all.
-all: robot_controllers/robbie_auto/CMakeFiles/robbie_auto_generate_messages.dir/all
+all: robot_controllers/robbie_auto/CMakeFiles/kinect_processor.dir/all
 
 .PHONY : all
 
 # Build rule for subdir invocation for target.
-robot_controllers/robbie_auto/CMakeFiles/robbie_auto_generate_messages.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/moyin/dev/autonomous_controllers/build/CMakeFiles 4
-	$(MAKE) -f CMakeFiles/Makefile2 robot_controllers/robbie_auto/CMakeFiles/robbie_auto_generate_messages.dir/all
+robot_controllers/robbie_auto/CMakeFiles/kinect_processor.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/moyin/dev/autonomous_controllers/build/CMakeFiles 2
+	$(MAKE) -f CMakeFiles/Makefile2 robot_controllers/robbie_auto/CMakeFiles/kinect_processor.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/moyin/dev/autonomous_controllers/build/CMakeFiles 0
-.PHONY : robot_controllers/robbie_auto/CMakeFiles/robbie_auto_generate_messages.dir/rule
+.PHONY : robot_controllers/robbie_auto/CMakeFiles/kinect_processor.dir/rule
 
 # Convenience name for target.
-robbie_auto_generate_messages: robot_controllers/robbie_auto/CMakeFiles/robbie_auto_generate_messages.dir/rule
+kinect_processor: robot_controllers/robbie_auto/CMakeFiles/kinect_processor.dir/rule
 
-.PHONY : robbie_auto_generate_messages
-
-# clean rule for target.
-robot_controllers/robbie_auto/CMakeFiles/robbie_auto_generate_messages.dir/clean:
-	$(MAKE) -f robot_controllers/robbie_auto/CMakeFiles/robbie_auto_generate_messages.dir/build.make robot_controllers/robbie_auto/CMakeFiles/robbie_auto_generate_messages.dir/clean
-.PHONY : robot_controllers/robbie_auto/CMakeFiles/robbie_auto_generate_messages.dir/clean
+.PHONY : kinect_processor
 
 # clean rule for target.
-clean: robot_controllers/robbie_auto/CMakeFiles/robbie_auto_generate_messages.dir/clean
+robot_controllers/robbie_auto/CMakeFiles/kinect_processor.dir/clean:
+	$(MAKE) -f robot_controllers/robbie_auto/CMakeFiles/kinect_processor.dir/build.make robot_controllers/robbie_auto/CMakeFiles/kinect_processor.dir/clean
+.PHONY : robot_controllers/robbie_auto/CMakeFiles/kinect_processor.dir/clean
+
+# clean rule for target.
+clean: robot_controllers/robbie_auto/CMakeFiles/kinect_processor.dir/clean
+
+.PHONY : clean
+
+#=============================================================================
+# Target rules for target robot_controllers/robbie_auto/CMakeFiles/laser_to_pointcloud.dir
+
+# All Build rule for target.
+robot_controllers/robbie_auto/CMakeFiles/laser_to_pointcloud.dir/all:
+	$(MAKE) -f robot_controllers/robbie_auto/CMakeFiles/laser_to_pointcloud.dir/build.make robot_controllers/robbie_auto/CMakeFiles/laser_to_pointcloud.dir/depend
+	$(MAKE) -f robot_controllers/robbie_auto/CMakeFiles/laser_to_pointcloud.dir/build.make robot_controllers/robbie_auto/CMakeFiles/laser_to_pointcloud.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/moyin/dev/autonomous_controllers/build/CMakeFiles --progress-num=11,12 "Built target laser_to_pointcloud"
+.PHONY : robot_controllers/robbie_auto/CMakeFiles/laser_to_pointcloud.dir/all
+
+# Include target in all.
+all: robot_controllers/robbie_auto/CMakeFiles/laser_to_pointcloud.dir/all
+
+.PHONY : all
+
+# Build rule for subdir invocation for target.
+robot_controllers/robbie_auto/CMakeFiles/laser_to_pointcloud.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/moyin/dev/autonomous_controllers/build/CMakeFiles 2
+	$(MAKE) -f CMakeFiles/Makefile2 robot_controllers/robbie_auto/CMakeFiles/laser_to_pointcloud.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/moyin/dev/autonomous_controllers/build/CMakeFiles 0
+.PHONY : robot_controllers/robbie_auto/CMakeFiles/laser_to_pointcloud.dir/rule
+
+# Convenience name for target.
+laser_to_pointcloud: robot_controllers/robbie_auto/CMakeFiles/laser_to_pointcloud.dir/rule
+
+.PHONY : laser_to_pointcloud
+
+# clean rule for target.
+robot_controllers/robbie_auto/CMakeFiles/laser_to_pointcloud.dir/clean:
+	$(MAKE) -f robot_controllers/robbie_auto/CMakeFiles/laser_to_pointcloud.dir/build.make robot_controllers/robbie_auto/CMakeFiles/laser_to_pointcloud.dir/clean
+.PHONY : robot_controllers/robbie_auto/CMakeFiles/laser_to_pointcloud.dir/clean
+
+# clean rule for target.
+clean: robot_controllers/robbie_auto/CMakeFiles/laser_to_pointcloud.dir/clean
 
 .PHONY : clean
 
@@ -2638,66 +2786,66 @@ clean: robot_controllers/robbie_auto/CMakeFiles/height_publisher.dir/clean
 .PHONY : clean
 
 #=============================================================================
-# Target rules for target robot_controllers/robbie_auto/CMakeFiles/robbie_auto_generate_messages_cpp.dir
+# Target rules for target robot_controllers/robbie_auto/CMakeFiles/pcl_msgs_generate_messages_py.dir
 
 # All Build rule for target.
-robot_controllers/robbie_auto/CMakeFiles/robbie_auto_generate_messages_cpp.dir/all: robot_controllers/robbie_auto/CMakeFiles/_robbie_auto_generate_messages_check_deps_Contact.dir/all
-	$(MAKE) -f robot_controllers/robbie_auto/CMakeFiles/robbie_auto_generate_messages_cpp.dir/build.make robot_controllers/robbie_auto/CMakeFiles/robbie_auto_generate_messages_cpp.dir/depend
-	$(MAKE) -f robot_controllers/robbie_auto/CMakeFiles/robbie_auto_generate_messages_cpp.dir/build.make robot_controllers/robbie_auto/CMakeFiles/robbie_auto_generate_messages_cpp.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/moyin/dev/autonomous_controllers/build/CMakeFiles --progress-num=9 "Built target robbie_auto_generate_messages_cpp"
-.PHONY : robot_controllers/robbie_auto/CMakeFiles/robbie_auto_generate_messages_cpp.dir/all
+robot_controllers/robbie_auto/CMakeFiles/pcl_msgs_generate_messages_py.dir/all:
+	$(MAKE) -f robot_controllers/robbie_auto/CMakeFiles/pcl_msgs_generate_messages_py.dir/build.make robot_controllers/robbie_auto/CMakeFiles/pcl_msgs_generate_messages_py.dir/depend
+	$(MAKE) -f robot_controllers/robbie_auto/CMakeFiles/pcl_msgs_generate_messages_py.dir/build.make robot_controllers/robbie_auto/CMakeFiles/pcl_msgs_generate_messages_py.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/moyin/dev/autonomous_controllers/build/CMakeFiles --progress-num= "Built target pcl_msgs_generate_messages_py"
+.PHONY : robot_controllers/robbie_auto/CMakeFiles/pcl_msgs_generate_messages_py.dir/all
 
 # Build rule for subdir invocation for target.
-robot_controllers/robbie_auto/CMakeFiles/robbie_auto_generate_messages_cpp.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/moyin/dev/autonomous_controllers/build/CMakeFiles 1
-	$(MAKE) -f CMakeFiles/Makefile2 robot_controllers/robbie_auto/CMakeFiles/robbie_auto_generate_messages_cpp.dir/all
+robot_controllers/robbie_auto/CMakeFiles/pcl_msgs_generate_messages_py.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/moyin/dev/autonomous_controllers/build/CMakeFiles 0
-.PHONY : robot_controllers/robbie_auto/CMakeFiles/robbie_auto_generate_messages_cpp.dir/rule
+	$(MAKE) -f CMakeFiles/Makefile2 robot_controllers/robbie_auto/CMakeFiles/pcl_msgs_generate_messages_py.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/moyin/dev/autonomous_controllers/build/CMakeFiles 0
+.PHONY : robot_controllers/robbie_auto/CMakeFiles/pcl_msgs_generate_messages_py.dir/rule
 
 # Convenience name for target.
-robbie_auto_generate_messages_cpp: robot_controllers/robbie_auto/CMakeFiles/robbie_auto_generate_messages_cpp.dir/rule
+pcl_msgs_generate_messages_py: robot_controllers/robbie_auto/CMakeFiles/pcl_msgs_generate_messages_py.dir/rule
 
-.PHONY : robbie_auto_generate_messages_cpp
-
-# clean rule for target.
-robot_controllers/robbie_auto/CMakeFiles/robbie_auto_generate_messages_cpp.dir/clean:
-	$(MAKE) -f robot_controllers/robbie_auto/CMakeFiles/robbie_auto_generate_messages_cpp.dir/build.make robot_controllers/robbie_auto/CMakeFiles/robbie_auto_generate_messages_cpp.dir/clean
-.PHONY : robot_controllers/robbie_auto/CMakeFiles/robbie_auto_generate_messages_cpp.dir/clean
+.PHONY : pcl_msgs_generate_messages_py
 
 # clean rule for target.
-clean: robot_controllers/robbie_auto/CMakeFiles/robbie_auto_generate_messages_cpp.dir/clean
+robot_controllers/robbie_auto/CMakeFiles/pcl_msgs_generate_messages_py.dir/clean:
+	$(MAKE) -f robot_controllers/robbie_auto/CMakeFiles/pcl_msgs_generate_messages_py.dir/build.make robot_controllers/robbie_auto/CMakeFiles/pcl_msgs_generate_messages_py.dir/clean
+.PHONY : robot_controllers/robbie_auto/CMakeFiles/pcl_msgs_generate_messages_py.dir/clean
+
+# clean rule for target.
+clean: robot_controllers/robbie_auto/CMakeFiles/pcl_msgs_generate_messages_py.dir/clean
 
 .PHONY : clean
 
 #=============================================================================
-# Target rules for target robot_controllers/robbie_auto/CMakeFiles/robbie_auto_gencpp.dir
+# Target rules for target robot_controllers/robbie_auto/CMakeFiles/pcl_msgs_generate_messages_lisp.dir
 
 # All Build rule for target.
-robot_controllers/robbie_auto/CMakeFiles/robbie_auto_gencpp.dir/all: robot_controllers/robbie_auto/CMakeFiles/robbie_auto_generate_messages_cpp.dir/all
-	$(MAKE) -f robot_controllers/robbie_auto/CMakeFiles/robbie_auto_gencpp.dir/build.make robot_controllers/robbie_auto/CMakeFiles/robbie_auto_gencpp.dir/depend
-	$(MAKE) -f robot_controllers/robbie_auto/CMakeFiles/robbie_auto_gencpp.dir/build.make robot_controllers/robbie_auto/CMakeFiles/robbie_auto_gencpp.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/moyin/dev/autonomous_controllers/build/CMakeFiles --progress-num= "Built target robbie_auto_gencpp"
-.PHONY : robot_controllers/robbie_auto/CMakeFiles/robbie_auto_gencpp.dir/all
+robot_controllers/robbie_auto/CMakeFiles/pcl_msgs_generate_messages_lisp.dir/all:
+	$(MAKE) -f robot_controllers/robbie_auto/CMakeFiles/pcl_msgs_generate_messages_lisp.dir/build.make robot_controllers/robbie_auto/CMakeFiles/pcl_msgs_generate_messages_lisp.dir/depend
+	$(MAKE) -f robot_controllers/robbie_auto/CMakeFiles/pcl_msgs_generate_messages_lisp.dir/build.make robot_controllers/robbie_auto/CMakeFiles/pcl_msgs_generate_messages_lisp.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/moyin/dev/autonomous_controllers/build/CMakeFiles --progress-num= "Built target pcl_msgs_generate_messages_lisp"
+.PHONY : robot_controllers/robbie_auto/CMakeFiles/pcl_msgs_generate_messages_lisp.dir/all
 
 # Build rule for subdir invocation for target.
-robot_controllers/robbie_auto/CMakeFiles/robbie_auto_gencpp.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/moyin/dev/autonomous_controllers/build/CMakeFiles 1
-	$(MAKE) -f CMakeFiles/Makefile2 robot_controllers/robbie_auto/CMakeFiles/robbie_auto_gencpp.dir/all
+robot_controllers/robbie_auto/CMakeFiles/pcl_msgs_generate_messages_lisp.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/moyin/dev/autonomous_controllers/build/CMakeFiles 0
-.PHONY : robot_controllers/robbie_auto/CMakeFiles/robbie_auto_gencpp.dir/rule
+	$(MAKE) -f CMakeFiles/Makefile2 robot_controllers/robbie_auto/CMakeFiles/pcl_msgs_generate_messages_lisp.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/moyin/dev/autonomous_controllers/build/CMakeFiles 0
+.PHONY : robot_controllers/robbie_auto/CMakeFiles/pcl_msgs_generate_messages_lisp.dir/rule
 
 # Convenience name for target.
-robbie_auto_gencpp: robot_controllers/robbie_auto/CMakeFiles/robbie_auto_gencpp.dir/rule
+pcl_msgs_generate_messages_lisp: robot_controllers/robbie_auto/CMakeFiles/pcl_msgs_generate_messages_lisp.dir/rule
 
-.PHONY : robbie_auto_gencpp
-
-# clean rule for target.
-robot_controllers/robbie_auto/CMakeFiles/robbie_auto_gencpp.dir/clean:
-	$(MAKE) -f robot_controllers/robbie_auto/CMakeFiles/robbie_auto_gencpp.dir/build.make robot_controllers/robbie_auto/CMakeFiles/robbie_auto_gencpp.dir/clean
-.PHONY : robot_controllers/robbie_auto/CMakeFiles/robbie_auto_gencpp.dir/clean
+.PHONY : pcl_msgs_generate_messages_lisp
 
 # clean rule for target.
-clean: robot_controllers/robbie_auto/CMakeFiles/robbie_auto_gencpp.dir/clean
+robot_controllers/robbie_auto/CMakeFiles/pcl_msgs_generate_messages_lisp.dir/clean:
+	$(MAKE) -f robot_controllers/robbie_auto/CMakeFiles/pcl_msgs_generate_messages_lisp.dir/build.make robot_controllers/robbie_auto/CMakeFiles/pcl_msgs_generate_messages_lisp.dir/clean
+.PHONY : robot_controllers/robbie_auto/CMakeFiles/pcl_msgs_generate_messages_lisp.dir/clean
+
+# clean rule for target.
+clean: robot_controllers/robbie_auto/CMakeFiles/pcl_msgs_generate_messages_lisp.dir/clean
 
 .PHONY : clean
 
@@ -2706,14 +2854,15 @@ clean: robot_controllers/robbie_auto/CMakeFiles/robbie_auto_gencpp.dir/clean
 
 # All Build rule for target.
 robot_controllers/robbie_auto/CMakeFiles/robbie_auto_generate_messages_lisp.dir/all: robot_controllers/robbie_auto/CMakeFiles/_robbie_auto_generate_messages_check_deps_Contact.dir/all
+robot_controllers/robbie_auto/CMakeFiles/robbie_auto_generate_messages_lisp.dir/all: robot_controllers/robbie_auto/CMakeFiles/_robbie_auto_generate_messages_check_deps_Script.dir/all
 	$(MAKE) -f robot_controllers/robbie_auto/CMakeFiles/robbie_auto_generate_messages_lisp.dir/build.make robot_controllers/robbie_auto/CMakeFiles/robbie_auto_generate_messages_lisp.dir/depend
 	$(MAKE) -f robot_controllers/robbie_auto/CMakeFiles/robbie_auto_generate_messages_lisp.dir/build.make robot_controllers/robbie_auto/CMakeFiles/robbie_auto_generate_messages_lisp.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/moyin/dev/autonomous_controllers/build/CMakeFiles --progress-num=10 "Built target robbie_auto_generate_messages_lisp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/moyin/dev/autonomous_controllers/build/CMakeFiles --progress-num=15,16 "Built target robbie_auto_generate_messages_lisp"
 .PHONY : robot_controllers/robbie_auto/CMakeFiles/robbie_auto_generate_messages_lisp.dir/all
 
 # Build rule for subdir invocation for target.
 robot_controllers/robbie_auto/CMakeFiles/robbie_auto_generate_messages_lisp.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/moyin/dev/autonomous_controllers/build/CMakeFiles 1
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/moyin/dev/autonomous_controllers/build/CMakeFiles 2
 	$(MAKE) -f CMakeFiles/Makefile2 robot_controllers/robbie_auto/CMakeFiles/robbie_auto_generate_messages_lisp.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/moyin/dev/autonomous_controllers/build/CMakeFiles 0
 .PHONY : robot_controllers/robbie_auto/CMakeFiles/robbie_auto_generate_messages_lisp.dir/rule
@@ -2734,6 +2883,526 @@ clean: robot_controllers/robbie_auto/CMakeFiles/robbie_auto_generate_messages_li
 .PHONY : clean
 
 #=============================================================================
+# Target rules for target robot_controllers/robbie_auto/CMakeFiles/_robbie_auto_generate_messages_check_deps_Contact.dir
+
+# All Build rule for target.
+robot_controllers/robbie_auto/CMakeFiles/_robbie_auto_generate_messages_check_deps_Contact.dir/all:
+	$(MAKE) -f robot_controllers/robbie_auto/CMakeFiles/_robbie_auto_generate_messages_check_deps_Contact.dir/build.make robot_controllers/robbie_auto/CMakeFiles/_robbie_auto_generate_messages_check_deps_Contact.dir/depend
+	$(MAKE) -f robot_controllers/robbie_auto/CMakeFiles/_robbie_auto_generate_messages_check_deps_Contact.dir/build.make robot_controllers/robbie_auto/CMakeFiles/_robbie_auto_generate_messages_check_deps_Contact.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/moyin/dev/autonomous_controllers/build/CMakeFiles --progress-num= "Built target _robbie_auto_generate_messages_check_deps_Contact"
+.PHONY : robot_controllers/robbie_auto/CMakeFiles/_robbie_auto_generate_messages_check_deps_Contact.dir/all
+
+# Build rule for subdir invocation for target.
+robot_controllers/robbie_auto/CMakeFiles/_robbie_auto_generate_messages_check_deps_Contact.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/moyin/dev/autonomous_controllers/build/CMakeFiles 0
+	$(MAKE) -f CMakeFiles/Makefile2 robot_controllers/robbie_auto/CMakeFiles/_robbie_auto_generate_messages_check_deps_Contact.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/moyin/dev/autonomous_controllers/build/CMakeFiles 0
+.PHONY : robot_controllers/robbie_auto/CMakeFiles/_robbie_auto_generate_messages_check_deps_Contact.dir/rule
+
+# Convenience name for target.
+_robbie_auto_generate_messages_check_deps_Contact: robot_controllers/robbie_auto/CMakeFiles/_robbie_auto_generate_messages_check_deps_Contact.dir/rule
+
+.PHONY : _robbie_auto_generate_messages_check_deps_Contact
+
+# clean rule for target.
+robot_controllers/robbie_auto/CMakeFiles/_robbie_auto_generate_messages_check_deps_Contact.dir/clean:
+	$(MAKE) -f robot_controllers/robbie_auto/CMakeFiles/_robbie_auto_generate_messages_check_deps_Contact.dir/build.make robot_controllers/robbie_auto/CMakeFiles/_robbie_auto_generate_messages_check_deps_Contact.dir/clean
+.PHONY : robot_controllers/robbie_auto/CMakeFiles/_robbie_auto_generate_messages_check_deps_Contact.dir/clean
+
+# clean rule for target.
+clean: robot_controllers/robbie_auto/CMakeFiles/_robbie_auto_generate_messages_check_deps_Contact.dir/clean
+
+.PHONY : clean
+
+#=============================================================================
+# Target rules for target robot_controllers/robbie_auto/CMakeFiles/pcl_msgs_generate_messages_cpp.dir
+
+# All Build rule for target.
+robot_controllers/robbie_auto/CMakeFiles/pcl_msgs_generate_messages_cpp.dir/all:
+	$(MAKE) -f robot_controllers/robbie_auto/CMakeFiles/pcl_msgs_generate_messages_cpp.dir/build.make robot_controllers/robbie_auto/CMakeFiles/pcl_msgs_generate_messages_cpp.dir/depend
+	$(MAKE) -f robot_controllers/robbie_auto/CMakeFiles/pcl_msgs_generate_messages_cpp.dir/build.make robot_controllers/robbie_auto/CMakeFiles/pcl_msgs_generate_messages_cpp.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/moyin/dev/autonomous_controllers/build/CMakeFiles --progress-num= "Built target pcl_msgs_generate_messages_cpp"
+.PHONY : robot_controllers/robbie_auto/CMakeFiles/pcl_msgs_generate_messages_cpp.dir/all
+
+# Build rule for subdir invocation for target.
+robot_controllers/robbie_auto/CMakeFiles/pcl_msgs_generate_messages_cpp.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/moyin/dev/autonomous_controllers/build/CMakeFiles 0
+	$(MAKE) -f CMakeFiles/Makefile2 robot_controllers/robbie_auto/CMakeFiles/pcl_msgs_generate_messages_cpp.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/moyin/dev/autonomous_controllers/build/CMakeFiles 0
+.PHONY : robot_controllers/robbie_auto/CMakeFiles/pcl_msgs_generate_messages_cpp.dir/rule
+
+# Convenience name for target.
+pcl_msgs_generate_messages_cpp: robot_controllers/robbie_auto/CMakeFiles/pcl_msgs_generate_messages_cpp.dir/rule
+
+.PHONY : pcl_msgs_generate_messages_cpp
+
+# clean rule for target.
+robot_controllers/robbie_auto/CMakeFiles/pcl_msgs_generate_messages_cpp.dir/clean:
+	$(MAKE) -f robot_controllers/robbie_auto/CMakeFiles/pcl_msgs_generate_messages_cpp.dir/build.make robot_controllers/robbie_auto/CMakeFiles/pcl_msgs_generate_messages_cpp.dir/clean
+.PHONY : robot_controllers/robbie_auto/CMakeFiles/pcl_msgs_generate_messages_cpp.dir/clean
+
+# clean rule for target.
+clean: robot_controllers/robbie_auto/CMakeFiles/pcl_msgs_generate_messages_cpp.dir/clean
+
+.PHONY : clean
+
+#=============================================================================
+# Target rules for target robot_controllers/robbie_auto/CMakeFiles/bond_generate_messages_lisp.dir
+
+# All Build rule for target.
+robot_controllers/robbie_auto/CMakeFiles/bond_generate_messages_lisp.dir/all:
+	$(MAKE) -f robot_controllers/robbie_auto/CMakeFiles/bond_generate_messages_lisp.dir/build.make robot_controllers/robbie_auto/CMakeFiles/bond_generate_messages_lisp.dir/depend
+	$(MAKE) -f robot_controllers/robbie_auto/CMakeFiles/bond_generate_messages_lisp.dir/build.make robot_controllers/robbie_auto/CMakeFiles/bond_generate_messages_lisp.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/moyin/dev/autonomous_controllers/build/CMakeFiles --progress-num= "Built target bond_generate_messages_lisp"
+.PHONY : robot_controllers/robbie_auto/CMakeFiles/bond_generate_messages_lisp.dir/all
+
+# Build rule for subdir invocation for target.
+robot_controllers/robbie_auto/CMakeFiles/bond_generate_messages_lisp.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/moyin/dev/autonomous_controllers/build/CMakeFiles 0
+	$(MAKE) -f CMakeFiles/Makefile2 robot_controllers/robbie_auto/CMakeFiles/bond_generate_messages_lisp.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/moyin/dev/autonomous_controllers/build/CMakeFiles 0
+.PHONY : robot_controllers/robbie_auto/CMakeFiles/bond_generate_messages_lisp.dir/rule
+
+# Convenience name for target.
+bond_generate_messages_lisp: robot_controllers/robbie_auto/CMakeFiles/bond_generate_messages_lisp.dir/rule
+
+.PHONY : bond_generate_messages_lisp
+
+# clean rule for target.
+robot_controllers/robbie_auto/CMakeFiles/bond_generate_messages_lisp.dir/clean:
+	$(MAKE) -f robot_controllers/robbie_auto/CMakeFiles/bond_generate_messages_lisp.dir/build.make robot_controllers/robbie_auto/CMakeFiles/bond_generate_messages_lisp.dir/clean
+.PHONY : robot_controllers/robbie_auto/CMakeFiles/bond_generate_messages_lisp.dir/clean
+
+# clean rule for target.
+clean: robot_controllers/robbie_auto/CMakeFiles/bond_generate_messages_lisp.dir/clean
+
+.PHONY : clean
+
+#=============================================================================
+# Target rules for target robot_controllers/robbie_auto/CMakeFiles/bond_generate_messages_cpp.dir
+
+# All Build rule for target.
+robot_controllers/robbie_auto/CMakeFiles/bond_generate_messages_cpp.dir/all:
+	$(MAKE) -f robot_controllers/robbie_auto/CMakeFiles/bond_generate_messages_cpp.dir/build.make robot_controllers/robbie_auto/CMakeFiles/bond_generate_messages_cpp.dir/depend
+	$(MAKE) -f robot_controllers/robbie_auto/CMakeFiles/bond_generate_messages_cpp.dir/build.make robot_controllers/robbie_auto/CMakeFiles/bond_generate_messages_cpp.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/moyin/dev/autonomous_controllers/build/CMakeFiles --progress-num= "Built target bond_generate_messages_cpp"
+.PHONY : robot_controllers/robbie_auto/CMakeFiles/bond_generate_messages_cpp.dir/all
+
+# Build rule for subdir invocation for target.
+robot_controllers/robbie_auto/CMakeFiles/bond_generate_messages_cpp.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/moyin/dev/autonomous_controllers/build/CMakeFiles 0
+	$(MAKE) -f CMakeFiles/Makefile2 robot_controllers/robbie_auto/CMakeFiles/bond_generate_messages_cpp.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/moyin/dev/autonomous_controllers/build/CMakeFiles 0
+.PHONY : robot_controllers/robbie_auto/CMakeFiles/bond_generate_messages_cpp.dir/rule
+
+# Convenience name for target.
+bond_generate_messages_cpp: robot_controllers/robbie_auto/CMakeFiles/bond_generate_messages_cpp.dir/rule
+
+.PHONY : bond_generate_messages_cpp
+
+# clean rule for target.
+robot_controllers/robbie_auto/CMakeFiles/bond_generate_messages_cpp.dir/clean:
+	$(MAKE) -f robot_controllers/robbie_auto/CMakeFiles/bond_generate_messages_cpp.dir/build.make robot_controllers/robbie_auto/CMakeFiles/bond_generate_messages_cpp.dir/clean
+.PHONY : robot_controllers/robbie_auto/CMakeFiles/bond_generate_messages_cpp.dir/clean
+
+# clean rule for target.
+clean: robot_controllers/robbie_auto/CMakeFiles/bond_generate_messages_cpp.dir/clean
+
+.PHONY : clean
+
+#=============================================================================
+# Target rules for target robot_controllers/robbie_auto/CMakeFiles/nodelet_generate_messages_py.dir
+
+# All Build rule for target.
+robot_controllers/robbie_auto/CMakeFiles/nodelet_generate_messages_py.dir/all:
+	$(MAKE) -f robot_controllers/robbie_auto/CMakeFiles/nodelet_generate_messages_py.dir/build.make robot_controllers/robbie_auto/CMakeFiles/nodelet_generate_messages_py.dir/depend
+	$(MAKE) -f robot_controllers/robbie_auto/CMakeFiles/nodelet_generate_messages_py.dir/build.make robot_controllers/robbie_auto/CMakeFiles/nodelet_generate_messages_py.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/moyin/dev/autonomous_controllers/build/CMakeFiles --progress-num= "Built target nodelet_generate_messages_py"
+.PHONY : robot_controllers/robbie_auto/CMakeFiles/nodelet_generate_messages_py.dir/all
+
+# Build rule for subdir invocation for target.
+robot_controllers/robbie_auto/CMakeFiles/nodelet_generate_messages_py.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/moyin/dev/autonomous_controllers/build/CMakeFiles 0
+	$(MAKE) -f CMakeFiles/Makefile2 robot_controllers/robbie_auto/CMakeFiles/nodelet_generate_messages_py.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/moyin/dev/autonomous_controllers/build/CMakeFiles 0
+.PHONY : robot_controllers/robbie_auto/CMakeFiles/nodelet_generate_messages_py.dir/rule
+
+# Convenience name for target.
+nodelet_generate_messages_py: robot_controllers/robbie_auto/CMakeFiles/nodelet_generate_messages_py.dir/rule
+
+.PHONY : nodelet_generate_messages_py
+
+# clean rule for target.
+robot_controllers/robbie_auto/CMakeFiles/nodelet_generate_messages_py.dir/clean:
+	$(MAKE) -f robot_controllers/robbie_auto/CMakeFiles/nodelet_generate_messages_py.dir/build.make robot_controllers/robbie_auto/CMakeFiles/nodelet_generate_messages_py.dir/clean
+.PHONY : robot_controllers/robbie_auto/CMakeFiles/nodelet_generate_messages_py.dir/clean
+
+# clean rule for target.
+clean: robot_controllers/robbie_auto/CMakeFiles/nodelet_generate_messages_py.dir/clean
+
+.PHONY : clean
+
+#=============================================================================
+# Target rules for target robot_controllers/robbie_auto/CMakeFiles/nodelet_generate_messages_cpp.dir
+
+# All Build rule for target.
+robot_controllers/robbie_auto/CMakeFiles/nodelet_generate_messages_cpp.dir/all:
+	$(MAKE) -f robot_controllers/robbie_auto/CMakeFiles/nodelet_generate_messages_cpp.dir/build.make robot_controllers/robbie_auto/CMakeFiles/nodelet_generate_messages_cpp.dir/depend
+	$(MAKE) -f robot_controllers/robbie_auto/CMakeFiles/nodelet_generate_messages_cpp.dir/build.make robot_controllers/robbie_auto/CMakeFiles/nodelet_generate_messages_cpp.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/moyin/dev/autonomous_controllers/build/CMakeFiles --progress-num= "Built target nodelet_generate_messages_cpp"
+.PHONY : robot_controllers/robbie_auto/CMakeFiles/nodelet_generate_messages_cpp.dir/all
+
+# Build rule for subdir invocation for target.
+robot_controllers/robbie_auto/CMakeFiles/nodelet_generate_messages_cpp.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/moyin/dev/autonomous_controllers/build/CMakeFiles 0
+	$(MAKE) -f CMakeFiles/Makefile2 robot_controllers/robbie_auto/CMakeFiles/nodelet_generate_messages_cpp.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/moyin/dev/autonomous_controllers/build/CMakeFiles 0
+.PHONY : robot_controllers/robbie_auto/CMakeFiles/nodelet_generate_messages_cpp.dir/rule
+
+# Convenience name for target.
+nodelet_generate_messages_cpp: robot_controllers/robbie_auto/CMakeFiles/nodelet_generate_messages_cpp.dir/rule
+
+.PHONY : nodelet_generate_messages_cpp
+
+# clean rule for target.
+robot_controllers/robbie_auto/CMakeFiles/nodelet_generate_messages_cpp.dir/clean:
+	$(MAKE) -f robot_controllers/robbie_auto/CMakeFiles/nodelet_generate_messages_cpp.dir/build.make robot_controllers/robbie_auto/CMakeFiles/nodelet_generate_messages_cpp.dir/clean
+.PHONY : robot_controllers/robbie_auto/CMakeFiles/nodelet_generate_messages_cpp.dir/clean
+
+# clean rule for target.
+clean: robot_controllers/robbie_auto/CMakeFiles/nodelet_generate_messages_cpp.dir/clean
+
+.PHONY : clean
+
+#=============================================================================
+# Target rules for target robot_controllers/robbie_auto/CMakeFiles/_robbie_auto_generate_messages_check_deps_Script.dir
+
+# All Build rule for target.
+robot_controllers/robbie_auto/CMakeFiles/_robbie_auto_generate_messages_check_deps_Script.dir/all:
+	$(MAKE) -f robot_controllers/robbie_auto/CMakeFiles/_robbie_auto_generate_messages_check_deps_Script.dir/build.make robot_controllers/robbie_auto/CMakeFiles/_robbie_auto_generate_messages_check_deps_Script.dir/depend
+	$(MAKE) -f robot_controllers/robbie_auto/CMakeFiles/_robbie_auto_generate_messages_check_deps_Script.dir/build.make robot_controllers/robbie_auto/CMakeFiles/_robbie_auto_generate_messages_check_deps_Script.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/moyin/dev/autonomous_controllers/build/CMakeFiles --progress-num= "Built target _robbie_auto_generate_messages_check_deps_Script"
+.PHONY : robot_controllers/robbie_auto/CMakeFiles/_robbie_auto_generate_messages_check_deps_Script.dir/all
+
+# Build rule for subdir invocation for target.
+robot_controllers/robbie_auto/CMakeFiles/_robbie_auto_generate_messages_check_deps_Script.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/moyin/dev/autonomous_controllers/build/CMakeFiles 0
+	$(MAKE) -f CMakeFiles/Makefile2 robot_controllers/robbie_auto/CMakeFiles/_robbie_auto_generate_messages_check_deps_Script.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/moyin/dev/autonomous_controllers/build/CMakeFiles 0
+.PHONY : robot_controllers/robbie_auto/CMakeFiles/_robbie_auto_generate_messages_check_deps_Script.dir/rule
+
+# Convenience name for target.
+_robbie_auto_generate_messages_check_deps_Script: robot_controllers/robbie_auto/CMakeFiles/_robbie_auto_generate_messages_check_deps_Script.dir/rule
+
+.PHONY : _robbie_auto_generate_messages_check_deps_Script
+
+# clean rule for target.
+robot_controllers/robbie_auto/CMakeFiles/_robbie_auto_generate_messages_check_deps_Script.dir/clean:
+	$(MAKE) -f robot_controllers/robbie_auto/CMakeFiles/_robbie_auto_generate_messages_check_deps_Script.dir/build.make robot_controllers/robbie_auto/CMakeFiles/_robbie_auto_generate_messages_check_deps_Script.dir/clean
+.PHONY : robot_controllers/robbie_auto/CMakeFiles/_robbie_auto_generate_messages_check_deps_Script.dir/clean
+
+# clean rule for target.
+clean: robot_controllers/robbie_auto/CMakeFiles/_robbie_auto_generate_messages_check_deps_Script.dir/clean
+
+.PHONY : clean
+
+#=============================================================================
+# Target rules for target robot_controllers/robbie_auto/CMakeFiles/bond_generate_messages_py.dir
+
+# All Build rule for target.
+robot_controllers/robbie_auto/CMakeFiles/bond_generate_messages_py.dir/all:
+	$(MAKE) -f robot_controllers/robbie_auto/CMakeFiles/bond_generate_messages_py.dir/build.make robot_controllers/robbie_auto/CMakeFiles/bond_generate_messages_py.dir/depend
+	$(MAKE) -f robot_controllers/robbie_auto/CMakeFiles/bond_generate_messages_py.dir/build.make robot_controllers/robbie_auto/CMakeFiles/bond_generate_messages_py.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/moyin/dev/autonomous_controllers/build/CMakeFiles --progress-num= "Built target bond_generate_messages_py"
+.PHONY : robot_controllers/robbie_auto/CMakeFiles/bond_generate_messages_py.dir/all
+
+# Build rule for subdir invocation for target.
+robot_controllers/robbie_auto/CMakeFiles/bond_generate_messages_py.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/moyin/dev/autonomous_controllers/build/CMakeFiles 0
+	$(MAKE) -f CMakeFiles/Makefile2 robot_controllers/robbie_auto/CMakeFiles/bond_generate_messages_py.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/moyin/dev/autonomous_controllers/build/CMakeFiles 0
+.PHONY : robot_controllers/robbie_auto/CMakeFiles/bond_generate_messages_py.dir/rule
+
+# Convenience name for target.
+bond_generate_messages_py: robot_controllers/robbie_auto/CMakeFiles/bond_generate_messages_py.dir/rule
+
+.PHONY : bond_generate_messages_py
+
+# clean rule for target.
+robot_controllers/robbie_auto/CMakeFiles/bond_generate_messages_py.dir/clean:
+	$(MAKE) -f robot_controllers/robbie_auto/CMakeFiles/bond_generate_messages_py.dir/build.make robot_controllers/robbie_auto/CMakeFiles/bond_generate_messages_py.dir/clean
+.PHONY : robot_controllers/robbie_auto/CMakeFiles/bond_generate_messages_py.dir/clean
+
+# clean rule for target.
+clean: robot_controllers/robbie_auto/CMakeFiles/bond_generate_messages_py.dir/clean
+
+.PHONY : clean
+
+#=============================================================================
+# Target rules for target robot_controllers/robbie_auto/CMakeFiles/pcl_ros_gencfg.dir
+
+# All Build rule for target.
+robot_controllers/robbie_auto/CMakeFiles/pcl_ros_gencfg.dir/all:
+	$(MAKE) -f robot_controllers/robbie_auto/CMakeFiles/pcl_ros_gencfg.dir/build.make robot_controllers/robbie_auto/CMakeFiles/pcl_ros_gencfg.dir/depend
+	$(MAKE) -f robot_controllers/robbie_auto/CMakeFiles/pcl_ros_gencfg.dir/build.make robot_controllers/robbie_auto/CMakeFiles/pcl_ros_gencfg.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/moyin/dev/autonomous_controllers/build/CMakeFiles --progress-num= "Built target pcl_ros_gencfg"
+.PHONY : robot_controllers/robbie_auto/CMakeFiles/pcl_ros_gencfg.dir/all
+
+# Build rule for subdir invocation for target.
+robot_controllers/robbie_auto/CMakeFiles/pcl_ros_gencfg.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/moyin/dev/autonomous_controllers/build/CMakeFiles 0
+	$(MAKE) -f CMakeFiles/Makefile2 robot_controllers/robbie_auto/CMakeFiles/pcl_ros_gencfg.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/moyin/dev/autonomous_controllers/build/CMakeFiles 0
+.PHONY : robot_controllers/robbie_auto/CMakeFiles/pcl_ros_gencfg.dir/rule
+
+# Convenience name for target.
+pcl_ros_gencfg: robot_controllers/robbie_auto/CMakeFiles/pcl_ros_gencfg.dir/rule
+
+.PHONY : pcl_ros_gencfg
+
+# clean rule for target.
+robot_controllers/robbie_auto/CMakeFiles/pcl_ros_gencfg.dir/clean:
+	$(MAKE) -f robot_controllers/robbie_auto/CMakeFiles/pcl_ros_gencfg.dir/build.make robot_controllers/robbie_auto/CMakeFiles/pcl_ros_gencfg.dir/clean
+.PHONY : robot_controllers/robbie_auto/CMakeFiles/pcl_ros_gencfg.dir/clean
+
+# clean rule for target.
+clean: robot_controllers/robbie_auto/CMakeFiles/pcl_ros_gencfg.dir/clean
+
+.PHONY : clean
+
+#=============================================================================
+# Target rules for target robot_controllers/robbie_auto/CMakeFiles/robbie_auto_gencpp.dir
+
+# All Build rule for target.
+robot_controllers/robbie_auto/CMakeFiles/robbie_auto_gencpp.dir/all: robot_controllers/robbie_auto/CMakeFiles/robbie_auto_generate_messages_cpp.dir/all
+	$(MAKE) -f robot_controllers/robbie_auto/CMakeFiles/robbie_auto_gencpp.dir/build.make robot_controllers/robbie_auto/CMakeFiles/robbie_auto_gencpp.dir/depend
+	$(MAKE) -f robot_controllers/robbie_auto/CMakeFiles/robbie_auto_gencpp.dir/build.make robot_controllers/robbie_auto/CMakeFiles/robbie_auto_gencpp.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/moyin/dev/autonomous_controllers/build/CMakeFiles --progress-num= "Built target robbie_auto_gencpp"
+.PHONY : robot_controllers/robbie_auto/CMakeFiles/robbie_auto_gencpp.dir/all
+
+# Build rule for subdir invocation for target.
+robot_controllers/robbie_auto/CMakeFiles/robbie_auto_gencpp.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/moyin/dev/autonomous_controllers/build/CMakeFiles 2
+	$(MAKE) -f CMakeFiles/Makefile2 robot_controllers/robbie_auto/CMakeFiles/robbie_auto_gencpp.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/moyin/dev/autonomous_controllers/build/CMakeFiles 0
+.PHONY : robot_controllers/robbie_auto/CMakeFiles/robbie_auto_gencpp.dir/rule
+
+# Convenience name for target.
+robbie_auto_gencpp: robot_controllers/robbie_auto/CMakeFiles/robbie_auto_gencpp.dir/rule
+
+.PHONY : robbie_auto_gencpp
+
+# clean rule for target.
+robot_controllers/robbie_auto/CMakeFiles/robbie_auto_gencpp.dir/clean:
+	$(MAKE) -f robot_controllers/robbie_auto/CMakeFiles/robbie_auto_gencpp.dir/build.make robot_controllers/robbie_auto/CMakeFiles/robbie_auto_gencpp.dir/clean
+.PHONY : robot_controllers/robbie_auto/CMakeFiles/robbie_auto_gencpp.dir/clean
+
+# clean rule for target.
+clean: robot_controllers/robbie_auto/CMakeFiles/robbie_auto_gencpp.dir/clean
+
+.PHONY : clean
+
+#=============================================================================
+# Target rules for target robot_controllers/robbie_auto/CMakeFiles/topic_tools_generate_messages_cpp.dir
+
+# All Build rule for target.
+robot_controllers/robbie_auto/CMakeFiles/topic_tools_generate_messages_cpp.dir/all:
+	$(MAKE) -f robot_controllers/robbie_auto/CMakeFiles/topic_tools_generate_messages_cpp.dir/build.make robot_controllers/robbie_auto/CMakeFiles/topic_tools_generate_messages_cpp.dir/depend
+	$(MAKE) -f robot_controllers/robbie_auto/CMakeFiles/topic_tools_generate_messages_cpp.dir/build.make robot_controllers/robbie_auto/CMakeFiles/topic_tools_generate_messages_cpp.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/moyin/dev/autonomous_controllers/build/CMakeFiles --progress-num= "Built target topic_tools_generate_messages_cpp"
+.PHONY : robot_controllers/robbie_auto/CMakeFiles/topic_tools_generate_messages_cpp.dir/all
+
+# Build rule for subdir invocation for target.
+robot_controllers/robbie_auto/CMakeFiles/topic_tools_generate_messages_cpp.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/moyin/dev/autonomous_controllers/build/CMakeFiles 0
+	$(MAKE) -f CMakeFiles/Makefile2 robot_controllers/robbie_auto/CMakeFiles/topic_tools_generate_messages_cpp.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/moyin/dev/autonomous_controllers/build/CMakeFiles 0
+.PHONY : robot_controllers/robbie_auto/CMakeFiles/topic_tools_generate_messages_cpp.dir/rule
+
+# Convenience name for target.
+topic_tools_generate_messages_cpp: robot_controllers/robbie_auto/CMakeFiles/topic_tools_generate_messages_cpp.dir/rule
+
+.PHONY : topic_tools_generate_messages_cpp
+
+# clean rule for target.
+robot_controllers/robbie_auto/CMakeFiles/topic_tools_generate_messages_cpp.dir/clean:
+	$(MAKE) -f robot_controllers/robbie_auto/CMakeFiles/topic_tools_generate_messages_cpp.dir/build.make robot_controllers/robbie_auto/CMakeFiles/topic_tools_generate_messages_cpp.dir/clean
+.PHONY : robot_controllers/robbie_auto/CMakeFiles/topic_tools_generate_messages_cpp.dir/clean
+
+# clean rule for target.
+clean: robot_controllers/robbie_auto/CMakeFiles/topic_tools_generate_messages_cpp.dir/clean
+
+.PHONY : clean
+
+#=============================================================================
+# Target rules for target robot_controllers/robbie_auto/CMakeFiles/topic_tools_generate_messages_lisp.dir
+
+# All Build rule for target.
+robot_controllers/robbie_auto/CMakeFiles/topic_tools_generate_messages_lisp.dir/all:
+	$(MAKE) -f robot_controllers/robbie_auto/CMakeFiles/topic_tools_generate_messages_lisp.dir/build.make robot_controllers/robbie_auto/CMakeFiles/topic_tools_generate_messages_lisp.dir/depend
+	$(MAKE) -f robot_controllers/robbie_auto/CMakeFiles/topic_tools_generate_messages_lisp.dir/build.make robot_controllers/robbie_auto/CMakeFiles/topic_tools_generate_messages_lisp.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/moyin/dev/autonomous_controllers/build/CMakeFiles --progress-num= "Built target topic_tools_generate_messages_lisp"
+.PHONY : robot_controllers/robbie_auto/CMakeFiles/topic_tools_generate_messages_lisp.dir/all
+
+# Build rule for subdir invocation for target.
+robot_controllers/robbie_auto/CMakeFiles/topic_tools_generate_messages_lisp.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/moyin/dev/autonomous_controllers/build/CMakeFiles 0
+	$(MAKE) -f CMakeFiles/Makefile2 robot_controllers/robbie_auto/CMakeFiles/topic_tools_generate_messages_lisp.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/moyin/dev/autonomous_controllers/build/CMakeFiles 0
+.PHONY : robot_controllers/robbie_auto/CMakeFiles/topic_tools_generate_messages_lisp.dir/rule
+
+# Convenience name for target.
+topic_tools_generate_messages_lisp: robot_controllers/robbie_auto/CMakeFiles/topic_tools_generate_messages_lisp.dir/rule
+
+.PHONY : topic_tools_generate_messages_lisp
+
+# clean rule for target.
+robot_controllers/robbie_auto/CMakeFiles/topic_tools_generate_messages_lisp.dir/clean:
+	$(MAKE) -f robot_controllers/robbie_auto/CMakeFiles/topic_tools_generate_messages_lisp.dir/build.make robot_controllers/robbie_auto/CMakeFiles/topic_tools_generate_messages_lisp.dir/clean
+.PHONY : robot_controllers/robbie_auto/CMakeFiles/topic_tools_generate_messages_lisp.dir/clean
+
+# clean rule for target.
+clean: robot_controllers/robbie_auto/CMakeFiles/topic_tools_generate_messages_lisp.dir/clean
+
+.PHONY : clean
+
+#=============================================================================
+# Target rules for target robot_controllers/robbie_auto/CMakeFiles/topic_tools_generate_messages_py.dir
+
+# All Build rule for target.
+robot_controllers/robbie_auto/CMakeFiles/topic_tools_generate_messages_py.dir/all:
+	$(MAKE) -f robot_controllers/robbie_auto/CMakeFiles/topic_tools_generate_messages_py.dir/build.make robot_controllers/robbie_auto/CMakeFiles/topic_tools_generate_messages_py.dir/depend
+	$(MAKE) -f robot_controllers/robbie_auto/CMakeFiles/topic_tools_generate_messages_py.dir/build.make robot_controllers/robbie_auto/CMakeFiles/topic_tools_generate_messages_py.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/moyin/dev/autonomous_controllers/build/CMakeFiles --progress-num= "Built target topic_tools_generate_messages_py"
+.PHONY : robot_controllers/robbie_auto/CMakeFiles/topic_tools_generate_messages_py.dir/all
+
+# Build rule for subdir invocation for target.
+robot_controllers/robbie_auto/CMakeFiles/topic_tools_generate_messages_py.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/moyin/dev/autonomous_controllers/build/CMakeFiles 0
+	$(MAKE) -f CMakeFiles/Makefile2 robot_controllers/robbie_auto/CMakeFiles/topic_tools_generate_messages_py.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/moyin/dev/autonomous_controllers/build/CMakeFiles 0
+.PHONY : robot_controllers/robbie_auto/CMakeFiles/topic_tools_generate_messages_py.dir/rule
+
+# Convenience name for target.
+topic_tools_generate_messages_py: robot_controllers/robbie_auto/CMakeFiles/topic_tools_generate_messages_py.dir/rule
+
+.PHONY : topic_tools_generate_messages_py
+
+# clean rule for target.
+robot_controllers/robbie_auto/CMakeFiles/topic_tools_generate_messages_py.dir/clean:
+	$(MAKE) -f robot_controllers/robbie_auto/CMakeFiles/topic_tools_generate_messages_py.dir/build.make robot_controllers/robbie_auto/CMakeFiles/topic_tools_generate_messages_py.dir/clean
+.PHONY : robot_controllers/robbie_auto/CMakeFiles/topic_tools_generate_messages_py.dir/clean
+
+# clean rule for target.
+clean: robot_controllers/robbie_auto/CMakeFiles/topic_tools_generate_messages_py.dir/clean
+
+.PHONY : clean
+
+#=============================================================================
+# Target rules for target robot_controllers/robbie_auto/CMakeFiles/robbie_auto_generate_messages.dir
+
+# All Build rule for target.
+robot_controllers/robbie_auto/CMakeFiles/robbie_auto_generate_messages.dir/all: robot_controllers/robbie_auto/CMakeFiles/robbie_auto_generate_messages_lisp.dir/all
+robot_controllers/robbie_auto/CMakeFiles/robbie_auto_generate_messages.dir/all: robot_controllers/robbie_auto/CMakeFiles/robbie_auto_generate_messages_cpp.dir/all
+robot_controllers/robbie_auto/CMakeFiles/robbie_auto_generate_messages.dir/all: robot_controllers/robbie_auto/CMakeFiles/robbie_auto_generate_messages_py.dir/all
+	$(MAKE) -f robot_controllers/robbie_auto/CMakeFiles/robbie_auto_generate_messages.dir/build.make robot_controllers/robbie_auto/CMakeFiles/robbie_auto_generate_messages.dir/depend
+	$(MAKE) -f robot_controllers/robbie_auto/CMakeFiles/robbie_auto_generate_messages.dir/build.make robot_controllers/robbie_auto/CMakeFiles/robbie_auto_generate_messages.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/moyin/dev/autonomous_controllers/build/CMakeFiles --progress-num= "Built target robbie_auto_generate_messages"
+.PHONY : robot_controllers/robbie_auto/CMakeFiles/robbie_auto_generate_messages.dir/all
+
+# Include target in all.
+all: robot_controllers/robbie_auto/CMakeFiles/robbie_auto_generate_messages.dir/all
+
+.PHONY : all
+
+# Build rule for subdir invocation for target.
+robot_controllers/robbie_auto/CMakeFiles/robbie_auto_generate_messages.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/moyin/dev/autonomous_controllers/build/CMakeFiles 7
+	$(MAKE) -f CMakeFiles/Makefile2 robot_controllers/robbie_auto/CMakeFiles/robbie_auto_generate_messages.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/moyin/dev/autonomous_controllers/build/CMakeFiles 0
+.PHONY : robot_controllers/robbie_auto/CMakeFiles/robbie_auto_generate_messages.dir/rule
+
+# Convenience name for target.
+robbie_auto_generate_messages: robot_controllers/robbie_auto/CMakeFiles/robbie_auto_generate_messages.dir/rule
+
+.PHONY : robbie_auto_generate_messages
+
+# clean rule for target.
+robot_controllers/robbie_auto/CMakeFiles/robbie_auto_generate_messages.dir/clean:
+	$(MAKE) -f robot_controllers/robbie_auto/CMakeFiles/robbie_auto_generate_messages.dir/build.make robot_controllers/robbie_auto/CMakeFiles/robbie_auto_generate_messages.dir/clean
+.PHONY : robot_controllers/robbie_auto/CMakeFiles/robbie_auto_generate_messages.dir/clean
+
+# clean rule for target.
+clean: robot_controllers/robbie_auto/CMakeFiles/robbie_auto_generate_messages.dir/clean
+
+.PHONY : clean
+
+#=============================================================================
+# Target rules for target robot_controllers/robbie_auto/CMakeFiles/nodelet_generate_messages_lisp.dir
+
+# All Build rule for target.
+robot_controllers/robbie_auto/CMakeFiles/nodelet_generate_messages_lisp.dir/all:
+	$(MAKE) -f robot_controllers/robbie_auto/CMakeFiles/nodelet_generate_messages_lisp.dir/build.make robot_controllers/robbie_auto/CMakeFiles/nodelet_generate_messages_lisp.dir/depend
+	$(MAKE) -f robot_controllers/robbie_auto/CMakeFiles/nodelet_generate_messages_lisp.dir/build.make robot_controllers/robbie_auto/CMakeFiles/nodelet_generate_messages_lisp.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/moyin/dev/autonomous_controllers/build/CMakeFiles --progress-num= "Built target nodelet_generate_messages_lisp"
+.PHONY : robot_controllers/robbie_auto/CMakeFiles/nodelet_generate_messages_lisp.dir/all
+
+# Build rule for subdir invocation for target.
+robot_controllers/robbie_auto/CMakeFiles/nodelet_generate_messages_lisp.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/moyin/dev/autonomous_controllers/build/CMakeFiles 0
+	$(MAKE) -f CMakeFiles/Makefile2 robot_controllers/robbie_auto/CMakeFiles/nodelet_generate_messages_lisp.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/moyin/dev/autonomous_controllers/build/CMakeFiles 0
+.PHONY : robot_controllers/robbie_auto/CMakeFiles/nodelet_generate_messages_lisp.dir/rule
+
+# Convenience name for target.
+nodelet_generate_messages_lisp: robot_controllers/robbie_auto/CMakeFiles/nodelet_generate_messages_lisp.dir/rule
+
+.PHONY : nodelet_generate_messages_lisp
+
+# clean rule for target.
+robot_controllers/robbie_auto/CMakeFiles/nodelet_generate_messages_lisp.dir/clean:
+	$(MAKE) -f robot_controllers/robbie_auto/CMakeFiles/nodelet_generate_messages_lisp.dir/build.make robot_controllers/robbie_auto/CMakeFiles/nodelet_generate_messages_lisp.dir/clean
+.PHONY : robot_controllers/robbie_auto/CMakeFiles/nodelet_generate_messages_lisp.dir/clean
+
+# clean rule for target.
+clean: robot_controllers/robbie_auto/CMakeFiles/nodelet_generate_messages_lisp.dir/clean
+
+.PHONY : clean
+
+#=============================================================================
+# Target rules for target robot_controllers/robbie_auto/CMakeFiles/robbie_auto_generate_messages_cpp.dir
+
+# All Build rule for target.
+robot_controllers/robbie_auto/CMakeFiles/robbie_auto_generate_messages_cpp.dir/all: robot_controllers/robbie_auto/CMakeFiles/_robbie_auto_generate_messages_check_deps_Contact.dir/all
+robot_controllers/robbie_auto/CMakeFiles/robbie_auto_generate_messages_cpp.dir/all: robot_controllers/robbie_auto/CMakeFiles/_robbie_auto_generate_messages_check_deps_Script.dir/all
+	$(MAKE) -f robot_controllers/robbie_auto/CMakeFiles/robbie_auto_generate_messages_cpp.dir/build.make robot_controllers/robbie_auto/CMakeFiles/robbie_auto_generate_messages_cpp.dir/depend
+	$(MAKE) -f robot_controllers/robbie_auto/CMakeFiles/robbie_auto_generate_messages_cpp.dir/build.make robot_controllers/robbie_auto/CMakeFiles/robbie_auto_generate_messages_cpp.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/moyin/dev/autonomous_controllers/build/CMakeFiles --progress-num=13,14 "Built target robbie_auto_generate_messages_cpp"
+.PHONY : robot_controllers/robbie_auto/CMakeFiles/robbie_auto_generate_messages_cpp.dir/all
+
+# Build rule for subdir invocation for target.
+robot_controllers/robbie_auto/CMakeFiles/robbie_auto_generate_messages_cpp.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/moyin/dev/autonomous_controllers/build/CMakeFiles 2
+	$(MAKE) -f CMakeFiles/Makefile2 robot_controllers/robbie_auto/CMakeFiles/robbie_auto_generate_messages_cpp.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/moyin/dev/autonomous_controllers/build/CMakeFiles 0
+.PHONY : robot_controllers/robbie_auto/CMakeFiles/robbie_auto_generate_messages_cpp.dir/rule
+
+# Convenience name for target.
+robbie_auto_generate_messages_cpp: robot_controllers/robbie_auto/CMakeFiles/robbie_auto_generate_messages_cpp.dir/rule
+
+.PHONY : robbie_auto_generate_messages_cpp
+
+# clean rule for target.
+robot_controllers/robbie_auto/CMakeFiles/robbie_auto_generate_messages_cpp.dir/clean:
+	$(MAKE) -f robot_controllers/robbie_auto/CMakeFiles/robbie_auto_generate_messages_cpp.dir/build.make robot_controllers/robbie_auto/CMakeFiles/robbie_auto_generate_messages_cpp.dir/clean
+.PHONY : robot_controllers/robbie_auto/CMakeFiles/robbie_auto_generate_messages_cpp.dir/clean
+
+# clean rule for target.
+clean: robot_controllers/robbie_auto/CMakeFiles/robbie_auto_generate_messages_cpp.dir/clean
+
+.PHONY : clean
+
+#=============================================================================
 # Target rules for target robot_controllers/robbie_auto/CMakeFiles/robbie_auto_genlisp.dir
 
 # All Build rule for target.
@@ -2745,7 +3414,7 @@ robot_controllers/robbie_auto/CMakeFiles/robbie_auto_genlisp.dir/all: robot_cont
 
 # Build rule for subdir invocation for target.
 robot_controllers/robbie_auto/CMakeFiles/robbie_auto_genlisp.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/moyin/dev/autonomous_controllers/build/CMakeFiles 1
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/moyin/dev/autonomous_controllers/build/CMakeFiles 2
 	$(MAKE) -f CMakeFiles/Makefile2 robot_controllers/robbie_auto/CMakeFiles/robbie_auto_genlisp.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/moyin/dev/autonomous_controllers/build/CMakeFiles 0
 .PHONY : robot_controllers/robbie_auto/CMakeFiles/robbie_auto_genlisp.dir/rule
@@ -2770,14 +3439,15 @@ clean: robot_controllers/robbie_auto/CMakeFiles/robbie_auto_genlisp.dir/clean
 
 # All Build rule for target.
 robot_controllers/robbie_auto/CMakeFiles/robbie_auto_generate_messages_py.dir/all: robot_controllers/robbie_auto/CMakeFiles/_robbie_auto_generate_messages_check_deps_Contact.dir/all
+robot_controllers/robbie_auto/CMakeFiles/robbie_auto_generate_messages_py.dir/all: robot_controllers/robbie_auto/CMakeFiles/_robbie_auto_generate_messages_check_deps_Script.dir/all
 	$(MAKE) -f robot_controllers/robbie_auto/CMakeFiles/robbie_auto_generate_messages_py.dir/build.make robot_controllers/robbie_auto/CMakeFiles/robbie_auto_generate_messages_py.dir/depend
 	$(MAKE) -f robot_controllers/robbie_auto/CMakeFiles/robbie_auto_generate_messages_py.dir/build.make robot_controllers/robbie_auto/CMakeFiles/robbie_auto_generate_messages_py.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/moyin/dev/autonomous_controllers/build/CMakeFiles --progress-num=11,12 "Built target robbie_auto_generate_messages_py"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/moyin/dev/autonomous_controllers/build/CMakeFiles --progress-num=17,18,19 "Built target robbie_auto_generate_messages_py"
 .PHONY : robot_controllers/robbie_auto/CMakeFiles/robbie_auto_generate_messages_py.dir/all
 
 # Build rule for subdir invocation for target.
 robot_controllers/robbie_auto/CMakeFiles/robbie_auto_generate_messages_py.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/moyin/dev/autonomous_controllers/build/CMakeFiles 2
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/moyin/dev/autonomous_controllers/build/CMakeFiles 3
 	$(MAKE) -f CMakeFiles/Makefile2 robot_controllers/robbie_auto/CMakeFiles/robbie_auto_generate_messages_py.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/moyin/dev/autonomous_controllers/build/CMakeFiles 0
 .PHONY : robot_controllers/robbie_auto/CMakeFiles/robbie_auto_generate_messages_py.dir/rule
@@ -2794,6 +3464,38 @@ robot_controllers/robbie_auto/CMakeFiles/robbie_auto_generate_messages_py.dir/cl
 
 # clean rule for target.
 clean: robot_controllers/robbie_auto/CMakeFiles/robbie_auto_generate_messages_py.dir/clean
+
+.PHONY : clean
+
+#=============================================================================
+# Target rules for target robot_controllers/robbie_auto/CMakeFiles/robbie_auto_genpy.dir
+
+# All Build rule for target.
+robot_controllers/robbie_auto/CMakeFiles/robbie_auto_genpy.dir/all: robot_controllers/robbie_auto/CMakeFiles/robbie_auto_generate_messages_py.dir/all
+	$(MAKE) -f robot_controllers/robbie_auto/CMakeFiles/robbie_auto_genpy.dir/build.make robot_controllers/robbie_auto/CMakeFiles/robbie_auto_genpy.dir/depend
+	$(MAKE) -f robot_controllers/robbie_auto/CMakeFiles/robbie_auto_genpy.dir/build.make robot_controllers/robbie_auto/CMakeFiles/robbie_auto_genpy.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/moyin/dev/autonomous_controllers/build/CMakeFiles --progress-num= "Built target robbie_auto_genpy"
+.PHONY : robot_controllers/robbie_auto/CMakeFiles/robbie_auto_genpy.dir/all
+
+# Build rule for subdir invocation for target.
+robot_controllers/robbie_auto/CMakeFiles/robbie_auto_genpy.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/moyin/dev/autonomous_controllers/build/CMakeFiles 3
+	$(MAKE) -f CMakeFiles/Makefile2 robot_controllers/robbie_auto/CMakeFiles/robbie_auto_genpy.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/moyin/dev/autonomous_controllers/build/CMakeFiles 0
+.PHONY : robot_controllers/robbie_auto/CMakeFiles/robbie_auto_genpy.dir/rule
+
+# Convenience name for target.
+robbie_auto_genpy: robot_controllers/robbie_auto/CMakeFiles/robbie_auto_genpy.dir/rule
+
+.PHONY : robbie_auto_genpy
+
+# clean rule for target.
+robot_controllers/robbie_auto/CMakeFiles/robbie_auto_genpy.dir/clean:
+	$(MAKE) -f robot_controllers/robbie_auto/CMakeFiles/robbie_auto_genpy.dir/build.make robot_controllers/robbie_auto/CMakeFiles/robbie_auto_genpy.dir/clean
+.PHONY : robot_controllers/robbie_auto/CMakeFiles/robbie_auto_genpy.dir/clean
+
+# clean rule for target.
+clean: robot_controllers/robbie_auto/CMakeFiles/robbie_auto_genpy.dir/clean
 
 .PHONY : clean
 

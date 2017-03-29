@@ -15,6 +15,10 @@
 #include <ros/builtin_message_traits.h>
 #include <ros/message_operations.h>
 
+#include <std_msgs/Header.h>
+#include <geometry_msgs/Point.h>
+#include <geometry_msgs/Point.h>
+#include <geometry_msgs/Point.h>
 
 namespace robbie_stability
 {
@@ -24,18 +28,35 @@ struct Contact_
   typedef Contact_<ContainerAllocator> Type;
 
   Contact_()
-    : shank(false)
+    : header()
+    , shank(false)
     , lhm(false)
-    , stabilizer(false)  {
+    , stabilizer(false)
+    , stabilizer_on()
+    , shank_on()
+    , lhm_on()
+    , stabilizer_location()
+    , shank_location()
+    , lhm_location()  {
     }
   Contact_(const ContainerAllocator& _alloc)
-    : shank(false)
+    : header(_alloc)
+    , shank(false)
     , lhm(false)
-    , stabilizer(false)  {
+    , stabilizer(false)
+    , stabilizer_on(_alloc)
+    , shank_on(_alloc)
+    , lhm_on(_alloc)
+    , stabilizer_location(_alloc)
+    , shank_location(_alloc)
+    , lhm_location(_alloc)  {
   (void)_alloc;
     }
 
 
+
+   typedef  ::std_msgs::Header_<ContainerAllocator>  _header_type;
+  _header_type header;
 
    typedef uint8_t _shank_type;
   _shank_type shank;
@@ -45,6 +66,24 @@ struct Contact_
 
    typedef uint8_t _stabilizer_type;
   _stabilizer_type stabilizer;
+
+   typedef std::basic_string<char, std::char_traits<char>, typename ContainerAllocator::template rebind<char>::other >  _stabilizer_on_type;
+  _stabilizer_on_type stabilizer_on;
+
+   typedef std::basic_string<char, std::char_traits<char>, typename ContainerAllocator::template rebind<char>::other >  _shank_on_type;
+  _shank_on_type shank_on;
+
+   typedef std::basic_string<char, std::char_traits<char>, typename ContainerAllocator::template rebind<char>::other >  _lhm_on_type;
+  _lhm_on_type lhm_on;
+
+   typedef  ::geometry_msgs::Point_<ContainerAllocator>  _stabilizer_location_type;
+  _stabilizer_location_type stabilizer_location;
+
+   typedef  ::geometry_msgs::Point_<ContainerAllocator>  _shank_location_type;
+  _shank_location_type shank_location;
+
+   typedef  ::geometry_msgs::Point_<ContainerAllocator>  _lhm_location_type;
+  _lhm_location_type lhm_location;
 
 
 
@@ -79,8 +118,8 @@ namespace message_traits
 
 
 
-// BOOLTRAITS {'IsFixedSize': True, 'IsMessage': True, 'HasHeader': False}
-// {'robbie_stability': ['/home/moyin/dev/autonomous_controllers/src/robot_controllers/robbie_stability/msg']}
+// BOOLTRAITS {'IsFixedSize': False, 'IsMessage': True, 'HasHeader': True}
+// {'trajectory_msgs': ['/opt/ros/indigo/share/trajectory_msgs/cmake/../msg'], 'std_msgs': ['/opt/ros/indigo/share/std_msgs/cmake/../msg'], 'robbie_stability': ['/home/moyin/dev/autonomous_controllers/src/robot_controllers/robbie_stability/msg'], 'gazebo_msgs': ['/opt/ros/indigo/share/gazebo_msgs/cmake/../msg'], 'geometry_msgs': ['/opt/ros/indigo/share/geometry_msgs/cmake/../msg'], 'sensor_msgs': ['/opt/ros/indigo/share/sensor_msgs/cmake/../msg']}
 
 // !!!!!!!!!!! ['__class__', '__delattr__', '__dict__', '__doc__', '__eq__', '__format__', '__getattribute__', '__hash__', '__init__', '__module__', '__ne__', '__new__', '__reduce__', '__reduce_ex__', '__repr__', '__setattr__', '__sizeof__', '__str__', '__subclasshook__', '__weakref__', '_parsed_fields', 'constants', 'fields', 'full_name', 'has_header', 'header_present', 'names', 'package', 'parsed_fields', 'short_name', 'text', 'types']
 
@@ -89,12 +128,12 @@ namespace message_traits
 
 template <class ContainerAllocator>
 struct IsFixedSize< ::robbie_stability::Contact_<ContainerAllocator> >
-  : TrueType
+  : FalseType
   { };
 
 template <class ContainerAllocator>
 struct IsFixedSize< ::robbie_stability::Contact_<ContainerAllocator> const>
-  : TrueType
+  : FalseType
   { };
 
 template <class ContainerAllocator>
@@ -109,12 +148,12 @@ struct IsMessage< ::robbie_stability::Contact_<ContainerAllocator> const>
 
 template <class ContainerAllocator>
 struct HasHeader< ::robbie_stability::Contact_<ContainerAllocator> >
-  : FalseType
+  : TrueType
   { };
 
 template <class ContainerAllocator>
 struct HasHeader< ::robbie_stability::Contact_<ContainerAllocator> const>
-  : FalseType
+  : TrueType
   { };
 
 
@@ -123,12 +162,12 @@ struct MD5Sum< ::robbie_stability::Contact_<ContainerAllocator> >
 {
   static const char* value()
   {
-    return "a1098ecc6338cffcc410aeee87ea5720";
+    return "31b45b8e08a0213533479b6867616a3e";
   }
 
   static const char* value(const ::robbie_stability::Contact_<ContainerAllocator>&) { return value(); }
-  static const uint64_t static_value1 = 0xa1098ecc6338cffcULL;
-  static const uint64_t static_value2 = 0xc410aeee87ea5720ULL;
+  static const uint64_t static_value1 = 0x31b45b8e08a02135ULL;
+  static const uint64_t static_value2 = 0x33479b6867616a3eULL;
 };
 
 template<class ContainerAllocator>
@@ -147,9 +186,43 @@ struct Definition< ::robbie_stability::Contact_<ContainerAllocator> >
 {
   static const char* value()
   {
-    return "bool shank\n\
+    return "std_msgs/Header header\n\
+\n\
+bool shank\n\
 bool lhm\n\
 bool stabilizer\n\
+\n\
+string stabilizer_on\n\
+string shank_on\n\
+string lhm_on\n\
+\n\
+geometry_msgs/Point stabilizer_location\n\
+geometry_msgs/Point shank_location\n\
+geometry_msgs/Point lhm_location\n\
+================================================================================\n\
+MSG: std_msgs/Header\n\
+# Standard metadata for higher-level stamped data types.\n\
+# This is generally used to communicate timestamped data \n\
+# in a particular coordinate frame.\n\
+# \n\
+# sequence ID: consecutively increasing ID \n\
+uint32 seq\n\
+#Two-integer timestamp that is expressed as:\n\
+# * stamp.sec: seconds (stamp_secs) since epoch (in Python the variable is called 'secs')\n\
+# * stamp.nsec: nanoseconds since stamp_secs (in Python the variable is called 'nsecs')\n\
+# time-handling sugar is provided by the client library\n\
+time stamp\n\
+#Frame this data is associated with\n\
+# 0: no frame\n\
+# 1: global frame\n\
+string frame_id\n\
+\n\
+================================================================================\n\
+MSG: geometry_msgs/Point\n\
+# This contains the position of a point in free space\n\
+float64 x\n\
+float64 y\n\
+float64 z\n\
 ";
   }
 
@@ -168,9 +241,16 @@ namespace serialization
   {
     template<typename Stream, typename T> inline static void allInOne(Stream& stream, T m)
     {
+      stream.next(m.header);
       stream.next(m.shank);
       stream.next(m.lhm);
       stream.next(m.stabilizer);
+      stream.next(m.stabilizer_on);
+      stream.next(m.shank_on);
+      stream.next(m.lhm_on);
+      stream.next(m.stabilizer_location);
+      stream.next(m.shank_location);
+      stream.next(m.lhm_location);
     }
 
     ROS_DECLARE_ALLINONE_SERIALIZER
@@ -189,12 +269,30 @@ struct Printer< ::robbie_stability::Contact_<ContainerAllocator> >
 {
   template<typename Stream> static void stream(Stream& s, const std::string& indent, const ::robbie_stability::Contact_<ContainerAllocator>& v)
   {
+    s << indent << "header: ";
+    s << std::endl;
+    Printer< ::std_msgs::Header_<ContainerAllocator> >::stream(s, indent + "  ", v.header);
     s << indent << "shank: ";
     Printer<uint8_t>::stream(s, indent + "  ", v.shank);
     s << indent << "lhm: ";
     Printer<uint8_t>::stream(s, indent + "  ", v.lhm);
     s << indent << "stabilizer: ";
     Printer<uint8_t>::stream(s, indent + "  ", v.stabilizer);
+    s << indent << "stabilizer_on: ";
+    Printer<std::basic_string<char, std::char_traits<char>, typename ContainerAllocator::template rebind<char>::other > >::stream(s, indent + "  ", v.stabilizer_on);
+    s << indent << "shank_on: ";
+    Printer<std::basic_string<char, std::char_traits<char>, typename ContainerAllocator::template rebind<char>::other > >::stream(s, indent + "  ", v.shank_on);
+    s << indent << "lhm_on: ";
+    Printer<std::basic_string<char, std::char_traits<char>, typename ContainerAllocator::template rebind<char>::other > >::stream(s, indent + "  ", v.lhm_on);
+    s << indent << "stabilizer_location: ";
+    s << std::endl;
+    Printer< ::geometry_msgs::Point_<ContainerAllocator> >::stream(s, indent + "  ", v.stabilizer_location);
+    s << indent << "shank_location: ";
+    s << std::endl;
+    Printer< ::geometry_msgs::Point_<ContainerAllocator> >::stream(s, indent + "  ", v.shank_location);
+    s << indent << "lhm_location: ";
+    s << std::endl;
+    Printer< ::geometry_msgs::Point_<ContainerAllocator> >::stream(s, indent + "  ", v.lhm_location);
   }
 };
 

@@ -54,7 +54,7 @@ CMAKE_BINARY_DIR = /home/moyin/dev/autonomous_controllers/build
 include robot_controllers/robbie_stability/CMakeFiles/_robbie_stability_generate_messages_check_deps_Contact.dir/progress.make
 
 robot_controllers/robbie_stability/CMakeFiles/_robbie_stability_generate_messages_check_deps_Contact:
-	cd /home/moyin/dev/autonomous_controllers/build/robot_controllers/robbie_stability && ../../catkin_generated/env_cached.sh /usr/local/bin/python /opt/ros/indigo/share/genmsg/cmake/../../../lib/genmsg/genmsg_check_deps.py robbie_stability /home/moyin/dev/autonomous_controllers/src/robot_controllers/robbie_stability/msg/Contact.msg 
+	cd /home/moyin/dev/autonomous_controllers/build/robot_controllers/robbie_stability && ../../catkin_generated/env_cached.sh /usr/local/bin/python /opt/ros/indigo/share/genmsg/cmake/../../../lib/genmsg/genmsg_check_deps.py robbie_stability /home/moyin/dev/autonomous_controllers/src/robot_controllers/robbie_stability/msg/Contact.msg std_msgs/Header:geometry_msgs/Point
 
 _robbie_stability_generate_messages_check_deps_Contact: robot_controllers/robbie_stability/CMakeFiles/_robbie_stability_generate_messages_check_deps_Contact
 _robbie_stability_generate_messages_check_deps_Contact: robot_controllers/robbie_stability/CMakeFiles/_robbie_stability_generate_messages_check_deps_Contact.dir/build.make

@@ -1,6 +1,8 @@
 file(REMOVE_RECURSE
   "CMakeFiles/robbie_stability_generate_messages_lisp"
+  "/home/moyin/dev/autonomous_controllers/devel/share/common-lisp/ros/robbie_stability/msg/ContactLinkStates.lisp"
   "/home/moyin/dev/autonomous_controllers/devel/share/common-lisp/ros/robbie_stability/msg/Contact.lisp"
+  "/home/moyin/dev/autonomous_controllers/devel/share/common-lisp/ros/robbie_stability/msg/LinkStatesStamped.lisp"
 )
 
 # Per-language clean rules from dependency scanning.

@@ -1,6 +1,6 @@
 # generated from genmsg/cmake/pkg-genmsg.cmake.em
 
-message(STATUS "robbie_auto: 1 messages, 0 services")
+message(STATUS "robbie_auto: 2 messages, 0 services")
 
 set(MSG_I_FLAGS "-Irobbie_auto:/home/moyin/dev/autonomous_controllers/src/robot_controllers/robbie_auto/msg")
 
@@ -20,12 +20,23 @@ add_custom_target(_robbie_auto_generate_messages_check_deps_${_filename}
   COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "robbie_auto" "/home/moyin/dev/autonomous_controllers/src/robot_controllers/robbie_auto/msg/Contact.msg" ""
 )
 
+get_filename_component(_filename "/home/moyin/dev/autonomous_controllers/src/robot_controllers/robbie_auto/msg/Script.msg" NAME_WE)
+add_custom_target(_robbie_auto_generate_messages_check_deps_${_filename}
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "robbie_auto" "/home/moyin/dev/autonomous_controllers/src/robot_controllers/robbie_auto/msg/Script.msg" ""
+)
+
 #
 #  langs = gencpp;genlisp;genpy
 #
 
 ### Section generating for lang: gencpp
 ### Generating Messages
+_generate_msg_cpp(robbie_auto
+  "/home/moyin/dev/autonomous_controllers/src/robot_controllers/robbie_auto/msg/Script.msg"
+  "${MSG_I_FLAGS}"
+  ""
+  ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/robbie_auto
+)
 _generate_msg_cpp(robbie_auto
   "/home/moyin/dev/autonomous_controllers/src/robot_controllers/robbie_auto/msg/Contact.msg"
   "${MSG_I_FLAGS}"
@@ -49,6 +60,8 @@ add_dependencies(robbie_auto_generate_messages robbie_auto_generate_messages_cpp
 # add dependencies to all check dependencies targets
 get_filename_component(_filename "/home/moyin/dev/autonomous_controllers/src/robot_controllers/robbie_auto/msg/Contact.msg" NAME_WE)
 add_dependencies(robbie_auto_generate_messages_cpp _robbie_auto_generate_messages_check_deps_${_filename})
+get_filename_component(_filename "/home/moyin/dev/autonomous_controllers/src/robot_controllers/robbie_auto/msg/Script.msg" NAME_WE)
+add_dependencies(robbie_auto_generate_messages_cpp _robbie_auto_generate_messages_check_deps_${_filename})
 
 # target for backward compatibility
 add_custom_target(robbie_auto_gencpp)
@@ -59,6 +72,12 @@ list(APPEND ${PROJECT_NAME}_EXPORTED_TARGETS robbie_auto_generate_messages_cpp)
 
 ### Section generating for lang: genlisp
 ### Generating Messages
+_generate_msg_lisp(robbie_auto
+  "/home/moyin/dev/autonomous_controllers/src/robot_controllers/robbie_auto/msg/Script.msg"
+  "${MSG_I_FLAGS}"
+  ""
+  ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/robbie_auto
+)
 _generate_msg_lisp(robbie_auto
   "/home/moyin/dev/autonomous_controllers/src/robot_controllers/robbie_auto/msg/Contact.msg"
   "${MSG_I_FLAGS}"
@@ -82,6 +101,8 @@ add_dependencies(robbie_auto_generate_messages robbie_auto_generate_messages_lis
 # add dependencies to all check dependencies targets
 get_filename_component(_filename "/home/moyin/dev/autonomous_controllers/src/robot_controllers/robbie_auto/msg/Contact.msg" NAME_WE)
 add_dependencies(robbie_auto_generate_messages_lisp _robbie_auto_generate_messages_check_deps_${_filename})
+get_filename_component(_filename "/home/moyin/dev/autonomous_controllers/src/robot_controllers/robbie_auto/msg/Script.msg" NAME_WE)
+add_dependencies(robbie_auto_generate_messages_lisp _robbie_auto_generate_messages_check_deps_${_filename})
 
 # target for backward compatibility
 add_custom_target(robbie_auto_genlisp)
@@ -92,6 +113,12 @@ list(APPEND ${PROJECT_NAME}_EXPORTED_TARGETS robbie_auto_generate_messages_lisp)
 
 ### Section generating for lang: genpy
 ### Generating Messages
+_generate_msg_py(robbie_auto
+  "/home/moyin/dev/autonomous_controllers/src/robot_controllers/robbie_auto/msg/Script.msg"
+  "${MSG_I_FLAGS}"
+  ""
+  ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/robbie_auto
+)
 _generate_msg_py(robbie_auto
   "/home/moyin/dev/autonomous_controllers/src/robot_controllers/robbie_auto/msg/Contact.msg"
   "${MSG_I_FLAGS}"
@@ -114,6 +141,8 @@ add_dependencies(robbie_auto_generate_messages robbie_auto_generate_messages_py)
 
 # add dependencies to all check dependencies targets
 get_filename_component(_filename "/home/moyin/dev/autonomous_controllers/src/robot_controllers/robbie_auto/msg/Contact.msg" NAME_WE)
+add_dependencies(robbie_auto_generate_messages_py _robbie_auto_generate_messages_check_deps_${_filename})
+get_filename_component(_filename "/home/moyin/dev/autonomous_controllers/src/robot_controllers/robbie_auto/msg/Script.msg" NAME_WE)
 add_dependencies(robbie_auto_generate_messages_py _robbie_auto_generate_messages_check_deps_${_filename})
 
 # target for backward compatibility

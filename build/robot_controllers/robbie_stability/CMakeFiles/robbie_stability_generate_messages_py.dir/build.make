@@ -53,22 +53,52 @@ CMAKE_BINARY_DIR = /home/moyin/dev/autonomous_controllers/build
 # Include the progress variables for this target.
 include robot_controllers/robbie_stability/CMakeFiles/robbie_stability_generate_messages_py.dir/progress.make
 
+robot_controllers/robbie_stability/CMakeFiles/robbie_stability_generate_messages_py: /home/moyin/dev/autonomous_controllers/devel/lib/python2.7/dist-packages/robbie_stability/msg/_ContactLinkStates.py
 robot_controllers/robbie_stability/CMakeFiles/robbie_stability_generate_messages_py: /home/moyin/dev/autonomous_controllers/devel/lib/python2.7/dist-packages/robbie_stability/msg/_Contact.py
+robot_controllers/robbie_stability/CMakeFiles/robbie_stability_generate_messages_py: /home/moyin/dev/autonomous_controllers/devel/lib/python2.7/dist-packages/robbie_stability/msg/_LinkStatesStamped.py
 robot_controllers/robbie_stability/CMakeFiles/robbie_stability_generate_messages_py: /home/moyin/dev/autonomous_controllers/devel/lib/python2.7/dist-packages/robbie_stability/msg/__init__.py
 
 
+/home/moyin/dev/autonomous_controllers/devel/lib/python2.7/dist-packages/robbie_stability/msg/_ContactLinkStates.py: /opt/ros/indigo/lib/genpy/genmsg_py.py
+/home/moyin/dev/autonomous_controllers/devel/lib/python2.7/dist-packages/robbie_stability/msg/_ContactLinkStates.py: /home/moyin/dev/autonomous_controllers/src/robot_controllers/robbie_stability/msg/ContactLinkStates.msg
+/home/moyin/dev/autonomous_controllers/devel/lib/python2.7/dist-packages/robbie_stability/msg/_ContactLinkStates.py: /home/moyin/dev/autonomous_controllers/src/robot_controllers/robbie_stability/msg/Contact.msg
+/home/moyin/dev/autonomous_controllers/devel/lib/python2.7/dist-packages/robbie_stability/msg/_ContactLinkStates.py: /opt/ros/indigo/share/geometry_msgs/msg/Pose.msg
+/home/moyin/dev/autonomous_controllers/devel/lib/python2.7/dist-packages/robbie_stability/msg/_ContactLinkStates.py: /opt/ros/indigo/share/geometry_msgs/msg/Quaternion.msg
+/home/moyin/dev/autonomous_controllers/devel/lib/python2.7/dist-packages/robbie_stability/msg/_ContactLinkStates.py: /opt/ros/indigo/share/std_msgs/msg/Header.msg
+/home/moyin/dev/autonomous_controllers/devel/lib/python2.7/dist-packages/robbie_stability/msg/_ContactLinkStates.py: /opt/ros/indigo/share/geometry_msgs/msg/Point.msg
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/moyin/dev/autonomous_controllers/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating Python from MSG robbie_stability/ContactLinkStates"
+	cd /home/moyin/dev/autonomous_controllers/build/robot_controllers/robbie_stability && ../../catkin_generated/env_cached.sh /usr/local/bin/python /opt/ros/indigo/share/genpy/cmake/../../../lib/genpy/genmsg_py.py /home/moyin/dev/autonomous_controllers/src/robot_controllers/robbie_stability/msg/ContactLinkStates.msg -Irobbie_stability:/home/moyin/dev/autonomous_controllers/src/robot_controllers/robbie_stability/msg -Istd_msgs:/opt/ros/indigo/share/std_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/indigo/share/geometry_msgs/cmake/../msg -Igazebo_msgs:/opt/ros/indigo/share/gazebo_msgs/cmake/../msg -Isensor_msgs:/opt/ros/indigo/share/sensor_msgs/cmake/../msg -Itrajectory_msgs:/opt/ros/indigo/share/trajectory_msgs/cmake/../msg -p robbie_stability -o /home/moyin/dev/autonomous_controllers/devel/lib/python2.7/dist-packages/robbie_stability/msg
+
 /home/moyin/dev/autonomous_controllers/devel/lib/python2.7/dist-packages/robbie_stability/msg/_Contact.py: /opt/ros/indigo/lib/genpy/genmsg_py.py
 /home/moyin/dev/autonomous_controllers/devel/lib/python2.7/dist-packages/robbie_stability/msg/_Contact.py: /home/moyin/dev/autonomous_controllers/src/robot_controllers/robbie_stability/msg/Contact.msg
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/moyin/dev/autonomous_controllers/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating Python from MSG robbie_stability/Contact"
-	cd /home/moyin/dev/autonomous_controllers/build/robot_controllers/robbie_stability && ../../catkin_generated/env_cached.sh /usr/local/bin/python /opt/ros/indigo/share/genpy/cmake/../../../lib/genpy/genmsg_py.py /home/moyin/dev/autonomous_controllers/src/robot_controllers/robbie_stability/msg/Contact.msg -Irobbie_stability:/home/moyin/dev/autonomous_controllers/src/robot_controllers/robbie_stability/msg -p robbie_stability -o /home/moyin/dev/autonomous_controllers/devel/lib/python2.7/dist-packages/robbie_stability/msg
+/home/moyin/dev/autonomous_controllers/devel/lib/python2.7/dist-packages/robbie_stability/msg/_Contact.py: /opt/ros/indigo/share/std_msgs/msg/Header.msg
+/home/moyin/dev/autonomous_controllers/devel/lib/python2.7/dist-packages/robbie_stability/msg/_Contact.py: /opt/ros/indigo/share/geometry_msgs/msg/Point.msg
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/moyin/dev/autonomous_controllers/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Generating Python from MSG robbie_stability/Contact"
+	cd /home/moyin/dev/autonomous_controllers/build/robot_controllers/robbie_stability && ../../catkin_generated/env_cached.sh /usr/local/bin/python /opt/ros/indigo/share/genpy/cmake/../../../lib/genpy/genmsg_py.py /home/moyin/dev/autonomous_controllers/src/robot_controllers/robbie_stability/msg/Contact.msg -Irobbie_stability:/home/moyin/dev/autonomous_controllers/src/robot_controllers/robbie_stability/msg -Istd_msgs:/opt/ros/indigo/share/std_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/indigo/share/geometry_msgs/cmake/../msg -Igazebo_msgs:/opt/ros/indigo/share/gazebo_msgs/cmake/../msg -Isensor_msgs:/opt/ros/indigo/share/sensor_msgs/cmake/../msg -Itrajectory_msgs:/opt/ros/indigo/share/trajectory_msgs/cmake/../msg -p robbie_stability -o /home/moyin/dev/autonomous_controllers/devel/lib/python2.7/dist-packages/robbie_stability/msg
+
+/home/moyin/dev/autonomous_controllers/devel/lib/python2.7/dist-packages/robbie_stability/msg/_LinkStatesStamped.py: /opt/ros/indigo/lib/genpy/genmsg_py.py
+/home/moyin/dev/autonomous_controllers/devel/lib/python2.7/dist-packages/robbie_stability/msg/_LinkStatesStamped.py: /home/moyin/dev/autonomous_controllers/src/robot_controllers/robbie_stability/msg/LinkStatesStamped.msg
+/home/moyin/dev/autonomous_controllers/devel/lib/python2.7/dist-packages/robbie_stability/msg/_LinkStatesStamped.py: /opt/ros/indigo/share/geometry_msgs/msg/Point.msg
+/home/moyin/dev/autonomous_controllers/devel/lib/python2.7/dist-packages/robbie_stability/msg/_LinkStatesStamped.py: /opt/ros/indigo/share/geometry_msgs/msg/Vector3.msg
+/home/moyin/dev/autonomous_controllers/devel/lib/python2.7/dist-packages/robbie_stability/msg/_LinkStatesStamped.py: /opt/ros/indigo/share/std_msgs/msg/Header.msg
+/home/moyin/dev/autonomous_controllers/devel/lib/python2.7/dist-packages/robbie_stability/msg/_LinkStatesStamped.py: /opt/ros/indigo/share/geometry_msgs/msg/Quaternion.msg
+/home/moyin/dev/autonomous_controllers/devel/lib/python2.7/dist-packages/robbie_stability/msg/_LinkStatesStamped.py: /opt/ros/indigo/share/gazebo_msgs/msg/LinkStates.msg
+/home/moyin/dev/autonomous_controllers/devel/lib/python2.7/dist-packages/robbie_stability/msg/_LinkStatesStamped.py: /opt/ros/indigo/share/geometry_msgs/msg/Pose.msg
+/home/moyin/dev/autonomous_controllers/devel/lib/python2.7/dist-packages/robbie_stability/msg/_LinkStatesStamped.py: /opt/ros/indigo/share/geometry_msgs/msg/Twist.msg
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/moyin/dev/autonomous_controllers/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Generating Python from MSG robbie_stability/LinkStatesStamped"
+	cd /home/moyin/dev/autonomous_controllers/build/robot_controllers/robbie_stability && ../../catkin_generated/env_cached.sh /usr/local/bin/python /opt/ros/indigo/share/genpy/cmake/../../../lib/genpy/genmsg_py.py /home/moyin/dev/autonomous_controllers/src/robot_controllers/robbie_stability/msg/LinkStatesStamped.msg -Irobbie_stability:/home/moyin/dev/autonomous_controllers/src/robot_controllers/robbie_stability/msg -Istd_msgs:/opt/ros/indigo/share/std_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/indigo/share/geometry_msgs/cmake/../msg -Igazebo_msgs:/opt/ros/indigo/share/gazebo_msgs/cmake/../msg -Isensor_msgs:/opt/ros/indigo/share/sensor_msgs/cmake/../msg -Itrajectory_msgs:/opt/ros/indigo/share/trajectory_msgs/cmake/../msg -p robbie_stability -o /home/moyin/dev/autonomous_controllers/devel/lib/python2.7/dist-packages/robbie_stability/msg
 
 /home/moyin/dev/autonomous_controllers/devel/lib/python2.7/dist-packages/robbie_stability/msg/__init__.py: /opt/ros/indigo/lib/genpy/genmsg_py.py
+/home/moyin/dev/autonomous_controllers/devel/lib/python2.7/dist-packages/robbie_stability/msg/__init__.py: /home/moyin/dev/autonomous_controllers/devel/lib/python2.7/dist-packages/robbie_stability/msg/_ContactLinkStates.py
 /home/moyin/dev/autonomous_controllers/devel/lib/python2.7/dist-packages/robbie_stability/msg/__init__.py: /home/moyin/dev/autonomous_controllers/devel/lib/python2.7/dist-packages/robbie_stability/msg/_Contact.py
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/moyin/dev/autonomous_controllers/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Generating Python msg __init__.py for robbie_stability"
+/home/moyin/dev/autonomous_controllers/devel/lib/python2.7/dist-packages/robbie_stability/msg/__init__.py: /home/moyin/dev/autonomous_controllers/devel/lib/python2.7/dist-packages/robbie_stability/msg/_LinkStatesStamped.py
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/moyin/dev/autonomous_controllers/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Generating Python msg __init__.py for robbie_stability"
 	cd /home/moyin/dev/autonomous_controllers/build/robot_controllers/robbie_stability && ../../catkin_generated/env_cached.sh /usr/local/bin/python /opt/ros/indigo/share/genpy/cmake/../../../lib/genpy/genmsg_py.py -o /home/moyin/dev/autonomous_controllers/devel/lib/python2.7/dist-packages/robbie_stability/msg --initpy
 
 robbie_stability_generate_messages_py: robot_controllers/robbie_stability/CMakeFiles/robbie_stability_generate_messages_py
+robbie_stability_generate_messages_py: /home/moyin/dev/autonomous_controllers/devel/lib/python2.7/dist-packages/robbie_stability/msg/_ContactLinkStates.py
 robbie_stability_generate_messages_py: /home/moyin/dev/autonomous_controllers/devel/lib/python2.7/dist-packages/robbie_stability/msg/_Contact.py
+robbie_stability_generate_messages_py: /home/moyin/dev/autonomous_controllers/devel/lib/python2.7/dist-packages/robbie_stability/msg/_LinkStatesStamped.py
 robbie_stability_generate_messages_py: /home/moyin/dev/autonomous_controllers/devel/lib/python2.7/dist-packages/robbie_stability/msg/__init__.py
 robbie_stability_generate_messages_py: robot_controllers/robbie_stability/CMakeFiles/robbie_stability_generate_messages_py.dir/build.make
 

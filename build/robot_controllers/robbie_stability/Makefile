@@ -56,17 +56,6 @@ CMAKE_BINARY_DIR = /home/moyin/dev/autonomous_controllers/build
 #=============================================================================
 # Targets provided globally by CMake.
 
-# Special rule for the target install/local
-install/local: preinstall
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing only the local directory..."
-	/home/moyin/tools/cmake-3.7.0-rc1/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
-.PHONY : install/local
-
-# Special rule for the target install/local
-install/local/fast: install/local
-
-.PHONY : install/local/fast
-
 # Special rule for the target rebuild_cache
 rebuild_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
@@ -89,6 +78,17 @@ edit_cache/fast: edit_cache
 
 .PHONY : edit_cache/fast
 
+# Special rule for the target test
+test:
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running tests..."
+	/home/moyin/tools/cmake-3.7.0-rc1/bin/ctest --force-new-ctest-process $(ARGS)
+.PHONY : test
+
+# Special rule for the target test
+test/fast: test
+
+.PHONY : test/fast
+
 # Special rule for the target install/strip
 install/strip: preinstall
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing the project stripped..."
@@ -110,16 +110,16 @@ list_install_components/fast: list_install_components
 
 .PHONY : list_install_components/fast
 
-# Special rule for the target test
-test:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running tests..."
-	/home/moyin/tools/cmake-3.7.0-rc1/bin/ctest --force-new-ctest-process $(ARGS)
-.PHONY : test
+# Special rule for the target install/local
+install/local: preinstall
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing only the local directory..."
+	/home/moyin/tools/cmake-3.7.0-rc1/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
+.PHONY : install/local
 
-# Special rule for the target test
-test/fast: test
+# Special rule for the target install/local
+install/local/fast: install/local
 
-.PHONY : test/fast
+.PHONY : install/local/fast
 
 # Special rule for the target install
 install: preinstall
@@ -166,6 +166,66 @@ depend:
 .PHONY : depend
 
 # Convenience name for target.
+robot_controllers/robbie_stability/CMakeFiles/robbie_location_contact.dir/rule:
+	cd /home/moyin/dev/autonomous_controllers/build && $(MAKE) -f CMakeFiles/Makefile2 robot_controllers/robbie_stability/CMakeFiles/robbie_location_contact.dir/rule
+.PHONY : robot_controllers/robbie_stability/CMakeFiles/robbie_location_contact.dir/rule
+
+# Convenience name for target.
+robbie_location_contact: robot_controllers/robbie_stability/CMakeFiles/robbie_location_contact.dir/rule
+
+.PHONY : robbie_location_contact
+
+# fast build rule for target.
+robbie_location_contact/fast:
+	cd /home/moyin/dev/autonomous_controllers/build && $(MAKE) -f robot_controllers/robbie_stability/CMakeFiles/robbie_location_contact.dir/build.make robot_controllers/robbie_stability/CMakeFiles/robbie_location_contact.dir/build
+.PHONY : robbie_location_contact/fast
+
+# Convenience name for target.
+robot_controllers/robbie_stability/CMakeFiles/robbie_linkstates_stamped.dir/rule:
+	cd /home/moyin/dev/autonomous_controllers/build && $(MAKE) -f CMakeFiles/Makefile2 robot_controllers/robbie_stability/CMakeFiles/robbie_linkstates_stamped.dir/rule
+.PHONY : robot_controllers/robbie_stability/CMakeFiles/robbie_linkstates_stamped.dir/rule
+
+# Convenience name for target.
+robbie_linkstates_stamped: robot_controllers/robbie_stability/CMakeFiles/robbie_linkstates_stamped.dir/rule
+
+.PHONY : robbie_linkstates_stamped
+
+# fast build rule for target.
+robbie_linkstates_stamped/fast:
+	cd /home/moyin/dev/autonomous_controllers/build && $(MAKE) -f robot_controllers/robbie_stability/CMakeFiles/robbie_linkstates_stamped.dir/build.make robot_controllers/robbie_stability/CMakeFiles/robbie_linkstates_stamped.dir/build
+.PHONY : robbie_linkstates_stamped/fast
+
+# Convenience name for target.
+robot_controllers/robbie_stability/CMakeFiles/robbie_contact_ex.dir/rule:
+	cd /home/moyin/dev/autonomous_controllers/build && $(MAKE) -f CMakeFiles/Makefile2 robot_controllers/robbie_stability/CMakeFiles/robbie_contact_ex.dir/rule
+.PHONY : robot_controllers/robbie_stability/CMakeFiles/robbie_contact_ex.dir/rule
+
+# Convenience name for target.
+robbie_contact_ex: robot_controllers/robbie_stability/CMakeFiles/robbie_contact_ex.dir/rule
+
+.PHONY : robbie_contact_ex
+
+# fast build rule for target.
+robbie_contact_ex/fast:
+	cd /home/moyin/dev/autonomous_controllers/build && $(MAKE) -f robot_controllers/robbie_stability/CMakeFiles/robbie_contact_ex.dir/build.make robot_controllers/robbie_stability/CMakeFiles/robbie_contact_ex.dir/build
+.PHONY : robbie_contact_ex/fast
+
+# Convenience name for target.
+robot_controllers/robbie_stability/CMakeFiles/robbie_stability_ex.dir/rule:
+	cd /home/moyin/dev/autonomous_controllers/build && $(MAKE) -f CMakeFiles/Makefile2 robot_controllers/robbie_stability/CMakeFiles/robbie_stability_ex.dir/rule
+.PHONY : robot_controllers/robbie_stability/CMakeFiles/robbie_stability_ex.dir/rule
+
+# Convenience name for target.
+robbie_stability_ex: robot_controllers/robbie_stability/CMakeFiles/robbie_stability_ex.dir/rule
+
+.PHONY : robbie_stability_ex
+
+# fast build rule for target.
+robbie_stability_ex/fast:
+	cd /home/moyin/dev/autonomous_controllers/build && $(MAKE) -f robot_controllers/robbie_stability/CMakeFiles/robbie_stability_ex.dir/build.make robot_controllers/robbie_stability/CMakeFiles/robbie_stability_ex.dir/build
+.PHONY : robbie_stability_ex/fast
+
+# Convenience name for target.
 robot_controllers/robbie_stability/CMakeFiles/robbie_stability_generate_messages.dir/rule:
 	cd /home/moyin/dev/autonomous_controllers/build && $(MAKE) -f CMakeFiles/Makefile2 robot_controllers/robbie_stability/CMakeFiles/robbie_stability_generate_messages.dir/rule
 .PHONY : robot_controllers/robbie_stability/CMakeFiles/robbie_stability_generate_messages.dir/rule
@@ -196,19 +256,34 @@ _robbie_stability_generate_messages_check_deps_Contact/fast:
 .PHONY : _robbie_stability_generate_messages_check_deps_Contact/fast
 
 # Convenience name for target.
-robot_controllers/robbie_stability/CMakeFiles/robbie_stability_ex.dir/rule:
-	cd /home/moyin/dev/autonomous_controllers/build && $(MAKE) -f CMakeFiles/Makefile2 robot_controllers/robbie_stability/CMakeFiles/robbie_stability_ex.dir/rule
-.PHONY : robot_controllers/robbie_stability/CMakeFiles/robbie_stability_ex.dir/rule
+robot_controllers/robbie_stability/CMakeFiles/robbie_stability_genpy.dir/rule:
+	cd /home/moyin/dev/autonomous_controllers/build && $(MAKE) -f CMakeFiles/Makefile2 robot_controllers/robbie_stability/CMakeFiles/robbie_stability_genpy.dir/rule
+.PHONY : robot_controllers/robbie_stability/CMakeFiles/robbie_stability_genpy.dir/rule
 
 # Convenience name for target.
-robbie_stability_ex: robot_controllers/robbie_stability/CMakeFiles/robbie_stability_ex.dir/rule
+robbie_stability_genpy: robot_controllers/robbie_stability/CMakeFiles/robbie_stability_genpy.dir/rule
 
-.PHONY : robbie_stability_ex
+.PHONY : robbie_stability_genpy
 
 # fast build rule for target.
-robbie_stability_ex/fast:
-	cd /home/moyin/dev/autonomous_controllers/build && $(MAKE) -f robot_controllers/robbie_stability/CMakeFiles/robbie_stability_ex.dir/build.make robot_controllers/robbie_stability/CMakeFiles/robbie_stability_ex.dir/build
-.PHONY : robbie_stability_ex/fast
+robbie_stability_genpy/fast:
+	cd /home/moyin/dev/autonomous_controllers/build && $(MAKE) -f robot_controllers/robbie_stability/CMakeFiles/robbie_stability_genpy.dir/build.make robot_controllers/robbie_stability/CMakeFiles/robbie_stability_genpy.dir/build
+.PHONY : robbie_stability_genpy/fast
+
+# Convenience name for target.
+robot_controllers/robbie_stability/CMakeFiles/_robbie_stability_generate_messages_check_deps_LinkStatesStamped.dir/rule:
+	cd /home/moyin/dev/autonomous_controllers/build && $(MAKE) -f CMakeFiles/Makefile2 robot_controllers/robbie_stability/CMakeFiles/_robbie_stability_generate_messages_check_deps_LinkStatesStamped.dir/rule
+.PHONY : robot_controllers/robbie_stability/CMakeFiles/_robbie_stability_generate_messages_check_deps_LinkStatesStamped.dir/rule
+
+# Convenience name for target.
+_robbie_stability_generate_messages_check_deps_LinkStatesStamped: robot_controllers/robbie_stability/CMakeFiles/_robbie_stability_generate_messages_check_deps_LinkStatesStamped.dir/rule
+
+.PHONY : _robbie_stability_generate_messages_check_deps_LinkStatesStamped
+
+# fast build rule for target.
+_robbie_stability_generate_messages_check_deps_LinkStatesStamped/fast:
+	cd /home/moyin/dev/autonomous_controllers/build && $(MAKE) -f robot_controllers/robbie_stability/CMakeFiles/_robbie_stability_generate_messages_check_deps_LinkStatesStamped.dir/build.make robot_controllers/robbie_stability/CMakeFiles/_robbie_stability_generate_messages_check_deps_LinkStatesStamped.dir/build
+.PHONY : _robbie_stability_generate_messages_check_deps_LinkStatesStamped/fast
 
 # Convenience name for target.
 robot_controllers/robbie_stability/CMakeFiles/robbie_stability_gencpp.dir/rule:
@@ -271,6 +346,21 @@ robbie_stability_genlisp/fast:
 .PHONY : robbie_stability_genlisp/fast
 
 # Convenience name for target.
+robot_controllers/robbie_stability/CMakeFiles/_robbie_stability_generate_messages_check_deps_ContactLinkStates.dir/rule:
+	cd /home/moyin/dev/autonomous_controllers/build && $(MAKE) -f CMakeFiles/Makefile2 robot_controllers/robbie_stability/CMakeFiles/_robbie_stability_generate_messages_check_deps_ContactLinkStates.dir/rule
+.PHONY : robot_controllers/robbie_stability/CMakeFiles/_robbie_stability_generate_messages_check_deps_ContactLinkStates.dir/rule
+
+# Convenience name for target.
+_robbie_stability_generate_messages_check_deps_ContactLinkStates: robot_controllers/robbie_stability/CMakeFiles/_robbie_stability_generate_messages_check_deps_ContactLinkStates.dir/rule
+
+.PHONY : _robbie_stability_generate_messages_check_deps_ContactLinkStates
+
+# fast build rule for target.
+_robbie_stability_generate_messages_check_deps_ContactLinkStates/fast:
+	cd /home/moyin/dev/autonomous_controllers/build && $(MAKE) -f robot_controllers/robbie_stability/CMakeFiles/_robbie_stability_generate_messages_check_deps_ContactLinkStates.dir/build.make robot_controllers/robbie_stability/CMakeFiles/_robbie_stability_generate_messages_check_deps_ContactLinkStates.dir/build
+.PHONY : _robbie_stability_generate_messages_check_deps_ContactLinkStates/fast
+
+# Convenience name for target.
 robot_controllers/robbie_stability/CMakeFiles/robbie_stability_generate_messages_py.dir/rule:
 	cd /home/moyin/dev/autonomous_controllers/build && $(MAKE) -f CMakeFiles/Makefile2 robot_controllers/robbie_stability/CMakeFiles/robbie_stability_generate_messages_py.dir/rule
 .PHONY : robot_controllers/robbie_stability/CMakeFiles/robbie_stability_generate_messages_py.dir/rule
@@ -285,62 +375,86 @@ robbie_stability_generate_messages_py/fast:
 	cd /home/moyin/dev/autonomous_controllers/build && $(MAKE) -f robot_controllers/robbie_stability/CMakeFiles/robbie_stability_generate_messages_py.dir/build.make robot_controllers/robbie_stability/CMakeFiles/robbie_stability_generate_messages_py.dir/build
 .PHONY : robbie_stability_generate_messages_py/fast
 
-# Convenience name for target.
-robot_controllers/robbie_stability/CMakeFiles/robbie_stability_genpy.dir/rule:
-	cd /home/moyin/dev/autonomous_controllers/build && $(MAKE) -f CMakeFiles/Makefile2 robot_controllers/robbie_stability/CMakeFiles/robbie_stability_genpy.dir/rule
-.PHONY : robot_controllers/robbie_stability/CMakeFiles/robbie_stability_genpy.dir/rule
+src/robbie_contact_ex_2.o: src/robbie_contact_ex_2.cpp.o
 
-# Convenience name for target.
-robbie_stability_genpy: robot_controllers/robbie_stability/CMakeFiles/robbie_stability_genpy.dir/rule
-
-.PHONY : robbie_stability_genpy
-
-# fast build rule for target.
-robbie_stability_genpy/fast:
-	cd /home/moyin/dev/autonomous_controllers/build && $(MAKE) -f robot_controllers/robbie_stability/CMakeFiles/robbie_stability_genpy.dir/build.make robot_controllers/robbie_stability/CMakeFiles/robbie_stability_genpy.dir/build
-.PHONY : robbie_stability_genpy/fast
-
-# Convenience name for target.
-robot_controllers/robbie_stability/CMakeFiles/robbie_contact_ex.dir/rule:
-	cd /home/moyin/dev/autonomous_controllers/build && $(MAKE) -f CMakeFiles/Makefile2 robot_controllers/robbie_stability/CMakeFiles/robbie_contact_ex.dir/rule
-.PHONY : robot_controllers/robbie_stability/CMakeFiles/robbie_contact_ex.dir/rule
-
-# Convenience name for target.
-robbie_contact_ex: robot_controllers/robbie_stability/CMakeFiles/robbie_contact_ex.dir/rule
-
-.PHONY : robbie_contact_ex
-
-# fast build rule for target.
-robbie_contact_ex/fast:
-	cd /home/moyin/dev/autonomous_controllers/build && $(MAKE) -f robot_controllers/robbie_stability/CMakeFiles/robbie_contact_ex.dir/build.make robot_controllers/robbie_stability/CMakeFiles/robbie_contact_ex.dir/build
-.PHONY : robbie_contact_ex/fast
-
-src/robbie_contact_ex.o: src/robbie_contact_ex.cpp.o
-
-.PHONY : src/robbie_contact_ex.o
+.PHONY : src/robbie_contact_ex_2.o
 
 # target to build an object file
-src/robbie_contact_ex.cpp.o:
-	cd /home/moyin/dev/autonomous_controllers/build && $(MAKE) -f robot_controllers/robbie_stability/CMakeFiles/robbie_contact_ex.dir/build.make robot_controllers/robbie_stability/CMakeFiles/robbie_contact_ex.dir/src/robbie_contact_ex.cpp.o
-.PHONY : src/robbie_contact_ex.cpp.o
+src/robbie_contact_ex_2.cpp.o:
+	cd /home/moyin/dev/autonomous_controllers/build && $(MAKE) -f robot_controllers/robbie_stability/CMakeFiles/robbie_contact_ex.dir/build.make robot_controllers/robbie_stability/CMakeFiles/robbie_contact_ex.dir/src/robbie_contact_ex_2.cpp.o
+.PHONY : src/robbie_contact_ex_2.cpp.o
 
-src/robbie_contact_ex.i: src/robbie_contact_ex.cpp.i
+src/robbie_contact_ex_2.i: src/robbie_contact_ex_2.cpp.i
 
-.PHONY : src/robbie_contact_ex.i
+.PHONY : src/robbie_contact_ex_2.i
 
 # target to preprocess a source file
-src/robbie_contact_ex.cpp.i:
-	cd /home/moyin/dev/autonomous_controllers/build && $(MAKE) -f robot_controllers/robbie_stability/CMakeFiles/robbie_contact_ex.dir/build.make robot_controllers/robbie_stability/CMakeFiles/robbie_contact_ex.dir/src/robbie_contact_ex.cpp.i
-.PHONY : src/robbie_contact_ex.cpp.i
+src/robbie_contact_ex_2.cpp.i:
+	cd /home/moyin/dev/autonomous_controllers/build && $(MAKE) -f robot_controllers/robbie_stability/CMakeFiles/robbie_contact_ex.dir/build.make robot_controllers/robbie_stability/CMakeFiles/robbie_contact_ex.dir/src/robbie_contact_ex_2.cpp.i
+.PHONY : src/robbie_contact_ex_2.cpp.i
 
-src/robbie_contact_ex.s: src/robbie_contact_ex.cpp.s
+src/robbie_contact_ex_2.s: src/robbie_contact_ex_2.cpp.s
 
-.PHONY : src/robbie_contact_ex.s
+.PHONY : src/robbie_contact_ex_2.s
 
 # target to generate assembly for a file
-src/robbie_contact_ex.cpp.s:
-	cd /home/moyin/dev/autonomous_controllers/build && $(MAKE) -f robot_controllers/robbie_stability/CMakeFiles/robbie_contact_ex.dir/build.make robot_controllers/robbie_stability/CMakeFiles/robbie_contact_ex.dir/src/robbie_contact_ex.cpp.s
-.PHONY : src/robbie_contact_ex.cpp.s
+src/robbie_contact_ex_2.cpp.s:
+	cd /home/moyin/dev/autonomous_controllers/build && $(MAKE) -f robot_controllers/robbie_stability/CMakeFiles/robbie_contact_ex.dir/build.make robot_controllers/robbie_stability/CMakeFiles/robbie_contact_ex.dir/src/robbie_contact_ex_2.cpp.s
+.PHONY : src/robbie_contact_ex_2.cpp.s
+
+src/robbie_linkstates_stamped.o: src/robbie_linkstates_stamped.cpp.o
+
+.PHONY : src/robbie_linkstates_stamped.o
+
+# target to build an object file
+src/robbie_linkstates_stamped.cpp.o:
+	cd /home/moyin/dev/autonomous_controllers/build && $(MAKE) -f robot_controllers/robbie_stability/CMakeFiles/robbie_linkstates_stamped.dir/build.make robot_controllers/robbie_stability/CMakeFiles/robbie_linkstates_stamped.dir/src/robbie_linkstates_stamped.cpp.o
+.PHONY : src/robbie_linkstates_stamped.cpp.o
+
+src/robbie_linkstates_stamped.i: src/robbie_linkstates_stamped.cpp.i
+
+.PHONY : src/robbie_linkstates_stamped.i
+
+# target to preprocess a source file
+src/robbie_linkstates_stamped.cpp.i:
+	cd /home/moyin/dev/autonomous_controllers/build && $(MAKE) -f robot_controllers/robbie_stability/CMakeFiles/robbie_linkstates_stamped.dir/build.make robot_controllers/robbie_stability/CMakeFiles/robbie_linkstates_stamped.dir/src/robbie_linkstates_stamped.cpp.i
+.PHONY : src/robbie_linkstates_stamped.cpp.i
+
+src/robbie_linkstates_stamped.s: src/robbie_linkstates_stamped.cpp.s
+
+.PHONY : src/robbie_linkstates_stamped.s
+
+# target to generate assembly for a file
+src/robbie_linkstates_stamped.cpp.s:
+	cd /home/moyin/dev/autonomous_controllers/build && $(MAKE) -f robot_controllers/robbie_stability/CMakeFiles/robbie_linkstates_stamped.dir/build.make robot_controllers/robbie_stability/CMakeFiles/robbie_linkstates_stamped.dir/src/robbie_linkstates_stamped.cpp.s
+.PHONY : src/robbie_linkstates_stamped.cpp.s
+
+src/robbie_location_contact.o: src/robbie_location_contact.cpp.o
+
+.PHONY : src/robbie_location_contact.o
+
+# target to build an object file
+src/robbie_location_contact.cpp.o:
+	cd /home/moyin/dev/autonomous_controllers/build && $(MAKE) -f robot_controllers/robbie_stability/CMakeFiles/robbie_location_contact.dir/build.make robot_controllers/robbie_stability/CMakeFiles/robbie_location_contact.dir/src/robbie_location_contact.cpp.o
+.PHONY : src/robbie_location_contact.cpp.o
+
+src/robbie_location_contact.i: src/robbie_location_contact.cpp.i
+
+.PHONY : src/robbie_location_contact.i
+
+# target to preprocess a source file
+src/robbie_location_contact.cpp.i:
+	cd /home/moyin/dev/autonomous_controllers/build && $(MAKE) -f robot_controllers/robbie_stability/CMakeFiles/robbie_location_contact.dir/build.make robot_controllers/robbie_stability/CMakeFiles/robbie_location_contact.dir/src/robbie_location_contact.cpp.i
+.PHONY : src/robbie_location_contact.cpp.i
+
+src/robbie_location_contact.s: src/robbie_location_contact.cpp.s
+
+.PHONY : src/robbie_location_contact.s
+
+# target to generate assembly for a file
+src/robbie_location_contact.cpp.s:
+	cd /home/moyin/dev/autonomous_controllers/build && $(MAKE) -f robot_controllers/robbie_stability/CMakeFiles/robbie_location_contact.dir/build.make robot_controllers/robbie_stability/CMakeFiles/robbie_location_contact.dir/src/robbie_location_contact.cpp.s
+.PHONY : src/robbie_location_contact.cpp.s
 
 src/robbie_stability_ex.o: src/robbie_stability_ex.cpp.o
 
@@ -375,26 +489,36 @@ help:
 	@echo "... all (the default if no target is provided)"
 	@echo "... clean"
 	@echo "... depend"
-	@echo "... install/local"
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
+	@echo "... robbie_location_contact"
+	@echo "... robbie_linkstates_stamped"
+	@echo "... robbie_contact_ex"
+	@echo "... test"
+	@echo "... robbie_stability_ex"
 	@echo "... install/strip"
 	@echo "... list_install_components"
 	@echo "... robbie_stability_generate_messages"
 	@echo "... _robbie_stability_generate_messages_check_deps_Contact"
-	@echo "... test"
-	@echo "... robbie_stability_ex"
+	@echo "... robbie_stability_genpy"
+	@echo "... install/local"
+	@echo "... _robbie_stability_generate_messages_check_deps_LinkStatesStamped"
 	@echo "... install"
 	@echo "... robbie_stability_gencpp"
 	@echo "... robbie_stability_generate_messages_lisp"
 	@echo "... robbie_stability_generate_messages_cpp"
 	@echo "... robbie_stability_genlisp"
+	@echo "... _robbie_stability_generate_messages_check_deps_ContactLinkStates"
 	@echo "... robbie_stability_generate_messages_py"
-	@echo "... robbie_stability_genpy"
-	@echo "... robbie_contact_ex"
-	@echo "... src/robbie_contact_ex.o"
-	@echo "... src/robbie_contact_ex.i"
-	@echo "... src/robbie_contact_ex.s"
+	@echo "... src/robbie_contact_ex_2.o"
+	@echo "... src/robbie_contact_ex_2.i"
+	@echo "... src/robbie_contact_ex_2.s"
+	@echo "... src/robbie_linkstates_stamped.o"
+	@echo "... src/robbie_linkstates_stamped.i"
+	@echo "... src/robbie_linkstates_stamped.s"
+	@echo "... src/robbie_location_contact.o"
+	@echo "... src/robbie_location_contact.i"
+	@echo "... src/robbie_location_contact.s"
 	@echo "... src/robbie_stability_ex.o"
 	@echo "... src/robbie_stability_ex.i"
 	@echo "... src/robbie_stability_ex.s"

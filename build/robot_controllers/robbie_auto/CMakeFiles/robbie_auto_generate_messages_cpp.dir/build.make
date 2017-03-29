@@ -53,16 +53,24 @@ CMAKE_BINARY_DIR = /home/moyin/dev/autonomous_controllers/build
 # Include the progress variables for this target.
 include robot_controllers/robbie_auto/CMakeFiles/robbie_auto_generate_messages_cpp.dir/progress.make
 
+robot_controllers/robbie_auto/CMakeFiles/robbie_auto_generate_messages_cpp: /home/moyin/dev/autonomous_controllers/devel/include/robbie_auto/Script.h
 robot_controllers/robbie_auto/CMakeFiles/robbie_auto_generate_messages_cpp: /home/moyin/dev/autonomous_controllers/devel/include/robbie_auto/Contact.h
 
+
+/home/moyin/dev/autonomous_controllers/devel/include/robbie_auto/Script.h: /opt/ros/indigo/lib/gencpp/gen_cpp.py
+/home/moyin/dev/autonomous_controllers/devel/include/robbie_auto/Script.h: /home/moyin/dev/autonomous_controllers/src/robot_controllers/robbie_auto/msg/Script.msg
+/home/moyin/dev/autonomous_controllers/devel/include/robbie_auto/Script.h: /opt/ros/indigo/share/gencpp/msg.h.template
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/moyin/dev/autonomous_controllers/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating C++ code from robbie_auto/Script.msg"
+	cd /home/moyin/dev/autonomous_controllers/build/robot_controllers/robbie_auto && ../../catkin_generated/env_cached.sh /usr/local/bin/python /opt/ros/indigo/share/gencpp/cmake/../../../lib/gencpp/gen_cpp.py /home/moyin/dev/autonomous_controllers/src/robot_controllers/robbie_auto/msg/Script.msg -Irobbie_auto:/home/moyin/dev/autonomous_controllers/src/robot_controllers/robbie_auto/msg -p robbie_auto -o /home/moyin/dev/autonomous_controllers/devel/include/robbie_auto -e /opt/ros/indigo/share/gencpp/cmake/..
 
 /home/moyin/dev/autonomous_controllers/devel/include/robbie_auto/Contact.h: /opt/ros/indigo/lib/gencpp/gen_cpp.py
 /home/moyin/dev/autonomous_controllers/devel/include/robbie_auto/Contact.h: /home/moyin/dev/autonomous_controllers/src/robot_controllers/robbie_auto/msg/Contact.msg
 /home/moyin/dev/autonomous_controllers/devel/include/robbie_auto/Contact.h: /opt/ros/indigo/share/gencpp/msg.h.template
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/moyin/dev/autonomous_controllers/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating C++ code from robbie_auto/Contact.msg"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/moyin/dev/autonomous_controllers/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Generating C++ code from robbie_auto/Contact.msg"
 	cd /home/moyin/dev/autonomous_controllers/build/robot_controllers/robbie_auto && ../../catkin_generated/env_cached.sh /usr/local/bin/python /opt/ros/indigo/share/gencpp/cmake/../../../lib/gencpp/gen_cpp.py /home/moyin/dev/autonomous_controllers/src/robot_controllers/robbie_auto/msg/Contact.msg -Irobbie_auto:/home/moyin/dev/autonomous_controllers/src/robot_controllers/robbie_auto/msg -p robbie_auto -o /home/moyin/dev/autonomous_controllers/devel/include/robbie_auto -e /opt/ros/indigo/share/gencpp/cmake/..
 
 robbie_auto_generate_messages_cpp: robot_controllers/robbie_auto/CMakeFiles/robbie_auto_generate_messages_cpp
+robbie_auto_generate_messages_cpp: /home/moyin/dev/autonomous_controllers/devel/include/robbie_auto/Script.h
 robbie_auto_generate_messages_cpp: /home/moyin/dev/autonomous_controllers/devel/include/robbie_auto/Contact.h
 robbie_auto_generate_messages_cpp: robot_controllers/robbie_auto/CMakeFiles/robbie_auto_generate_messages_cpp.dir/build.make
 
