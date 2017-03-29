@@ -53,15 +53,22 @@ CMAKE_BINARY_DIR = /home/moyin/dev/autonomous_controllers/build
 # Include the progress variables for this target.
 include robot_controllers/robbie_auto/CMakeFiles/robbie_auto_generate_messages_lisp.dir/progress.make
 
+robot_controllers/robbie_auto/CMakeFiles/robbie_auto_generate_messages_lisp: /home/moyin/dev/autonomous_controllers/devel/share/common-lisp/ros/robbie_auto/msg/Script.lisp
 robot_controllers/robbie_auto/CMakeFiles/robbie_auto_generate_messages_lisp: /home/moyin/dev/autonomous_controllers/devel/share/common-lisp/ros/robbie_auto/msg/Contact.lisp
 
 
+/home/moyin/dev/autonomous_controllers/devel/share/common-lisp/ros/robbie_auto/msg/Script.lisp: /opt/ros/indigo/lib/genlisp/gen_lisp.py
+/home/moyin/dev/autonomous_controllers/devel/share/common-lisp/ros/robbie_auto/msg/Script.lisp: /home/moyin/dev/autonomous_controllers/src/robot_controllers/robbie_auto/msg/Script.msg
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/moyin/dev/autonomous_controllers/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating Lisp code from robbie_auto/Script.msg"
+	cd /home/moyin/dev/autonomous_controllers/build/robot_controllers/robbie_auto && ../../catkin_generated/env_cached.sh /usr/local/bin/python /opt/ros/indigo/share/genlisp/cmake/../../../lib/genlisp/gen_lisp.py /home/moyin/dev/autonomous_controllers/src/robot_controllers/robbie_auto/msg/Script.msg -Irobbie_auto:/home/moyin/dev/autonomous_controllers/src/robot_controllers/robbie_auto/msg -p robbie_auto -o /home/moyin/dev/autonomous_controllers/devel/share/common-lisp/ros/robbie_auto/msg
+
 /home/moyin/dev/autonomous_controllers/devel/share/common-lisp/ros/robbie_auto/msg/Contact.lisp: /opt/ros/indigo/lib/genlisp/gen_lisp.py
 /home/moyin/dev/autonomous_controllers/devel/share/common-lisp/ros/robbie_auto/msg/Contact.lisp: /home/moyin/dev/autonomous_controllers/src/robot_controllers/robbie_auto/msg/Contact.msg
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/moyin/dev/autonomous_controllers/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating Lisp code from robbie_auto/Contact.msg"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/moyin/dev/autonomous_controllers/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Generating Lisp code from robbie_auto/Contact.msg"
 	cd /home/moyin/dev/autonomous_controllers/build/robot_controllers/robbie_auto && ../../catkin_generated/env_cached.sh /usr/local/bin/python /opt/ros/indigo/share/genlisp/cmake/../../../lib/genlisp/gen_lisp.py /home/moyin/dev/autonomous_controllers/src/robot_controllers/robbie_auto/msg/Contact.msg -Irobbie_auto:/home/moyin/dev/autonomous_controllers/src/robot_controllers/robbie_auto/msg -p robbie_auto -o /home/moyin/dev/autonomous_controllers/devel/share/common-lisp/ros/robbie_auto/msg
 
 robbie_auto_generate_messages_lisp: robot_controllers/robbie_auto/CMakeFiles/robbie_auto_generate_messages_lisp
+robbie_auto_generate_messages_lisp: /home/moyin/dev/autonomous_controllers/devel/share/common-lisp/ros/robbie_auto/msg/Script.lisp
 robbie_auto_generate_messages_lisp: /home/moyin/dev/autonomous_controllers/devel/share/common-lisp/ros/robbie_auto/msg/Contact.lisp
 robbie_auto_generate_messages_lisp: robot_controllers/robbie_auto/CMakeFiles/robbie_auto_generate_messages_lisp.dir/build.make
 

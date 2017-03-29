@@ -196,6 +196,21 @@ laser_to_pointcloud/fast:
 .PHONY : laser_to_pointcloud/fast
 
 # Convenience name for target.
+robot_controllers/robbie_auto/CMakeFiles/height_publisher.dir/rule:
+	cd /home/moyin/dev/autonomous_controllers/build && $(MAKE) -f CMakeFiles/Makefile2 robot_controllers/robbie_auto/CMakeFiles/height_publisher.dir/rule
+.PHONY : robot_controllers/robbie_auto/CMakeFiles/height_publisher.dir/rule
+
+# Convenience name for target.
+height_publisher: robot_controllers/robbie_auto/CMakeFiles/height_publisher.dir/rule
+
+.PHONY : height_publisher
+
+# fast build rule for target.
+height_publisher/fast:
+	cd /home/moyin/dev/autonomous_controllers/build && $(MAKE) -f robot_controllers/robbie_auto/CMakeFiles/height_publisher.dir/build.make robot_controllers/robbie_auto/CMakeFiles/height_publisher.dir/build
+.PHONY : height_publisher/fast
+
+# Convenience name for target.
 robot_controllers/robbie_auto/CMakeFiles/pcl_msgs_generate_messages_py.dir/rule:
 	cd /home/moyin/dev/autonomous_controllers/build && $(MAKE) -f CMakeFiles/Makefile2 robot_controllers/robbie_auto/CMakeFiles/pcl_msgs_generate_messages_py.dir/rule
 .PHONY : robot_controllers/robbie_auto/CMakeFiles/pcl_msgs_generate_messages_py.dir/rule
@@ -331,6 +346,21 @@ nodelet_generate_messages_cpp/fast:
 .PHONY : nodelet_generate_messages_cpp/fast
 
 # Convenience name for target.
+robot_controllers/robbie_auto/CMakeFiles/_robbie_auto_generate_messages_check_deps_Script.dir/rule:
+	cd /home/moyin/dev/autonomous_controllers/build && $(MAKE) -f CMakeFiles/Makefile2 robot_controllers/robbie_auto/CMakeFiles/_robbie_auto_generate_messages_check_deps_Script.dir/rule
+.PHONY : robot_controllers/robbie_auto/CMakeFiles/_robbie_auto_generate_messages_check_deps_Script.dir/rule
+
+# Convenience name for target.
+_robbie_auto_generate_messages_check_deps_Script: robot_controllers/robbie_auto/CMakeFiles/_robbie_auto_generate_messages_check_deps_Script.dir/rule
+
+.PHONY : _robbie_auto_generate_messages_check_deps_Script
+
+# fast build rule for target.
+_robbie_auto_generate_messages_check_deps_Script/fast:
+	cd /home/moyin/dev/autonomous_controllers/build && $(MAKE) -f robot_controllers/robbie_auto/CMakeFiles/_robbie_auto_generate_messages_check_deps_Script.dir/build.make robot_controllers/robbie_auto/CMakeFiles/_robbie_auto_generate_messages_check_deps_Script.dir/build
+.PHONY : _robbie_auto_generate_messages_check_deps_Script/fast
+
+# Convenience name for target.
 robot_controllers/robbie_auto/CMakeFiles/bond_generate_messages_py.dir/rule:
 	cd /home/moyin/dev/autonomous_controllers/build && $(MAKE) -f CMakeFiles/Makefile2 robot_controllers/robbie_auto/CMakeFiles/bond_generate_messages_py.dir/rule
 .PHONY : robot_controllers/robbie_auto/CMakeFiles/bond_generate_messages_py.dir/rule
@@ -434,21 +464,6 @@ robbie_auto_generate_messages: robot_controllers/robbie_auto/CMakeFiles/robbie_a
 robbie_auto_generate_messages/fast:
 	cd /home/moyin/dev/autonomous_controllers/build && $(MAKE) -f robot_controllers/robbie_auto/CMakeFiles/robbie_auto_generate_messages.dir/build.make robot_controllers/robbie_auto/CMakeFiles/robbie_auto_generate_messages.dir/build
 .PHONY : robbie_auto_generate_messages/fast
-
-# Convenience name for target.
-robot_controllers/robbie_auto/CMakeFiles/height_publisher.dir/rule:
-	cd /home/moyin/dev/autonomous_controllers/build && $(MAKE) -f CMakeFiles/Makefile2 robot_controllers/robbie_auto/CMakeFiles/height_publisher.dir/rule
-.PHONY : robot_controllers/robbie_auto/CMakeFiles/height_publisher.dir/rule
-
-# Convenience name for target.
-height_publisher: robot_controllers/robbie_auto/CMakeFiles/height_publisher.dir/rule
-
-.PHONY : height_publisher
-
-# fast build rule for target.
-height_publisher/fast:
-	cd /home/moyin/dev/autonomous_controllers/build && $(MAKE) -f robot_controllers/robbie_auto/CMakeFiles/height_publisher.dir/build.make robot_controllers/robbie_auto/CMakeFiles/height_publisher.dir/build
-.PHONY : height_publisher/fast
 
 # Convenience name for target.
 robot_controllers/robbie_auto/CMakeFiles/nodelet_generate_messages_lisp.dir/rule:
@@ -620,6 +635,7 @@ help:
 	@echo "... edit_cache"
 	@echo "... kinect_processor"
 	@echo "... laser_to_pointcloud"
+	@echo "... height_publisher"
 	@echo "... pcl_msgs_generate_messages_py"
 	@echo "... pcl_msgs_generate_messages_lisp"
 	@echo "... robbie_auto_generate_messages_lisp"
@@ -629,6 +645,7 @@ help:
 	@echo "... bond_generate_messages_cpp"
 	@echo "... nodelet_generate_messages_py"
 	@echo "... nodelet_generate_messages_cpp"
+	@echo "... _robbie_auto_generate_messages_check_deps_Script"
 	@echo "... bond_generate_messages_py"
 	@echo "... pcl_ros_gencfg"
 	@echo "... robbie_auto_gencpp"
@@ -636,7 +653,6 @@ help:
 	@echo "... topic_tools_generate_messages_lisp"
 	@echo "... topic_tools_generate_messages_py"
 	@echo "... robbie_auto_generate_messages"
-	@echo "... height_publisher"
 	@echo "... nodelet_generate_messages_lisp"
 	@echo "... robbie_auto_generate_messages_cpp"
 	@echo "... test"

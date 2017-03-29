@@ -1,5 +1,6 @@
 file(REMOVE_RECURSE
   "CMakeFiles/robbie_auto_generate_messages_py"
+  "/home/moyin/dev/autonomous_controllers/devel/lib/python2.7/dist-packages/robbie_auto/msg/_Script.py"
   "/home/moyin/dev/autonomous_controllers/devel/lib/python2.7/dist-packages/robbie_auto/msg/_Contact.py"
   "/home/moyin/dev/autonomous_controllers/devel/lib/python2.7/dist-packages/robbie_auto/msg/__init__.py"
 )

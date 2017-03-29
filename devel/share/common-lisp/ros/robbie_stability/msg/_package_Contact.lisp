@@ -1,5 +1,7 @@
 (cl:in-package robbie_stability-msg)
-(cl:export '(SHANK-VAL
+(cl:export '(HEADER-VAL
+          HEADER
+          SHANK-VAL
           SHANK
           LHM-VAL
           LHM

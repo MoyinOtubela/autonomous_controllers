@@ -5,5 +5,7 @@
    "SSM"
    "<CONTACT>"
    "CONTACT"
+   "<SCRIPT>"
+   "SCRIPT"
   ))
 

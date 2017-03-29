@@ -53,21 +53,29 @@ CMAKE_BINARY_DIR = /home/moyin/dev/autonomous_controllers/build
 # Include the progress variables for this target.
 include robot_controllers/robbie_auto/CMakeFiles/robbie_auto_generate_messages_py.dir/progress.make
 
+robot_controllers/robbie_auto/CMakeFiles/robbie_auto_generate_messages_py: /home/moyin/dev/autonomous_controllers/devel/lib/python2.7/dist-packages/robbie_auto/msg/_Script.py
 robot_controllers/robbie_auto/CMakeFiles/robbie_auto_generate_messages_py: /home/moyin/dev/autonomous_controllers/devel/lib/python2.7/dist-packages/robbie_auto/msg/_Contact.py
 robot_controllers/robbie_auto/CMakeFiles/robbie_auto_generate_messages_py: /home/moyin/dev/autonomous_controllers/devel/lib/python2.7/dist-packages/robbie_auto/msg/__init__.py
 
 
+/home/moyin/dev/autonomous_controllers/devel/lib/python2.7/dist-packages/robbie_auto/msg/_Script.py: /opt/ros/indigo/lib/genpy/genmsg_py.py
+/home/moyin/dev/autonomous_controllers/devel/lib/python2.7/dist-packages/robbie_auto/msg/_Script.py: /home/moyin/dev/autonomous_controllers/src/robot_controllers/robbie_auto/msg/Script.msg
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/moyin/dev/autonomous_controllers/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating Python from MSG robbie_auto/Script"
+	cd /home/moyin/dev/autonomous_controllers/build/robot_controllers/robbie_auto && ../../catkin_generated/env_cached.sh /usr/local/bin/python /opt/ros/indigo/share/genpy/cmake/../../../lib/genpy/genmsg_py.py /home/moyin/dev/autonomous_controllers/src/robot_controllers/robbie_auto/msg/Script.msg -Irobbie_auto:/home/moyin/dev/autonomous_controllers/src/robot_controllers/robbie_auto/msg -p robbie_auto -o /home/moyin/dev/autonomous_controllers/devel/lib/python2.7/dist-packages/robbie_auto/msg
+
 /home/moyin/dev/autonomous_controllers/devel/lib/python2.7/dist-packages/robbie_auto/msg/_Contact.py: /opt/ros/indigo/lib/genpy/genmsg_py.py
 /home/moyin/dev/autonomous_controllers/devel/lib/python2.7/dist-packages/robbie_auto/msg/_Contact.py: /home/moyin/dev/autonomous_controllers/src/robot_controllers/robbie_auto/msg/Contact.msg
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/moyin/dev/autonomous_controllers/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating Python from MSG robbie_auto/Contact"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/moyin/dev/autonomous_controllers/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Generating Python from MSG robbie_auto/Contact"
 	cd /home/moyin/dev/autonomous_controllers/build/robot_controllers/robbie_auto && ../../catkin_generated/env_cached.sh /usr/local/bin/python /opt/ros/indigo/share/genpy/cmake/../../../lib/genpy/genmsg_py.py /home/moyin/dev/autonomous_controllers/src/robot_controllers/robbie_auto/msg/Contact.msg -Irobbie_auto:/home/moyin/dev/autonomous_controllers/src/robot_controllers/robbie_auto/msg -p robbie_auto -o /home/moyin/dev/autonomous_controllers/devel/lib/python2.7/dist-packages/robbie_auto/msg
 
 /home/moyin/dev/autonomous_controllers/devel/lib/python2.7/dist-packages/robbie_auto/msg/__init__.py: /opt/ros/indigo/lib/genpy/genmsg_py.py
+/home/moyin/dev/autonomous_controllers/devel/lib/python2.7/dist-packages/robbie_auto/msg/__init__.py: /home/moyin/dev/autonomous_controllers/devel/lib/python2.7/dist-packages/robbie_auto/msg/_Script.py
 /home/moyin/dev/autonomous_controllers/devel/lib/python2.7/dist-packages/robbie_auto/msg/__init__.py: /home/moyin/dev/autonomous_controllers/devel/lib/python2.7/dist-packages/robbie_auto/msg/_Contact.py
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/moyin/dev/autonomous_controllers/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Generating Python msg __init__.py for robbie_auto"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/moyin/dev/autonomous_controllers/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Generating Python msg __init__.py for robbie_auto"
 	cd /home/moyin/dev/autonomous_controllers/build/robot_controllers/robbie_auto && ../../catkin_generated/env_cached.sh /usr/local/bin/python /opt/ros/indigo/share/genpy/cmake/../../../lib/genpy/genmsg_py.py -o /home/moyin/dev/autonomous_controllers/devel/lib/python2.7/dist-packages/robbie_auto/msg --initpy
 
 robbie_auto_generate_messages_py: robot_controllers/robbie_auto/CMakeFiles/robbie_auto_generate_messages_py
+robbie_auto_generate_messages_py: /home/moyin/dev/autonomous_controllers/devel/lib/python2.7/dist-packages/robbie_auto/msg/_Script.py
 robbie_auto_generate_messages_py: /home/moyin/dev/autonomous_controllers/devel/lib/python2.7/dist-packages/robbie_auto/msg/_Contact.py
 robbie_auto_generate_messages_py: /home/moyin/dev/autonomous_controllers/devel/lib/python2.7/dist-packages/robbie_auto/msg/__init__.py
 robbie_auto_generate_messages_py: robot_controllers/robbie_auto/CMakeFiles/robbie_auto_generate_messages_py.dir/build.make

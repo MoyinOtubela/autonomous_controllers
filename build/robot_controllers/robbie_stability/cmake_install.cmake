@@ -33,7 +33,11 @@ if(NOT DEFINED CMAKE_INSTALL_SO_NO_EXE)
 endif()
 
 if("${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/robbie_stability/msg" TYPE FILE FILES "/home/moyin/dev/autonomous_controllers/src/robot_controllers/robbie_stability/msg/Contact.msg")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/robbie_stability/msg" TYPE FILE FILES
+    "/home/moyin/dev/autonomous_controllers/src/robot_controllers/robbie_stability/msg/Contact.msg"
+    "/home/moyin/dev/autonomous_controllers/src/robot_controllers/robbie_stability/msg/LinkStatesStamped.msg"
+    "/home/moyin/dev/autonomous_controllers/src/robot_controllers/robbie_stability/msg/ContactLinkStates.msg"
+    )
 endif()
 
 if("${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)

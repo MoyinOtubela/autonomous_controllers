@@ -8,4 +8,6 @@
     (:file "_package_ssm" :depends-on ("_package"))
     (:file "Contact" :depends-on ("_package_Contact"))
     (:file "_package_Contact" :depends-on ("_package"))
+    (:file "Script" :depends-on ("_package_Script"))
+    (:file "_package_Script" :depends-on ("_package"))
   ))

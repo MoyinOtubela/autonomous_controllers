@@ -1,5 +1,6 @@
 file(REMOVE_RECURSE
   "CMakeFiles/robbie_auto_generate_messages_lisp"
+  "/home/moyin/dev/autonomous_controllers/devel/share/common-lisp/ros/robbie_auto/msg/Script.lisp"
   "/home/moyin/dev/autonomous_controllers/devel/share/common-lisp/ros/robbie_auto/msg/Contact.lisp"
 )
 

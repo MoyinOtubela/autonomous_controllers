@@ -15,6 +15,7 @@
 #include <ros/builtin_message_traits.h>
 #include <ros/message_operations.h>
 
+#include <std_msgs/Header.h>
 #include <geometry_msgs/Point.h>
 #include <geometry_msgs/Point.h>
 #include <geometry_msgs/Point.h>
@@ -27,7 +28,8 @@ struct Contact_
   typedef Contact_<ContainerAllocator> Type;
 
   Contact_()
-    : shank(false)
+    : header()
+    , shank(false)
     , lhm(false)
     , stabilizer(false)
     , stabilizer_on()
@@ -38,7 +40,8 @@ struct Contact_
     , lhm_location()  {
     }
   Contact_(const ContainerAllocator& _alloc)
-    : shank(false)
+    : header(_alloc)
+    , shank(false)
     , lhm(false)
     , stabilizer(false)
     , stabilizer_on(_alloc)
@@ -51,6 +54,9 @@ struct Contact_
     }
 
 
+
+   typedef  ::std_msgs::Header_<ContainerAllocator>  _header_type;
+  _header_type header;
 
    typedef uint8_t _shank_type;
   _shank_type shank;
@@ -112,8 +118,8 @@ namespace message_traits
 
 
 
-// BOOLTRAITS {'IsFixedSize': False, 'IsMessage': True, 'HasHeader': False}
-// {'geometry_msgs': ['/opt/ros/indigo/share/geometry_msgs/cmake/../msg'], 'robbie_stability': ['/home/moyin/dev/autonomous_controllers/src/robot_controllers/robbie_stability/msg'], 'std_msgs': ['/opt/ros/indigo/share/std_msgs/cmake/../msg']}
+// BOOLTRAITS {'IsFixedSize': False, 'IsMessage': True, 'HasHeader': True}
+// {'trajectory_msgs': ['/opt/ros/indigo/share/trajectory_msgs/cmake/../msg'], 'std_msgs': ['/opt/ros/indigo/share/std_msgs/cmake/../msg'], 'robbie_stability': ['/home/moyin/dev/autonomous_controllers/src/robot_controllers/robbie_stability/msg'], 'gazebo_msgs': ['/opt/ros/indigo/share/gazebo_msgs/cmake/../msg'], 'geometry_msgs': ['/opt/ros/indigo/share/geometry_msgs/cmake/../msg'], 'sensor_msgs': ['/opt/ros/indigo/share/sensor_msgs/cmake/../msg']}
 
 // !!!!!!!!!!! ['__class__', '__delattr__', '__dict__', '__doc__', '__eq__', '__format__', '__getattribute__', '__hash__', '__init__', '__module__', '__ne__', '__new__', '__reduce__', '__reduce_ex__', '__repr__', '__setattr__', '__sizeof__', '__str__', '__subclasshook__', '__weakref__', '_parsed_fields', 'constants', 'fields', 'full_name', 'has_header', 'header_present', 'names', 'package', 'parsed_fields', 'short_name', 'text', 'types']
 
@@ -142,12 +148,12 @@ struct IsMessage< ::robbie_stability::Contact_<ContainerAllocator> const>
 
 template <class ContainerAllocator>
 struct HasHeader< ::robbie_stability::Contact_<ContainerAllocator> >
-  : FalseType
+  : TrueType
   { };
 
 template <class ContainerAllocator>
 struct HasHeader< ::robbie_stability::Contact_<ContainerAllocator> const>
-  : FalseType
+  : TrueType
   { };
 
 
@@ -156,12 +162,12 @@ struct MD5Sum< ::robbie_stability::Contact_<ContainerAllocator> >
 {
   static const char* value()
   {
-    return "031fc837dcc9ed46474cb01cba5abfbd";
+    return "31b45b8e08a0213533479b6867616a3e";
   }
 
   static const char* value(const ::robbie_stability::Contact_<ContainerAllocator>&) { return value(); }
-  static const uint64_t static_value1 = 0x031fc837dcc9ed46ULL;
-  static const uint64_t static_value2 = 0x474cb01cba5abfbdULL;
+  static const uint64_t static_value1 = 0x31b45b8e08a02135ULL;
+  static const uint64_t static_value2 = 0x33479b6867616a3eULL;
 };
 
 template<class ContainerAllocator>
@@ -180,7 +186,9 @@ struct Definition< ::robbie_stability::Contact_<ContainerAllocator> >
 {
   static const char* value()
   {
-    return "bool shank\n\
+    return "std_msgs/Header header\n\
+\n\
+bool shank\n\
 bool lhm\n\
 bool stabilizer\n\
 \n\
@@ -191,6 +199,24 @@ string lhm_on\n\
 geometry_msgs/Point stabilizer_location\n\
 geometry_msgs/Point shank_location\n\
 geometry_msgs/Point lhm_location\n\
+================================================================================\n\
+MSG: std_msgs/Header\n\
+# Standard metadata for higher-level stamped data types.\n\
+# This is generally used to communicate timestamped data \n\
+# in a particular coordinate frame.\n\
+# \n\
+# sequence ID: consecutively increasing ID \n\
+uint32 seq\n\
+#Two-integer timestamp that is expressed as:\n\
+# * stamp.sec: seconds (stamp_secs) since epoch (in Python the variable is called 'secs')\n\
+# * stamp.nsec: nanoseconds since stamp_secs (in Python the variable is called 'nsecs')\n\
+# time-handling sugar is provided by the client library\n\
+time stamp\n\
+#Frame this data is associated with\n\
+# 0: no frame\n\
+# 1: global frame\n\
+string frame_id\n\
+\n\
 ================================================================================\n\
 MSG: geometry_msgs/Point\n\
 # This contains the position of a point in free space\n\
@@ -215,6 +241,7 @@ namespace serialization
   {
     template<typename Stream, typename T> inline static void allInOne(Stream& stream, T m)
     {
+      stream.next(m.header);
       stream.next(m.shank);
       stream.next(m.lhm);
       stream.next(m.stabilizer);
@@ -242,6 +269,9 @@ struct Printer< ::robbie_stability::Contact_<ContainerAllocator> >
 {
   template<typename Stream> static void stream(Stream& s, const std::string& indent, const ::robbie_stability::Contact_<ContainerAllocator>& v)
   {
+    s << indent << "header: ";
+    s << std::endl;
+    Printer< ::std_msgs::Header_<ContainerAllocator> >::stream(s, indent + "  ", v.header);
     s << indent << "shank: ";
     Printer<uint8_t>::stream(s, indent + "  ", v.shank);
     s << indent << "lhm: ";

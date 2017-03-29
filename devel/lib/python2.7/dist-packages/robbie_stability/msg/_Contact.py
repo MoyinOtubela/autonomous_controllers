@@ -6,12 +6,15 @@ import genpy
 import struct
 
 import geometry_msgs.msg
+import std_msgs.msg
 
 class Contact(genpy.Message):
-  _md5sum = "031fc837dcc9ed46474cb01cba5abfbd"
+  _md5sum = "31b45b8e08a0213533479b6867616a3e"
   _type = "robbie_stability/Contact"
-  _has_header = False #flag to mark the presence of a Header object
-  _full_text = """bool shank
+  _has_header = True #flag to mark the presence of a Header object
+  _full_text = """std_msgs/Header header
+
+bool shank
 bool lhm
 bool stabilizer
 
@@ -23,14 +26,32 @@ geometry_msgs/Point stabilizer_location
 geometry_msgs/Point shank_location
 geometry_msgs/Point lhm_location
 ================================================================================
+MSG: std_msgs/Header
+# Standard metadata for higher-level stamped data types.
+# This is generally used to communicate timestamped data 
+# in a particular coordinate frame.
+# 
+# sequence ID: consecutively increasing ID 
+uint32 seq
+#Two-integer timestamp that is expressed as:
+# * stamp.sec: seconds (stamp_secs) since epoch (in Python the variable is called 'secs')
+# * stamp.nsec: nanoseconds since stamp_secs (in Python the variable is called 'nsecs')
+# time-handling sugar is provided by the client library
+time stamp
+#Frame this data is associated with
+# 0: no frame
+# 1: global frame
+string frame_id
+
+================================================================================
 MSG: geometry_msgs/Point
 # This contains the position of a point in free space
 float64 x
 float64 y
 float64 z
 """
-  __slots__ = ['shank','lhm','stabilizer','stabilizer_on','shank_on','lhm_on','stabilizer_location','shank_location','lhm_location']
-  _slot_types = ['bool','bool','bool','string','string','string','geometry_msgs/Point','geometry_msgs/Point','geometry_msgs/Point']
+  __slots__ = ['header','shank','lhm','stabilizer','stabilizer_on','shank_on','lhm_on','stabilizer_location','shank_location','lhm_location']
+  _slot_types = ['std_msgs/Header','bool','bool','bool','string','string','string','geometry_msgs/Point','geometry_msgs/Point','geometry_msgs/Point']
 
   def __init__(self, *args, **kwds):
     """
@@ -40,7 +61,7 @@ float64 z
     changes.  You cannot mix in-order arguments and keyword arguments.
 
     The available fields are:
-       shank,lhm,stabilizer,stabilizer_on,shank_on,lhm_on,stabilizer_location,shank_location,lhm_location
+       header,shank,lhm,stabilizer,stabilizer_on,shank_on,lhm_on,stabilizer_location,shank_location,lhm_location
 
     :param args: complete set of field values, in .msg order
     :param kwds: use keyword arguments corresponding to message field names
@@ -49,6 +70,8 @@ float64 z
     if args or kwds:
       super(Contact, self).__init__(*args, **kwds)
       #message fields cannot be None, assign default values for those that are
+      if self.header is None:
+        self.header = std_msgs.msg.Header()
       if self.shank is None:
         self.shank = False
       if self.lhm is None:
@@ -68,6 +91,7 @@ float64 z
       if self.lhm_location is None:
         self.lhm_location = geometry_msgs.msg.Point()
     else:
+      self.header = std_msgs.msg.Header()
       self.shank = False
       self.lhm = False
       self.stabilizer = False
@@ -90,6 +114,17 @@ float64 z
     :param buff: buffer, ``StringIO``
     """
     try:
+      _x = self
+      buff.write(_struct_3I.pack(_x.header.seq, _x.header.stamp.secs, _x.header.stamp.nsecs))
+      _x = self.header.frame_id
+      length = len(_x)
+      if python3 or type(_x) == unicode:
+        _x = _x.encode('utf-8')
+        length = len(_x)
+      if python3:
+        buff.write(struct.pack('<I%sB'%length, length, *_x))
+      else:
+        buff.write(struct.pack('<I%ss'%length, length, _x))
       _x = self
       buff.write(_struct_3B.pack(_x.shank, _x.lhm, _x.stabilizer))
       _x = self.stabilizer_on
@@ -130,6 +165,8 @@ float64 z
     :param str: byte array of serialized message, ``str``
     """
     try:
+      if self.header is None:
+        self.header = std_msgs.msg.Header()
       if self.stabilizer_location is None:
         self.stabilizer_location = geometry_msgs.msg.Point()
       if self.shank_location is None:
@@ -137,6 +174,19 @@ float64 z
       if self.lhm_location is None:
         self.lhm_location = geometry_msgs.msg.Point()
       end = 0
+      _x = self
+      start = end
+      end += 12
+      (_x.header.seq, _x.header.stamp.secs, _x.header.stamp.nsecs,) = _struct_3I.unpack(str[start:end])
+      start = end
+      end += 4
+      (length,) = _struct_I.unpack(str[start:end])
+      start = end
+      end += length
+      if python3:
+        self.header.frame_id = str[start:end].decode('utf-8')
+      else:
+        self.header.frame_id = str[start:end]
       _x = self
       start = end
       end += 3
@@ -188,6 +238,17 @@ float64 z
     """
     try:
       _x = self
+      buff.write(_struct_3I.pack(_x.header.seq, _x.header.stamp.secs, _x.header.stamp.nsecs))
+      _x = self.header.frame_id
+      length = len(_x)
+      if python3 or type(_x) == unicode:
+        _x = _x.encode('utf-8')
+        length = len(_x)
+      if python3:
+        buff.write(struct.pack('<I%sB'%length, length, *_x))
+      else:
+        buff.write(struct.pack('<I%ss'%length, length, _x))
+      _x = self
       buff.write(_struct_3B.pack(_x.shank, _x.lhm, _x.stabilizer))
       _x = self.stabilizer_on
       length = len(_x)
@@ -228,6 +289,8 @@ float64 z
     :param numpy: numpy python module
     """
     try:
+      if self.header is None:
+        self.header = std_msgs.msg.Header()
       if self.stabilizer_location is None:
         self.stabilizer_location = geometry_msgs.msg.Point()
       if self.shank_location is None:
@@ -235,6 +298,19 @@ float64 z
       if self.lhm_location is None:
         self.lhm_location = geometry_msgs.msg.Point()
       end = 0
+      _x = self
+      start = end
+      end += 12
+      (_x.header.seq, _x.header.stamp.secs, _x.header.stamp.nsecs,) = _struct_3I.unpack(str[start:end])
+      start = end
+      end += 4
+      (length,) = _struct_I.unpack(str[start:end])
+      start = end
+      end += length
+      if python3:
+        self.header.frame_id = str[start:end].decode('utf-8')
+      else:
+        self.header.frame_id = str[start:end]
       _x = self
       start = end
       end += 3
@@ -279,4 +355,5 @@ float64 z
 
 _struct_I = genpy.struct_I
 _struct_3B = struct.Struct("<3B")
+_struct_3I = struct.Struct("<3I")
 _struct_9d = struct.Struct("<9d")

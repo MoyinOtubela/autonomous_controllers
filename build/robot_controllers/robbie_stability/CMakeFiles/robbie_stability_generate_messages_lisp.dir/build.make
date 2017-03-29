@@ -53,17 +53,44 @@ CMAKE_BINARY_DIR = /home/moyin/dev/autonomous_controllers/build
 # Include the progress variables for this target.
 include robot_controllers/robbie_stability/CMakeFiles/robbie_stability_generate_messages_lisp.dir/progress.make
 
+robot_controllers/robbie_stability/CMakeFiles/robbie_stability_generate_messages_lisp: /home/moyin/dev/autonomous_controllers/devel/share/common-lisp/ros/robbie_stability/msg/ContactLinkStates.lisp
 robot_controllers/robbie_stability/CMakeFiles/robbie_stability_generate_messages_lisp: /home/moyin/dev/autonomous_controllers/devel/share/common-lisp/ros/robbie_stability/msg/Contact.lisp
+robot_controllers/robbie_stability/CMakeFiles/robbie_stability_generate_messages_lisp: /home/moyin/dev/autonomous_controllers/devel/share/common-lisp/ros/robbie_stability/msg/LinkStatesStamped.lisp
 
+
+/home/moyin/dev/autonomous_controllers/devel/share/common-lisp/ros/robbie_stability/msg/ContactLinkStates.lisp: /opt/ros/indigo/lib/genlisp/gen_lisp.py
+/home/moyin/dev/autonomous_controllers/devel/share/common-lisp/ros/robbie_stability/msg/ContactLinkStates.lisp: /home/moyin/dev/autonomous_controllers/src/robot_controllers/robbie_stability/msg/ContactLinkStates.msg
+/home/moyin/dev/autonomous_controllers/devel/share/common-lisp/ros/robbie_stability/msg/ContactLinkStates.lisp: /home/moyin/dev/autonomous_controllers/src/robot_controllers/robbie_stability/msg/Contact.msg
+/home/moyin/dev/autonomous_controllers/devel/share/common-lisp/ros/robbie_stability/msg/ContactLinkStates.lisp: /opt/ros/indigo/share/geometry_msgs/msg/Pose.msg
+/home/moyin/dev/autonomous_controllers/devel/share/common-lisp/ros/robbie_stability/msg/ContactLinkStates.lisp: /opt/ros/indigo/share/geometry_msgs/msg/Quaternion.msg
+/home/moyin/dev/autonomous_controllers/devel/share/common-lisp/ros/robbie_stability/msg/ContactLinkStates.lisp: /opt/ros/indigo/share/std_msgs/msg/Header.msg
+/home/moyin/dev/autonomous_controllers/devel/share/common-lisp/ros/robbie_stability/msg/ContactLinkStates.lisp: /opt/ros/indigo/share/geometry_msgs/msg/Point.msg
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/moyin/dev/autonomous_controllers/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating Lisp code from robbie_stability/ContactLinkStates.msg"
+	cd /home/moyin/dev/autonomous_controllers/build/robot_controllers/robbie_stability && ../../catkin_generated/env_cached.sh /usr/local/bin/python /opt/ros/indigo/share/genlisp/cmake/../../../lib/genlisp/gen_lisp.py /home/moyin/dev/autonomous_controllers/src/robot_controllers/robbie_stability/msg/ContactLinkStates.msg -Irobbie_stability:/home/moyin/dev/autonomous_controllers/src/robot_controllers/robbie_stability/msg -Istd_msgs:/opt/ros/indigo/share/std_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/indigo/share/geometry_msgs/cmake/../msg -Igazebo_msgs:/opt/ros/indigo/share/gazebo_msgs/cmake/../msg -Isensor_msgs:/opt/ros/indigo/share/sensor_msgs/cmake/../msg -Itrajectory_msgs:/opt/ros/indigo/share/trajectory_msgs/cmake/../msg -p robbie_stability -o /home/moyin/dev/autonomous_controllers/devel/share/common-lisp/ros/robbie_stability/msg
 
 /home/moyin/dev/autonomous_controllers/devel/share/common-lisp/ros/robbie_stability/msg/Contact.lisp: /opt/ros/indigo/lib/genlisp/gen_lisp.py
 /home/moyin/dev/autonomous_controllers/devel/share/common-lisp/ros/robbie_stability/msg/Contact.lisp: /home/moyin/dev/autonomous_controllers/src/robot_controllers/robbie_stability/msg/Contact.msg
+/home/moyin/dev/autonomous_controllers/devel/share/common-lisp/ros/robbie_stability/msg/Contact.lisp: /opt/ros/indigo/share/std_msgs/msg/Header.msg
 /home/moyin/dev/autonomous_controllers/devel/share/common-lisp/ros/robbie_stability/msg/Contact.lisp: /opt/ros/indigo/share/geometry_msgs/msg/Point.msg
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/moyin/dev/autonomous_controllers/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating Lisp code from robbie_stability/Contact.msg"
-	cd /home/moyin/dev/autonomous_controllers/build/robot_controllers/robbie_stability && ../../catkin_generated/env_cached.sh /usr/local/bin/python /opt/ros/indigo/share/genlisp/cmake/../../../lib/genlisp/gen_lisp.py /home/moyin/dev/autonomous_controllers/src/robot_controllers/robbie_stability/msg/Contact.msg -Irobbie_stability:/home/moyin/dev/autonomous_controllers/src/robot_controllers/robbie_stability/msg -Istd_msgs:/opt/ros/indigo/share/std_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/indigo/share/geometry_msgs/cmake/../msg -p robbie_stability -o /home/moyin/dev/autonomous_controllers/devel/share/common-lisp/ros/robbie_stability/msg
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/moyin/dev/autonomous_controllers/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Generating Lisp code from robbie_stability/Contact.msg"
+	cd /home/moyin/dev/autonomous_controllers/build/robot_controllers/robbie_stability && ../../catkin_generated/env_cached.sh /usr/local/bin/python /opt/ros/indigo/share/genlisp/cmake/../../../lib/genlisp/gen_lisp.py /home/moyin/dev/autonomous_controllers/src/robot_controllers/robbie_stability/msg/Contact.msg -Irobbie_stability:/home/moyin/dev/autonomous_controllers/src/robot_controllers/robbie_stability/msg -Istd_msgs:/opt/ros/indigo/share/std_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/indigo/share/geometry_msgs/cmake/../msg -Igazebo_msgs:/opt/ros/indigo/share/gazebo_msgs/cmake/../msg -Isensor_msgs:/opt/ros/indigo/share/sensor_msgs/cmake/../msg -Itrajectory_msgs:/opt/ros/indigo/share/trajectory_msgs/cmake/../msg -p robbie_stability -o /home/moyin/dev/autonomous_controllers/devel/share/common-lisp/ros/robbie_stability/msg
+
+/home/moyin/dev/autonomous_controllers/devel/share/common-lisp/ros/robbie_stability/msg/LinkStatesStamped.lisp: /opt/ros/indigo/lib/genlisp/gen_lisp.py
+/home/moyin/dev/autonomous_controllers/devel/share/common-lisp/ros/robbie_stability/msg/LinkStatesStamped.lisp: /home/moyin/dev/autonomous_controllers/src/robot_controllers/robbie_stability/msg/LinkStatesStamped.msg
+/home/moyin/dev/autonomous_controllers/devel/share/common-lisp/ros/robbie_stability/msg/LinkStatesStamped.lisp: /opt/ros/indigo/share/geometry_msgs/msg/Point.msg
+/home/moyin/dev/autonomous_controllers/devel/share/common-lisp/ros/robbie_stability/msg/LinkStatesStamped.lisp: /opt/ros/indigo/share/geometry_msgs/msg/Vector3.msg
+/home/moyin/dev/autonomous_controllers/devel/share/common-lisp/ros/robbie_stability/msg/LinkStatesStamped.lisp: /opt/ros/indigo/share/std_msgs/msg/Header.msg
+/home/moyin/dev/autonomous_controllers/devel/share/common-lisp/ros/robbie_stability/msg/LinkStatesStamped.lisp: /opt/ros/indigo/share/geometry_msgs/msg/Quaternion.msg
+/home/moyin/dev/autonomous_controllers/devel/share/common-lisp/ros/robbie_stability/msg/LinkStatesStamped.lisp: /opt/ros/indigo/share/gazebo_msgs/msg/LinkStates.msg
+/home/moyin/dev/autonomous_controllers/devel/share/common-lisp/ros/robbie_stability/msg/LinkStatesStamped.lisp: /opt/ros/indigo/share/geometry_msgs/msg/Pose.msg
+/home/moyin/dev/autonomous_controllers/devel/share/common-lisp/ros/robbie_stability/msg/LinkStatesStamped.lisp: /opt/ros/indigo/share/geometry_msgs/msg/Twist.msg
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/moyin/dev/autonomous_controllers/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Generating Lisp code from robbie_stability/LinkStatesStamped.msg"
+	cd /home/moyin/dev/autonomous_controllers/build/robot_controllers/robbie_stability && ../../catkin_generated/env_cached.sh /usr/local/bin/python /opt/ros/indigo/share/genlisp/cmake/../../../lib/genlisp/gen_lisp.py /home/moyin/dev/autonomous_controllers/src/robot_controllers/robbie_stability/msg/LinkStatesStamped.msg -Irobbie_stability:/home/moyin/dev/autonomous_controllers/src/robot_controllers/robbie_stability/msg -Istd_msgs:/opt/ros/indigo/share/std_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/indigo/share/geometry_msgs/cmake/../msg -Igazebo_msgs:/opt/ros/indigo/share/gazebo_msgs/cmake/../msg -Isensor_msgs:/opt/ros/indigo/share/sensor_msgs/cmake/../msg -Itrajectory_msgs:/opt/ros/indigo/share/trajectory_msgs/cmake/../msg -p robbie_stability -o /home/moyin/dev/autonomous_controllers/devel/share/common-lisp/ros/robbie_stability/msg
 
 robbie_stability_generate_messages_lisp: robot_controllers/robbie_stability/CMakeFiles/robbie_stability_generate_messages_lisp
+robbie_stability_generate_messages_lisp: /home/moyin/dev/autonomous_controllers/devel/share/common-lisp/ros/robbie_stability/msg/ContactLinkStates.lisp
 robbie_stability_generate_messages_lisp: /home/moyin/dev/autonomous_controllers/devel/share/common-lisp/ros/robbie_stability/msg/Contact.lisp
+robbie_stability_generate_messages_lisp: /home/moyin/dev/autonomous_controllers/devel/share/common-lisp/ros/robbie_stability/msg/LinkStatesStamped.lisp
 robbie_stability_generate_messages_lisp: robot_controllers/robbie_stability/CMakeFiles/robbie_stability_generate_messages_lisp.dir/build.make
 
 .PHONY : robbie_stability_generate_messages_lisp

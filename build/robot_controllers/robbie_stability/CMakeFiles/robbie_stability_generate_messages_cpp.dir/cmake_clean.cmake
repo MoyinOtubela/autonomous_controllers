@@ -1,6 +1,8 @@
 file(REMOVE_RECURSE
   "CMakeFiles/robbie_stability_generate_messages_cpp"
+  "/home/moyin/dev/autonomous_controllers/devel/include/robbie_stability/ContactLinkStates.h"
   "/home/moyin/dev/autonomous_controllers/devel/include/robbie_stability/Contact.h"
+  "/home/moyin/dev/autonomous_controllers/devel/include/robbie_stability/LinkStatesStamped.h"
 )
 
 # Per-language clean rules from dependency scanning.

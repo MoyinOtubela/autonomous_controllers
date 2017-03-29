@@ -1,6 +1,8 @@
 file(REMOVE_RECURSE
   "CMakeFiles/robbie_stability_generate_messages_py"
+  "/home/moyin/dev/autonomous_controllers/devel/lib/python2.7/dist-packages/robbie_stability/msg/_ContactLinkStates.py"
   "/home/moyin/dev/autonomous_controllers/devel/lib/python2.7/dist-packages/robbie_stability/msg/_Contact.py"
+  "/home/moyin/dev/autonomous_controllers/devel/lib/python2.7/dist-packages/robbie_stability/msg/_LinkStatesStamped.py"
   "/home/moyin/dev/autonomous_controllers/devel/lib/python2.7/dist-packages/robbie_stability/msg/__init__.py"
 )
 

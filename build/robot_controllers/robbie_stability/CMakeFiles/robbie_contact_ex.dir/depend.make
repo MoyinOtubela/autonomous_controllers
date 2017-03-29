@@ -17,6 +17,7 @@ robot_controllers/robbie_stability/CMakeFiles/robbie_contact_ex.dir/src/robbie_c
 robot_controllers/robbie_stability/CMakeFiles/robbie_contact_ex.dir/src/robbie_contact_ex_2.cpp.o: /opt/ros/indigo/include/message_filters/signal9.h
 robot_controllers/robbie_stability/CMakeFiles/robbie_contact_ex.dir/src/robbie_contact_ex_2.cpp.o: /opt/ros/indigo/include/message_filters/simple_filter.h
 robot_controllers/robbie_stability/CMakeFiles/robbie_contact_ex.dir/src/robbie_contact_ex_2.cpp.o: /opt/ros/indigo/include/message_filters/subscriber.h
+robot_controllers/robbie_stability/CMakeFiles/robbie_contact_ex.dir/src/robbie_contact_ex_2.cpp.o: /opt/ros/indigo/include/message_filters/sync_policies/approximate_time.h
 robot_controllers/robbie_stability/CMakeFiles/robbie_contact_ex.dir/src/robbie_contact_ex_2.cpp.o: /opt/ros/indigo/include/message_filters/sync_policies/exact_time.h
 robot_controllers/robbie_stability/CMakeFiles/robbie_contact_ex.dir/src/robbie_contact_ex_2.cpp.o: /opt/ros/indigo/include/message_filters/synchronizer.h
 robot_controllers/robbie_stability/CMakeFiles/robbie_contact_ex.dir/src/robbie_contact_ex_2.cpp.o: /opt/ros/indigo/include/message_filters/time_synchronizer.h

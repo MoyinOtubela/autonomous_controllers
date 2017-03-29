@@ -1,5 +1,6 @@
 file(REMOVE_RECURSE
   "CMakeFiles/robbie_auto_generate_messages_cpp"
+  "/home/moyin/dev/autonomous_controllers/devel/include/robbie_auto/Script.h"
   "/home/moyin/dev/autonomous_controllers/devel/include/robbie_auto/Contact.h"
 )
 
