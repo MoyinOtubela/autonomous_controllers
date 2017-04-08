@@ -6,30 +6,6 @@
 
 #IncludeRegexTransform: 
 
-/home/moyin/dev/autonomous_controllers/devel/include/robbie_stability/Contact.h
-string
--
-vector
--
-map
--
-ros/types.h
--
-ros/serialization.h
--
-ros/builtin_message_traits.h
--
-ros/message_operations.h
--
-std_msgs/Header.h
--
-geometry_msgs/Point.h
--
-geometry_msgs/Point.h
--
-geometry_msgs/Point.h
--
-
 /home/moyin/dev/autonomous_controllers/src/robot_controllers/robbie_stability/src/robbie_contact_ex_2.cpp
 ros/ros.h
 -
@@ -108,22 +84,6 @@ ros/message_operations.h
 std_msgs/Header.h
 -
 gazebo_msgs/ContactState.h
--
-
-/opt/ros/indigo/include/geometry_msgs/Point.h
-string
--
-vector
--
-map
--
-ros/types.h
--
-ros/serialization.h
--
-ros/builtin_message_traits.h
--
-ros/message_operations.h
 -
 
 /opt/ros/indigo/include/geometry_msgs/Vector3.h

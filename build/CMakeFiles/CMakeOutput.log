@@ -28,28 +28,28 @@ The CXX compiler identification is GNU, found in "/home/moyin/dev/autonomous_con
 Determining if the C compiler works passed with the following output:
 Change Dir: /home/moyin/dev/autonomous_controllers/build/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_81050/fast"
-/usr/bin/make -f CMakeFiles/cmTC_81050.dir/build.make CMakeFiles/cmTC_81050.dir/build
+Run Build Command:"/usr/bin/make" "cmTC_ed083/fast"
+/usr/bin/make -f CMakeFiles/cmTC_ed083.dir/build.make CMakeFiles/cmTC_ed083.dir/build
 make[1]: Entering directory `/home/moyin/dev/autonomous_controllers/build/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_81050.dir/testCCompiler.c.o
-/usr/bin/gcc-4.9     -o CMakeFiles/cmTC_81050.dir/testCCompiler.c.o   -c /home/moyin/dev/autonomous_controllers/build/CMakeFiles/CMakeTmp/testCCompiler.c
-Linking C executable cmTC_81050
-/home/moyin/tools/cmake-3.7.0-rc1/bin/cmake -E cmake_link_script CMakeFiles/cmTC_81050.dir/link.txt --verbose=1
-/usr/bin/gcc-4.9       CMakeFiles/cmTC_81050.dir/testCCompiler.c.o  -o cmTC_81050 -rdynamic 
+Building C object CMakeFiles/cmTC_ed083.dir/testCCompiler.c.o
+/usr/bin/gcc-4.9     -o CMakeFiles/cmTC_ed083.dir/testCCompiler.c.o   -c /home/moyin/dev/autonomous_controllers/build/CMakeFiles/CMakeTmp/testCCompiler.c
+Linking C executable cmTC_ed083
+/home/moyin/tools/cmake-3.7.0-rc1/bin/cmake -E cmake_link_script CMakeFiles/cmTC_ed083.dir/link.txt --verbose=1
+/usr/bin/gcc-4.9       CMakeFiles/cmTC_ed083.dir/testCCompiler.c.o  -o cmTC_ed083 -rdynamic 
 make[1]: Leaving directory `/home/moyin/dev/autonomous_controllers/build/CMakeFiles/CMakeTmp'
 
 
 Detecting C compiler ABI info compiled with the following output:
 Change Dir: /home/moyin/dev/autonomous_controllers/build/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_dc17c/fast"
-/usr/bin/make -f CMakeFiles/cmTC_dc17c.dir/build.make CMakeFiles/cmTC_dc17c.dir/build
+Run Build Command:"/usr/bin/make" "cmTC_ecf79/fast"
+/usr/bin/make -f CMakeFiles/cmTC_ecf79.dir/build.make CMakeFiles/cmTC_ecf79.dir/build
 make[1]: Entering directory `/home/moyin/dev/autonomous_controllers/build/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_dc17c.dir/CMakeCCompilerABI.c.o
-/usr/bin/gcc-4.9     -o CMakeFiles/cmTC_dc17c.dir/CMakeCCompilerABI.c.o   -c /home/moyin/tools/cmake-3.7.0-rc1/Modules/CMakeCCompilerABI.c
-Linking C executable cmTC_dc17c
-/home/moyin/tools/cmake-3.7.0-rc1/bin/cmake -E cmake_link_script CMakeFiles/cmTC_dc17c.dir/link.txt --verbose=1
-/usr/bin/gcc-4.9      -v CMakeFiles/cmTC_dc17c.dir/CMakeCCompilerABI.c.o  -o cmTC_dc17c -rdynamic  
+Building C object CMakeFiles/cmTC_ecf79.dir/CMakeCCompilerABI.c.o
+/usr/bin/gcc-4.9     -o CMakeFiles/cmTC_ecf79.dir/CMakeCCompilerABI.c.o   -c /home/moyin/tools/cmake-3.7.0-rc1/Modules/CMakeCCompilerABI.c
+Linking C executable cmTC_ecf79
+/home/moyin/tools/cmake-3.7.0-rc1/bin/cmake -E cmake_link_script CMakeFiles/cmTC_ecf79.dir/link.txt --verbose=1
+/usr/bin/gcc-4.9      -v CMakeFiles/cmTC_ecf79.dir/CMakeCCompilerABI.c.o  -o cmTC_ecf79 -rdynamic  
 Using built-in specs.
 COLLECT_GCC=/usr/bin/gcc-4.9
 COLLECT_LTO_WRAPPER=/usr/lib/gcc/x86_64-linux-gnu/4.9/lto-wrapper
@@ -59,8 +59,8 @@ Thread model: posix
 gcc version 4.9.4 (Ubuntu 4.9.4-2ubuntu1~14.04.1) 
 COMPILER_PATH=/usr/lib/gcc/x86_64-linux-gnu/4.9/:/usr/lib/gcc/x86_64-linux-gnu/4.9/:/usr/lib/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/4.9/:/usr/lib/gcc/x86_64-linux-gnu/
 LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/4.9/:/usr/lib/gcc/x86_64-linux-gnu/4.9/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/4.9/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/4.9/../../../:/lib/:/usr/lib/
-COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_dc17c' '-rdynamic' '-mtune=generic' '-march=x86-64'
- /usr/lib/gcc/x86_64-linux-gnu/4.9/collect2 -plugin /usr/lib/gcc/x86_64-linux-gnu/4.9/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/4.9/lto-wrapper -plugin-opt=-fresolution=/tmp/cckipB8L.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --sysroot=/ --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -export-dynamic -dynamic-linker /lib64/ld-linux-x86-64.so.2 -z relro -o cmTC_dc17c /usr/lib/gcc/x86_64-linux-gnu/4.9/../../../x86_64-linux-gnu/crt1.o /usr/lib/gcc/x86_64-linux-gnu/4.9/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/4.9/crtbegin.o -L/usr/lib/gcc/x86_64-linux-gnu/4.9 -L/usr/lib/gcc/x86_64-linux-gnu/4.9/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/4.9/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/4.9/../../.. CMakeFiles/cmTC_dc17c.dir/CMakeCCompilerABI.c.o -lgcc --as-needed -lgcc_s --no-as-needed -lc -lgcc --as-needed -lgcc_s --no-as-needed /usr/lib/gcc/x86_64-linux-gnu/4.9/crtend.o /usr/lib/gcc/x86_64-linux-gnu/4.9/../../../x86_64-linux-gnu/crtn.o
+COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_ecf79' '-rdynamic' '-mtune=generic' '-march=x86-64'
+ /usr/lib/gcc/x86_64-linux-gnu/4.9/collect2 -plugin /usr/lib/gcc/x86_64-linux-gnu/4.9/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/4.9/lto-wrapper -plugin-opt=-fresolution=/tmp/ccojTkEg.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --sysroot=/ --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -export-dynamic -dynamic-linker /lib64/ld-linux-x86-64.so.2 -z relro -o cmTC_ecf79 /usr/lib/gcc/x86_64-linux-gnu/4.9/../../../x86_64-linux-gnu/crt1.o /usr/lib/gcc/x86_64-linux-gnu/4.9/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/4.9/crtbegin.o -L/usr/lib/gcc/x86_64-linux-gnu/4.9 -L/usr/lib/gcc/x86_64-linux-gnu/4.9/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/4.9/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/4.9/../../.. CMakeFiles/cmTC_ecf79.dir/CMakeCCompilerABI.c.o -lgcc --as-needed -lgcc_s --no-as-needed -lc -lgcc --as-needed -lgcc_s --no-as-needed /usr/lib/gcc/x86_64-linux-gnu/4.9/crtend.o /usr/lib/gcc/x86_64-linux-gnu/4.9/../../../x86_64-linux-gnu/crtn.o
 make[1]: Leaving directory `/home/moyin/dev/autonomous_controllers/build/CMakeFiles/CMakeTmp'
 
 
@@ -68,14 +68,14 @@ Parsed C implicit link information from above output:
   link line regex: [^( *|.*[/\])(ld|([^/\]+-)?ld|collect2)[^/\]*( |$)]
   ignore line: [Change Dir: /home/moyin/dev/autonomous_controllers/build/CMakeFiles/CMakeTmp]
   ignore line: []
-  ignore line: [Run Build Command:"/usr/bin/make" "cmTC_dc17c/fast"]
-  ignore line: [/usr/bin/make -f CMakeFiles/cmTC_dc17c.dir/build.make CMakeFiles/cmTC_dc17c.dir/build]
+  ignore line: [Run Build Command:"/usr/bin/make" "cmTC_ecf79/fast"]
+  ignore line: [/usr/bin/make -f CMakeFiles/cmTC_ecf79.dir/build.make CMakeFiles/cmTC_ecf79.dir/build]
   ignore line: [make[1]: Entering directory `/home/moyin/dev/autonomous_controllers/build/CMakeFiles/CMakeTmp']
-  ignore line: [Building C object CMakeFiles/cmTC_dc17c.dir/CMakeCCompilerABI.c.o]
-  ignore line: [/usr/bin/gcc-4.9     -o CMakeFiles/cmTC_dc17c.dir/CMakeCCompilerABI.c.o   -c /home/moyin/tools/cmake-3.7.0-rc1/Modules/CMakeCCompilerABI.c]
-  ignore line: [Linking C executable cmTC_dc17c]
-  ignore line: [/home/moyin/tools/cmake-3.7.0-rc1/bin/cmake -E cmake_link_script CMakeFiles/cmTC_dc17c.dir/link.txt --verbose=1]
-  ignore line: [/usr/bin/gcc-4.9      -v CMakeFiles/cmTC_dc17c.dir/CMakeCCompilerABI.c.o  -o cmTC_dc17c -rdynamic  ]
+  ignore line: [Building C object CMakeFiles/cmTC_ecf79.dir/CMakeCCompilerABI.c.o]
+  ignore line: [/usr/bin/gcc-4.9     -o CMakeFiles/cmTC_ecf79.dir/CMakeCCompilerABI.c.o   -c /home/moyin/tools/cmake-3.7.0-rc1/Modules/CMakeCCompilerABI.c]
+  ignore line: [Linking C executable cmTC_ecf79]
+  ignore line: [/home/moyin/tools/cmake-3.7.0-rc1/bin/cmake -E cmake_link_script CMakeFiles/cmTC_ecf79.dir/link.txt --verbose=1]
+  ignore line: [/usr/bin/gcc-4.9      -v CMakeFiles/cmTC_ecf79.dir/CMakeCCompilerABI.c.o  -o cmTC_ecf79 -rdynamic  ]
   ignore line: [Using built-in specs.]
   ignore line: [COLLECT_GCC=/usr/bin/gcc-4.9]
   ignore line: [COLLECT_LTO_WRAPPER=/usr/lib/gcc/x86_64-linux-gnu/4.9/lto-wrapper]
@@ -85,13 +85,13 @@ Parsed C implicit link information from above output:
   ignore line: [gcc version 4.9.4 (Ubuntu 4.9.4-2ubuntu1~14.04.1) ]
   ignore line: [COMPILER_PATH=/usr/lib/gcc/x86_64-linux-gnu/4.9/:/usr/lib/gcc/x86_64-linux-gnu/4.9/:/usr/lib/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/4.9/:/usr/lib/gcc/x86_64-linux-gnu/]
   ignore line: [LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/4.9/:/usr/lib/gcc/x86_64-linux-gnu/4.9/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/4.9/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/4.9/../../../:/lib/:/usr/lib/]
-  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_dc17c' '-rdynamic' '-mtune=generic' '-march=x86-64']
-  link line: [ /usr/lib/gcc/x86_64-linux-gnu/4.9/collect2 -plugin /usr/lib/gcc/x86_64-linux-gnu/4.9/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/4.9/lto-wrapper -plugin-opt=-fresolution=/tmp/cckipB8L.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --sysroot=/ --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -export-dynamic -dynamic-linker /lib64/ld-linux-x86-64.so.2 -z relro -o cmTC_dc17c /usr/lib/gcc/x86_64-linux-gnu/4.9/../../../x86_64-linux-gnu/crt1.o /usr/lib/gcc/x86_64-linux-gnu/4.9/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/4.9/crtbegin.o -L/usr/lib/gcc/x86_64-linux-gnu/4.9 -L/usr/lib/gcc/x86_64-linux-gnu/4.9/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/4.9/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/4.9/../../.. CMakeFiles/cmTC_dc17c.dir/CMakeCCompilerABI.c.o -lgcc --as-needed -lgcc_s --no-as-needed -lc -lgcc --as-needed -lgcc_s --no-as-needed /usr/lib/gcc/x86_64-linux-gnu/4.9/crtend.o /usr/lib/gcc/x86_64-linux-gnu/4.9/../../../x86_64-linux-gnu/crtn.o]
+  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_ecf79' '-rdynamic' '-mtune=generic' '-march=x86-64']
+  link line: [ /usr/lib/gcc/x86_64-linux-gnu/4.9/collect2 -plugin /usr/lib/gcc/x86_64-linux-gnu/4.9/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/4.9/lto-wrapper -plugin-opt=-fresolution=/tmp/ccojTkEg.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --sysroot=/ --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -export-dynamic -dynamic-linker /lib64/ld-linux-x86-64.so.2 -z relro -o cmTC_ecf79 /usr/lib/gcc/x86_64-linux-gnu/4.9/../../../x86_64-linux-gnu/crt1.o /usr/lib/gcc/x86_64-linux-gnu/4.9/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/4.9/crtbegin.o -L/usr/lib/gcc/x86_64-linux-gnu/4.9 -L/usr/lib/gcc/x86_64-linux-gnu/4.9/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/4.9/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/4.9/../../.. CMakeFiles/cmTC_ecf79.dir/CMakeCCompilerABI.c.o -lgcc --as-needed -lgcc_s --no-as-needed -lc -lgcc --as-needed -lgcc_s --no-as-needed /usr/lib/gcc/x86_64-linux-gnu/4.9/crtend.o /usr/lib/gcc/x86_64-linux-gnu/4.9/../../../x86_64-linux-gnu/crtn.o]
     arg [/usr/lib/gcc/x86_64-linux-gnu/4.9/collect2] ==> ignore
     arg [-plugin] ==> ignore
     arg [/usr/lib/gcc/x86_64-linux-gnu/4.9/liblto_plugin.so] ==> ignore
     arg [-plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/4.9/lto-wrapper] ==> ignore
-    arg [-plugin-opt=-fresolution=/tmp/cckipB8L.res] ==> ignore
+    arg [-plugin-opt=-fresolution=/tmp/ccojTkEg.res] ==> ignore
     arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
     arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
     arg [-plugin-opt=-pass-through=-lc] ==> ignore
@@ -109,7 +109,7 @@ Parsed C implicit link information from above output:
     arg [/lib64/ld-linux-x86-64.so.2] ==> ignore
     arg [-zrelro] ==> ignore
     arg [-o] ==> ignore
-    arg [cmTC_dc17c] ==> ignore
+    arg [cmTC_ecf79] ==> ignore
     arg [/usr/lib/gcc/x86_64-linux-gnu/4.9/../../../x86_64-linux-gnu/crt1.o] ==> ignore
     arg [/usr/lib/gcc/x86_64-linux-gnu/4.9/../../../x86_64-linux-gnu/crti.o] ==> ignore
     arg [/usr/lib/gcc/x86_64-linux-gnu/4.9/crtbegin.o] ==> ignore
@@ -121,7 +121,7 @@ Parsed C implicit link information from above output:
     arg [-L/usr/lib/x86_64-linux-gnu] ==> dir [/usr/lib/x86_64-linux-gnu]
     arg [-L/usr/lib/../lib] ==> dir [/usr/lib/../lib]
     arg [-L/usr/lib/gcc/x86_64-linux-gnu/4.9/../../..] ==> dir [/usr/lib/gcc/x86_64-linux-gnu/4.9/../../..]
-    arg [CMakeFiles/cmTC_dc17c.dir/CMakeCCompilerABI.c.o] ==> ignore
+    arg [CMakeFiles/cmTC_ecf79.dir/CMakeCCompilerABI.c.o] ==> ignore
     arg [-lgcc] ==> lib [gcc]
     arg [--as-needed] ==> ignore
     arg [-lgcc_s] ==> lib [gcc_s]
@@ -155,14 +155,14 @@ Parsed C implicit link information from above output:
 Detecting C [-std=c11] compiler features compiled with the following output:
 Change Dir: /home/moyin/dev/autonomous_controllers/build/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_51a14/fast"
-/usr/bin/make -f CMakeFiles/cmTC_51a14.dir/build.make CMakeFiles/cmTC_51a14.dir/build
+Run Build Command:"/usr/bin/make" "cmTC_a871e/fast"
+/usr/bin/make -f CMakeFiles/cmTC_a871e.dir/build.make CMakeFiles/cmTC_a871e.dir/build
 make[1]: Entering directory `/home/moyin/dev/autonomous_controllers/build/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_51a14.dir/feature_tests.c.o
-/usr/bin/gcc-4.9    -std=c11 -o CMakeFiles/cmTC_51a14.dir/feature_tests.c.o   -c /home/moyin/dev/autonomous_controllers/build/CMakeFiles/feature_tests.c
-Linking C executable cmTC_51a14
-/home/moyin/tools/cmake-3.7.0-rc1/bin/cmake -E cmake_link_script CMakeFiles/cmTC_51a14.dir/link.txt --verbose=1
-/usr/bin/gcc-4.9       CMakeFiles/cmTC_51a14.dir/feature_tests.c.o  -o cmTC_51a14 -rdynamic 
+Building C object CMakeFiles/cmTC_a871e.dir/feature_tests.c.o
+/usr/bin/gcc-4.9    -std=c11 -o CMakeFiles/cmTC_a871e.dir/feature_tests.c.o   -c /home/moyin/dev/autonomous_controllers/build/CMakeFiles/feature_tests.c
+Linking C executable cmTC_a871e
+/home/moyin/tools/cmake-3.7.0-rc1/bin/cmake -E cmake_link_script CMakeFiles/cmTC_a871e.dir/link.txt --verbose=1
+/usr/bin/gcc-4.9       CMakeFiles/cmTC_a871e.dir/feature_tests.c.o  -o cmTC_a871e -rdynamic 
 make[1]: Leaving directory `/home/moyin/dev/autonomous_controllers/build/CMakeFiles/CMakeTmp'
 
 
@@ -175,14 +175,14 @@ make[1]: Leaving directory `/home/moyin/dev/autonomous_controllers/build/CMakeFi
 Detecting C [-std=c99] compiler features compiled with the following output:
 Change Dir: /home/moyin/dev/autonomous_controllers/build/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_f33b5/fast"
-/usr/bin/make -f CMakeFiles/cmTC_f33b5.dir/build.make CMakeFiles/cmTC_f33b5.dir/build
+Run Build Command:"/usr/bin/make" "cmTC_a0abb/fast"
+/usr/bin/make -f CMakeFiles/cmTC_a0abb.dir/build.make CMakeFiles/cmTC_a0abb.dir/build
 make[1]: Entering directory `/home/moyin/dev/autonomous_controllers/build/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_f33b5.dir/feature_tests.c.o
-/usr/bin/gcc-4.9    -std=c99 -o CMakeFiles/cmTC_f33b5.dir/feature_tests.c.o   -c /home/moyin/dev/autonomous_controllers/build/CMakeFiles/feature_tests.c
-Linking C executable cmTC_f33b5
-/home/moyin/tools/cmake-3.7.0-rc1/bin/cmake -E cmake_link_script CMakeFiles/cmTC_f33b5.dir/link.txt --verbose=1
-/usr/bin/gcc-4.9       CMakeFiles/cmTC_f33b5.dir/feature_tests.c.o  -o cmTC_f33b5 -rdynamic 
+Building C object CMakeFiles/cmTC_a0abb.dir/feature_tests.c.o
+/usr/bin/gcc-4.9    -std=c99 -o CMakeFiles/cmTC_a0abb.dir/feature_tests.c.o   -c /home/moyin/dev/autonomous_controllers/build/CMakeFiles/feature_tests.c
+Linking C executable cmTC_a0abb
+/home/moyin/tools/cmake-3.7.0-rc1/bin/cmake -E cmake_link_script CMakeFiles/cmTC_a0abb.dir/link.txt --verbose=1
+/usr/bin/gcc-4.9       CMakeFiles/cmTC_a0abb.dir/feature_tests.c.o  -o cmTC_a0abb -rdynamic 
 make[1]: Leaving directory `/home/moyin/dev/autonomous_controllers/build/CMakeFiles/CMakeTmp'
 
 
@@ -195,14 +195,14 @@ make[1]: Leaving directory `/home/moyin/dev/autonomous_controllers/build/CMakeFi
 Detecting C [-std=c90] compiler features compiled with the following output:
 Change Dir: /home/moyin/dev/autonomous_controllers/build/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_60069/fast"
-/usr/bin/make -f CMakeFiles/cmTC_60069.dir/build.make CMakeFiles/cmTC_60069.dir/build
+Run Build Command:"/usr/bin/make" "cmTC_370c2/fast"
+/usr/bin/make -f CMakeFiles/cmTC_370c2.dir/build.make CMakeFiles/cmTC_370c2.dir/build
 make[1]: Entering directory `/home/moyin/dev/autonomous_controllers/build/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_60069.dir/feature_tests.c.o
-/usr/bin/gcc-4.9    -std=c90 -o CMakeFiles/cmTC_60069.dir/feature_tests.c.o   -c /home/moyin/dev/autonomous_controllers/build/CMakeFiles/feature_tests.c
-Linking C executable cmTC_60069
-/home/moyin/tools/cmake-3.7.0-rc1/bin/cmake -E cmake_link_script CMakeFiles/cmTC_60069.dir/link.txt --verbose=1
-/usr/bin/gcc-4.9       CMakeFiles/cmTC_60069.dir/feature_tests.c.o  -o cmTC_60069 -rdynamic 
+Building C object CMakeFiles/cmTC_370c2.dir/feature_tests.c.o
+/usr/bin/gcc-4.9    -std=c90 -o CMakeFiles/cmTC_370c2.dir/feature_tests.c.o   -c /home/moyin/dev/autonomous_controllers/build/CMakeFiles/feature_tests.c
+Linking C executable cmTC_370c2
+/home/moyin/tools/cmake-3.7.0-rc1/bin/cmake -E cmake_link_script CMakeFiles/cmTC_370c2.dir/link.txt --verbose=1
+/usr/bin/gcc-4.9       CMakeFiles/cmTC_370c2.dir/feature_tests.c.o  -o cmTC_370c2 -rdynamic 
 make[1]: Leaving directory `/home/moyin/dev/autonomous_controllers/build/CMakeFiles/CMakeTmp'
 
 
@@ -213,28 +213,28 @@ make[1]: Leaving directory `/home/moyin/dev/autonomous_controllers/build/CMakeFi
 Determining if the CXX compiler works passed with the following output:
 Change Dir: /home/moyin/dev/autonomous_controllers/build/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_e0b8e/fast"
-/usr/bin/make -f CMakeFiles/cmTC_e0b8e.dir/build.make CMakeFiles/cmTC_e0b8e.dir/build
+Run Build Command:"/usr/bin/make" "cmTC_40beb/fast"
+/usr/bin/make -f CMakeFiles/cmTC_40beb.dir/build.make CMakeFiles/cmTC_40beb.dir/build
 make[1]: Entering directory `/home/moyin/dev/autonomous_controllers/build/CMakeFiles/CMakeTmp'
-Building CXX object CMakeFiles/cmTC_e0b8e.dir/testCXXCompiler.cxx.o
-/usr/bin/g++-4.9      -o CMakeFiles/cmTC_e0b8e.dir/testCXXCompiler.cxx.o -c /home/moyin/dev/autonomous_controllers/build/CMakeFiles/CMakeTmp/testCXXCompiler.cxx
-Linking CXX executable cmTC_e0b8e
-/home/moyin/tools/cmake-3.7.0-rc1/bin/cmake -E cmake_link_script CMakeFiles/cmTC_e0b8e.dir/link.txt --verbose=1
-/usr/bin/g++-4.9        CMakeFiles/cmTC_e0b8e.dir/testCXXCompiler.cxx.o  -o cmTC_e0b8e -rdynamic 
+Building CXX object CMakeFiles/cmTC_40beb.dir/testCXXCompiler.cxx.o
+/usr/bin/g++-4.9      -o CMakeFiles/cmTC_40beb.dir/testCXXCompiler.cxx.o -c /home/moyin/dev/autonomous_controllers/build/CMakeFiles/CMakeTmp/testCXXCompiler.cxx
+Linking CXX executable cmTC_40beb
+/home/moyin/tools/cmake-3.7.0-rc1/bin/cmake -E cmake_link_script CMakeFiles/cmTC_40beb.dir/link.txt --verbose=1
+/usr/bin/g++-4.9        CMakeFiles/cmTC_40beb.dir/testCXXCompiler.cxx.o  -o cmTC_40beb -rdynamic 
 make[1]: Leaving directory `/home/moyin/dev/autonomous_controllers/build/CMakeFiles/CMakeTmp'
 
 
 Detecting CXX compiler ABI info compiled with the following output:
 Change Dir: /home/moyin/dev/autonomous_controllers/build/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_1b53d/fast"
-/usr/bin/make -f CMakeFiles/cmTC_1b53d.dir/build.make CMakeFiles/cmTC_1b53d.dir/build
+Run Build Command:"/usr/bin/make" "cmTC_f8803/fast"
+/usr/bin/make -f CMakeFiles/cmTC_f8803.dir/build.make CMakeFiles/cmTC_f8803.dir/build
 make[1]: Entering directory `/home/moyin/dev/autonomous_controllers/build/CMakeFiles/CMakeTmp'
-Building CXX object CMakeFiles/cmTC_1b53d.dir/CMakeCXXCompilerABI.cpp.o
-/usr/bin/g++-4.9      -o CMakeFiles/cmTC_1b53d.dir/CMakeCXXCompilerABI.cpp.o -c /home/moyin/tools/cmake-3.7.0-rc1/Modules/CMakeCXXCompilerABI.cpp
-Linking CXX executable cmTC_1b53d
-/home/moyin/tools/cmake-3.7.0-rc1/bin/cmake -E cmake_link_script CMakeFiles/cmTC_1b53d.dir/link.txt --verbose=1
-/usr/bin/g++-4.9       -v CMakeFiles/cmTC_1b53d.dir/CMakeCXXCompilerABI.cpp.o  -o cmTC_1b53d -rdynamic  
+Building CXX object CMakeFiles/cmTC_f8803.dir/CMakeCXXCompilerABI.cpp.o
+/usr/bin/g++-4.9      -o CMakeFiles/cmTC_f8803.dir/CMakeCXXCompilerABI.cpp.o -c /home/moyin/tools/cmake-3.7.0-rc1/Modules/CMakeCXXCompilerABI.cpp
+Linking CXX executable cmTC_f8803
+/home/moyin/tools/cmake-3.7.0-rc1/bin/cmake -E cmake_link_script CMakeFiles/cmTC_f8803.dir/link.txt --verbose=1
+/usr/bin/g++-4.9       -v CMakeFiles/cmTC_f8803.dir/CMakeCXXCompilerABI.cpp.o  -o cmTC_f8803 -rdynamic  
 Using built-in specs.
 COLLECT_GCC=/usr/bin/g++-4.9
 COLLECT_LTO_WRAPPER=/usr/lib/gcc/x86_64-linux-gnu/4.9/lto-wrapper
@@ -244,8 +244,8 @@ Thread model: posix
 gcc version 4.9.4 (Ubuntu 4.9.4-2ubuntu1~14.04.1) 
 COMPILER_PATH=/usr/lib/gcc/x86_64-linux-gnu/4.9/:/usr/lib/gcc/x86_64-linux-gnu/4.9/:/usr/lib/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/4.9/:/usr/lib/gcc/x86_64-linux-gnu/
 LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/4.9/:/usr/lib/gcc/x86_64-linux-gnu/4.9/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/4.9/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/4.9/../../../:/lib/:/usr/lib/
-COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_1b53d' '-rdynamic' '-shared-libgcc' '-mtune=generic' '-march=x86-64'
- /usr/lib/gcc/x86_64-linux-gnu/4.9/collect2 -plugin /usr/lib/gcc/x86_64-linux-gnu/4.9/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/4.9/lto-wrapper -plugin-opt=-fresolution=/tmp/cck0vXka.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --sysroot=/ --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -export-dynamic -dynamic-linker /lib64/ld-linux-x86-64.so.2 -z relro -o cmTC_1b53d /usr/lib/gcc/x86_64-linux-gnu/4.9/../../../x86_64-linux-gnu/crt1.o /usr/lib/gcc/x86_64-linux-gnu/4.9/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/4.9/crtbegin.o -L/usr/lib/gcc/x86_64-linux-gnu/4.9 -L/usr/lib/gcc/x86_64-linux-gnu/4.9/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/4.9/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/4.9/../../.. CMakeFiles/cmTC_1b53d.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-linux-gnu/4.9/crtend.o /usr/lib/gcc/x86_64-linux-gnu/4.9/../../../x86_64-linux-gnu/crtn.o
+COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_f8803' '-rdynamic' '-shared-libgcc' '-mtune=generic' '-march=x86-64'
+ /usr/lib/gcc/x86_64-linux-gnu/4.9/collect2 -plugin /usr/lib/gcc/x86_64-linux-gnu/4.9/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/4.9/lto-wrapper -plugin-opt=-fresolution=/tmp/ccOA3Mjz.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --sysroot=/ --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -export-dynamic -dynamic-linker /lib64/ld-linux-x86-64.so.2 -z relro -o cmTC_f8803 /usr/lib/gcc/x86_64-linux-gnu/4.9/../../../x86_64-linux-gnu/crt1.o /usr/lib/gcc/x86_64-linux-gnu/4.9/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/4.9/crtbegin.o -L/usr/lib/gcc/x86_64-linux-gnu/4.9 -L/usr/lib/gcc/x86_64-linux-gnu/4.9/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/4.9/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/4.9/../../.. CMakeFiles/cmTC_f8803.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-linux-gnu/4.9/crtend.o /usr/lib/gcc/x86_64-linux-gnu/4.9/../../../x86_64-linux-gnu/crtn.o
 make[1]: Leaving directory `/home/moyin/dev/autonomous_controllers/build/CMakeFiles/CMakeTmp'
 
 
@@ -253,14 +253,14 @@ Parsed CXX implicit link information from above output:
   link line regex: [^( *|.*[/\])(ld|([^/\]+-)?ld|collect2)[^/\]*( |$)]
   ignore line: [Change Dir: /home/moyin/dev/autonomous_controllers/build/CMakeFiles/CMakeTmp]
   ignore line: []
-  ignore line: [Run Build Command:"/usr/bin/make" "cmTC_1b53d/fast"]
-  ignore line: [/usr/bin/make -f CMakeFiles/cmTC_1b53d.dir/build.make CMakeFiles/cmTC_1b53d.dir/build]
+  ignore line: [Run Build Command:"/usr/bin/make" "cmTC_f8803/fast"]
+  ignore line: [/usr/bin/make -f CMakeFiles/cmTC_f8803.dir/build.make CMakeFiles/cmTC_f8803.dir/build]
   ignore line: [make[1]: Entering directory `/home/moyin/dev/autonomous_controllers/build/CMakeFiles/CMakeTmp']
-  ignore line: [Building CXX object CMakeFiles/cmTC_1b53d.dir/CMakeCXXCompilerABI.cpp.o]
-  ignore line: [/usr/bin/g++-4.9      -o CMakeFiles/cmTC_1b53d.dir/CMakeCXXCompilerABI.cpp.o -c /home/moyin/tools/cmake-3.7.0-rc1/Modules/CMakeCXXCompilerABI.cpp]
-  ignore line: [Linking CXX executable cmTC_1b53d]
-  ignore line: [/home/moyin/tools/cmake-3.7.0-rc1/bin/cmake -E cmake_link_script CMakeFiles/cmTC_1b53d.dir/link.txt --verbose=1]
-  ignore line: [/usr/bin/g++-4.9       -v CMakeFiles/cmTC_1b53d.dir/CMakeCXXCompilerABI.cpp.o  -o cmTC_1b53d -rdynamic  ]
+  ignore line: [Building CXX object CMakeFiles/cmTC_f8803.dir/CMakeCXXCompilerABI.cpp.o]
+  ignore line: [/usr/bin/g++-4.9      -o CMakeFiles/cmTC_f8803.dir/CMakeCXXCompilerABI.cpp.o -c /home/moyin/tools/cmake-3.7.0-rc1/Modules/CMakeCXXCompilerABI.cpp]
+  ignore line: [Linking CXX executable cmTC_f8803]
+  ignore line: [/home/moyin/tools/cmake-3.7.0-rc1/bin/cmake -E cmake_link_script CMakeFiles/cmTC_f8803.dir/link.txt --verbose=1]
+  ignore line: [/usr/bin/g++-4.9       -v CMakeFiles/cmTC_f8803.dir/CMakeCXXCompilerABI.cpp.o  -o cmTC_f8803 -rdynamic  ]
   ignore line: [Using built-in specs.]
   ignore line: [COLLECT_GCC=/usr/bin/g++-4.9]
   ignore line: [COLLECT_LTO_WRAPPER=/usr/lib/gcc/x86_64-linux-gnu/4.9/lto-wrapper]
@@ -270,13 +270,13 @@ Parsed CXX implicit link information from above output:
   ignore line: [gcc version 4.9.4 (Ubuntu 4.9.4-2ubuntu1~14.04.1) ]
   ignore line: [COMPILER_PATH=/usr/lib/gcc/x86_64-linux-gnu/4.9/:/usr/lib/gcc/x86_64-linux-gnu/4.9/:/usr/lib/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/4.9/:/usr/lib/gcc/x86_64-linux-gnu/]
   ignore line: [LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/4.9/:/usr/lib/gcc/x86_64-linux-gnu/4.9/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/4.9/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/4.9/../../../:/lib/:/usr/lib/]
-  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_1b53d' '-rdynamic' '-shared-libgcc' '-mtune=generic' '-march=x86-64']
-  link line: [ /usr/lib/gcc/x86_64-linux-gnu/4.9/collect2 -plugin /usr/lib/gcc/x86_64-linux-gnu/4.9/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/4.9/lto-wrapper -plugin-opt=-fresolution=/tmp/cck0vXka.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --sysroot=/ --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -export-dynamic -dynamic-linker /lib64/ld-linux-x86-64.so.2 -z relro -o cmTC_1b53d /usr/lib/gcc/x86_64-linux-gnu/4.9/../../../x86_64-linux-gnu/crt1.o /usr/lib/gcc/x86_64-linux-gnu/4.9/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/4.9/crtbegin.o -L/usr/lib/gcc/x86_64-linux-gnu/4.9 -L/usr/lib/gcc/x86_64-linux-gnu/4.9/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/4.9/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/4.9/../../.. CMakeFiles/cmTC_1b53d.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-linux-gnu/4.9/crtend.o /usr/lib/gcc/x86_64-linux-gnu/4.9/../../../x86_64-linux-gnu/crtn.o]
+  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_f8803' '-rdynamic' '-shared-libgcc' '-mtune=generic' '-march=x86-64']
+  link line: [ /usr/lib/gcc/x86_64-linux-gnu/4.9/collect2 -plugin /usr/lib/gcc/x86_64-linux-gnu/4.9/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/4.9/lto-wrapper -plugin-opt=-fresolution=/tmp/ccOA3Mjz.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --sysroot=/ --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -export-dynamic -dynamic-linker /lib64/ld-linux-x86-64.so.2 -z relro -o cmTC_f8803 /usr/lib/gcc/x86_64-linux-gnu/4.9/../../../x86_64-linux-gnu/crt1.o /usr/lib/gcc/x86_64-linux-gnu/4.9/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/4.9/crtbegin.o -L/usr/lib/gcc/x86_64-linux-gnu/4.9 -L/usr/lib/gcc/x86_64-linux-gnu/4.9/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/4.9/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/4.9/../../.. CMakeFiles/cmTC_f8803.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-linux-gnu/4.9/crtend.o /usr/lib/gcc/x86_64-linux-gnu/4.9/../../../x86_64-linux-gnu/crtn.o]
     arg [/usr/lib/gcc/x86_64-linux-gnu/4.9/collect2] ==> ignore
     arg [-plugin] ==> ignore
     arg [/usr/lib/gcc/x86_64-linux-gnu/4.9/liblto_plugin.so] ==> ignore
     arg [-plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/4.9/lto-wrapper] ==> ignore
-    arg [-plugin-opt=-fresolution=/tmp/cck0vXka.res] ==> ignore
+    arg [-plugin-opt=-fresolution=/tmp/ccOA3Mjz.res] ==> ignore
     arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
     arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
     arg [-plugin-opt=-pass-through=-lc] ==> ignore
@@ -294,7 +294,7 @@ Parsed CXX implicit link information from above output:
     arg [/lib64/ld-linux-x86-64.so.2] ==> ignore
     arg [-zrelro] ==> ignore
     arg [-o] ==> ignore
-    arg [cmTC_1b53d] ==> ignore
+    arg [cmTC_f8803] ==> ignore
     arg [/usr/lib/gcc/x86_64-linux-gnu/4.9/../../../x86_64-linux-gnu/crt1.o] ==> ignore
     arg [/usr/lib/gcc/x86_64-linux-gnu/4.9/../../../x86_64-linux-gnu/crti.o] ==> ignore
     arg [/usr/lib/gcc/x86_64-linux-gnu/4.9/crtbegin.o] ==> ignore
@@ -306,7 +306,7 @@ Parsed CXX implicit link information from above output:
     arg [-L/usr/lib/x86_64-linux-gnu] ==> dir [/usr/lib/x86_64-linux-gnu]
     arg [-L/usr/lib/../lib] ==> dir [/usr/lib/../lib]
     arg [-L/usr/lib/gcc/x86_64-linux-gnu/4.9/../../..] ==> dir [/usr/lib/gcc/x86_64-linux-gnu/4.9/../../..]
-    arg [CMakeFiles/cmTC_1b53d.dir/CMakeCXXCompilerABI.cpp.o] ==> ignore
+    arg [CMakeFiles/cmTC_f8803.dir/CMakeCXXCompilerABI.cpp.o] ==> ignore
     arg [-lstdc++] ==> lib [stdc++]
     arg [-lm] ==> lib [m]
     arg [-lgcc_s] ==> lib [gcc_s]
@@ -338,14 +338,14 @@ Parsed CXX implicit link information from above output:
 Detecting CXX [-std=c++14] compiler features compiled with the following output:
 Change Dir: /home/moyin/dev/autonomous_controllers/build/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_c2f06/fast"
-/usr/bin/make -f CMakeFiles/cmTC_c2f06.dir/build.make CMakeFiles/cmTC_c2f06.dir/build
+Run Build Command:"/usr/bin/make" "cmTC_565ce/fast"
+/usr/bin/make -f CMakeFiles/cmTC_565ce.dir/build.make CMakeFiles/cmTC_565ce.dir/build
 make[1]: Entering directory `/home/moyin/dev/autonomous_controllers/build/CMakeFiles/CMakeTmp'
-Building CXX object CMakeFiles/cmTC_c2f06.dir/feature_tests.cxx.o
-/usr/bin/g++-4.9     -std=c++14 -o CMakeFiles/cmTC_c2f06.dir/feature_tests.cxx.o -c /home/moyin/dev/autonomous_controllers/build/CMakeFiles/feature_tests.cxx
-Linking CXX executable cmTC_c2f06
-/home/moyin/tools/cmake-3.7.0-rc1/bin/cmake -E cmake_link_script CMakeFiles/cmTC_c2f06.dir/link.txt --verbose=1
-/usr/bin/g++-4.9        CMakeFiles/cmTC_c2f06.dir/feature_tests.cxx.o  -o cmTC_c2f06 -rdynamic 
+Building CXX object CMakeFiles/cmTC_565ce.dir/feature_tests.cxx.o
+/usr/bin/g++-4.9     -std=c++14 -o CMakeFiles/cmTC_565ce.dir/feature_tests.cxx.o -c /home/moyin/dev/autonomous_controllers/build/CMakeFiles/feature_tests.cxx
+Linking CXX executable cmTC_565ce
+/home/moyin/tools/cmake-3.7.0-rc1/bin/cmake -E cmake_link_script CMakeFiles/cmTC_565ce.dir/link.txt --verbose=1
+/usr/bin/g++-4.9        CMakeFiles/cmTC_565ce.dir/feature_tests.cxx.o  -o cmTC_565ce -rdynamic 
 make[1]: Leaving directory `/home/moyin/dev/autonomous_controllers/build/CMakeFiles/CMakeTmp'
 
 
@@ -411,14 +411,14 @@ make[1]: Leaving directory `/home/moyin/dev/autonomous_controllers/build/CMakeFi
 Detecting CXX [-std=c++11] compiler features compiled with the following output:
 Change Dir: /home/moyin/dev/autonomous_controllers/build/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_41a77/fast"
-/usr/bin/make -f CMakeFiles/cmTC_41a77.dir/build.make CMakeFiles/cmTC_41a77.dir/build
+Run Build Command:"/usr/bin/make" "cmTC_e031e/fast"
+/usr/bin/make -f CMakeFiles/cmTC_e031e.dir/build.make CMakeFiles/cmTC_e031e.dir/build
 make[1]: Entering directory `/home/moyin/dev/autonomous_controllers/build/CMakeFiles/CMakeTmp'
-Building CXX object CMakeFiles/cmTC_41a77.dir/feature_tests.cxx.o
-/usr/bin/g++-4.9     -std=c++11 -o CMakeFiles/cmTC_41a77.dir/feature_tests.cxx.o -c /home/moyin/dev/autonomous_controllers/build/CMakeFiles/feature_tests.cxx
-Linking CXX executable cmTC_41a77
-/home/moyin/tools/cmake-3.7.0-rc1/bin/cmake -E cmake_link_script CMakeFiles/cmTC_41a77.dir/link.txt --verbose=1
-/usr/bin/g++-4.9        CMakeFiles/cmTC_41a77.dir/feature_tests.cxx.o  -o cmTC_41a77 -rdynamic 
+Building CXX object CMakeFiles/cmTC_e031e.dir/feature_tests.cxx.o
+/usr/bin/g++-4.9     -std=c++11 -o CMakeFiles/cmTC_e031e.dir/feature_tests.cxx.o -c /home/moyin/dev/autonomous_controllers/build/CMakeFiles/feature_tests.cxx
+Linking CXX executable cmTC_e031e
+/home/moyin/tools/cmake-3.7.0-rc1/bin/cmake -E cmake_link_script CMakeFiles/cmTC_e031e.dir/link.txt --verbose=1
+/usr/bin/g++-4.9        CMakeFiles/cmTC_e031e.dir/feature_tests.cxx.o  -o cmTC_e031e -rdynamic 
 make[1]: Leaving directory `/home/moyin/dev/autonomous_controllers/build/CMakeFiles/CMakeTmp'
 
 
@@ -484,14 +484,14 @@ make[1]: Leaving directory `/home/moyin/dev/autonomous_controllers/build/CMakeFi
 Detecting CXX [-std=c++98] compiler features compiled with the following output:
 Change Dir: /home/moyin/dev/autonomous_controllers/build/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_6ec55/fast"
-/usr/bin/make -f CMakeFiles/cmTC_6ec55.dir/build.make CMakeFiles/cmTC_6ec55.dir/build
+Run Build Command:"/usr/bin/make" "cmTC_32ca9/fast"
+/usr/bin/make -f CMakeFiles/cmTC_32ca9.dir/build.make CMakeFiles/cmTC_32ca9.dir/build
 make[1]: Entering directory `/home/moyin/dev/autonomous_controllers/build/CMakeFiles/CMakeTmp'
-Building CXX object CMakeFiles/cmTC_6ec55.dir/feature_tests.cxx.o
-/usr/bin/g++-4.9     -std=c++98 -o CMakeFiles/cmTC_6ec55.dir/feature_tests.cxx.o -c /home/moyin/dev/autonomous_controllers/build/CMakeFiles/feature_tests.cxx
-Linking CXX executable cmTC_6ec55
-/home/moyin/tools/cmake-3.7.0-rc1/bin/cmake -E cmake_link_script CMakeFiles/cmTC_6ec55.dir/link.txt --verbose=1
-/usr/bin/g++-4.9        CMakeFiles/cmTC_6ec55.dir/feature_tests.cxx.o  -o cmTC_6ec55 -rdynamic 
+Building CXX object CMakeFiles/cmTC_32ca9.dir/feature_tests.cxx.o
+/usr/bin/g++-4.9     -std=c++98 -o CMakeFiles/cmTC_32ca9.dir/feature_tests.cxx.o -c /home/moyin/dev/autonomous_controllers/build/CMakeFiles/feature_tests.cxx
+Linking CXX executable cmTC_32ca9
+/home/moyin/tools/cmake-3.7.0-rc1/bin/cmake -E cmake_link_script CMakeFiles/cmTC_32ca9.dir/link.txt --verbose=1
+/usr/bin/g++-4.9        CMakeFiles/cmTC_32ca9.dir/feature_tests.cxx.o  -o cmTC_32ca9 -rdynamic 
 make[1]: Leaving directory `/home/moyin/dev/autonomous_controllers/build/CMakeFiles/CMakeTmp'
 
 
@@ -555,28 +555,28 @@ make[1]: Leaving directory `/home/moyin/dev/autonomous_controllers/build/CMakeFi
 Determining if the include file pthread.h exists passed with the following output:
 Change Dir: /home/moyin/dev/autonomous_controllers/build/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_a43fd/fast"
-/usr/bin/make -f CMakeFiles/cmTC_a43fd.dir/build.make CMakeFiles/cmTC_a43fd.dir/build
+Run Build Command:"/usr/bin/make" "cmTC_25fd7/fast"
+/usr/bin/make -f CMakeFiles/cmTC_25fd7.dir/build.make CMakeFiles/cmTC_25fd7.dir/build
 make[1]: Entering directory `/home/moyin/dev/autonomous_controllers/build/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_a43fd.dir/CheckIncludeFile.c.o
-/usr/bin/gcc-4.9     -o CMakeFiles/cmTC_a43fd.dir/CheckIncludeFile.c.o   -c /home/moyin/dev/autonomous_controllers/build/CMakeFiles/CMakeTmp/CheckIncludeFile.c
-Linking C executable cmTC_a43fd
-/home/moyin/tools/cmake-3.7.0-rc1/bin/cmake -E cmake_link_script CMakeFiles/cmTC_a43fd.dir/link.txt --verbose=1
-/usr/bin/gcc-4.9       CMakeFiles/cmTC_a43fd.dir/CheckIncludeFile.c.o  -o cmTC_a43fd -rdynamic 
+Building C object CMakeFiles/cmTC_25fd7.dir/CheckIncludeFile.c.o
+/usr/bin/gcc-4.9     -o CMakeFiles/cmTC_25fd7.dir/CheckIncludeFile.c.o   -c /home/moyin/dev/autonomous_controllers/build/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+Linking C executable cmTC_25fd7
+/home/moyin/tools/cmake-3.7.0-rc1/bin/cmake -E cmake_link_script CMakeFiles/cmTC_25fd7.dir/link.txt --verbose=1
+/usr/bin/gcc-4.9       CMakeFiles/cmTC_25fd7.dir/CheckIncludeFile.c.o  -o cmTC_25fd7 -rdynamic 
 make[1]: Leaving directory `/home/moyin/dev/autonomous_controllers/build/CMakeFiles/CMakeTmp'
 
 
 Determining if the function pthread_create exists in the pthread passed with the following output:
 Change Dir: /home/moyin/dev/autonomous_controllers/build/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_61a33/fast"
-/usr/bin/make -f CMakeFiles/cmTC_61a33.dir/build.make CMakeFiles/cmTC_61a33.dir/build
+Run Build Command:"/usr/bin/make" "cmTC_9d627/fast"
+/usr/bin/make -f CMakeFiles/cmTC_9d627.dir/build.make CMakeFiles/cmTC_9d627.dir/build
 make[1]: Entering directory `/home/moyin/dev/autonomous_controllers/build/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_61a33.dir/CheckFunctionExists.c.o
-/usr/bin/gcc-4.9    -DCHECK_FUNCTION_EXISTS=pthread_create   -o CMakeFiles/cmTC_61a33.dir/CheckFunctionExists.c.o   -c /home/moyin/tools/cmake-3.7.0-rc1/Modules/CheckFunctionExists.c
-Linking C executable cmTC_61a33
-/home/moyin/tools/cmake-3.7.0-rc1/bin/cmake -E cmake_link_script CMakeFiles/cmTC_61a33.dir/link.txt --verbose=1
-/usr/bin/gcc-4.9   -DCHECK_FUNCTION_EXISTS=pthread_create    CMakeFiles/cmTC_61a33.dir/CheckFunctionExists.c.o  -o cmTC_61a33 -rdynamic -lpthread 
+Building C object CMakeFiles/cmTC_9d627.dir/CheckFunctionExists.c.o
+/usr/bin/gcc-4.9    -DCHECK_FUNCTION_EXISTS=pthread_create   -o CMakeFiles/cmTC_9d627.dir/CheckFunctionExists.c.o   -c /home/moyin/tools/cmake-3.7.0-rc1/Modules/CheckFunctionExists.c
+Linking C executable cmTC_9d627
+/home/moyin/tools/cmake-3.7.0-rc1/bin/cmake -E cmake_link_script CMakeFiles/cmTC_9d627.dir/link.txt --verbose=1
+/usr/bin/gcc-4.9   -DCHECK_FUNCTION_EXISTS=pthread_create    CMakeFiles/cmTC_9d627.dir/CheckFunctionExists.c.o  -o cmTC_9d627 -rdynamic -lpthread 
 make[1]: Leaving directory `/home/moyin/dev/autonomous_controllers/build/CMakeFiles/CMakeTmp'
 
 
